@@ -17,6 +17,8 @@
       }
     </style>-->
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <script src="js/vendor/modernizr.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -44,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Loocal</a>
+          <a class="brand" href="#"><img src="img/nav-logo.jpg" width="44" height="30" alt="Logo">Loocal</a>
           <div class="nav-collapse collapse">
             <ul class="nav nav-pills">
               <li><a href="#">App Shortcuts</a></li>
@@ -61,31 +63,114 @@
     <div class="main-content">
     <!-- Fly out Menu -->
     <div class="fly-out-menu">
-    <div class="container">
-    <a href="#" id="left-fly-out">Menu</a>
-    </div>
+    
+      <div class="container pull-left" id="left-fly-out">
+        <a href="#">Menu &rarr;</a>
+        <div aria-hidden="true" class="span3 left-menu left-menu-hidden">
+          <h3>Filters</h3>
+          <ul class="nav nav-list">
+          	  <li class="nav-header">Tribes</li>
+              <li><a href="#">Tribe 1</a></li>
+              <li><a href="#">Tribe 2</a></li>
+              <li><a href="#">Tribe 3</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">
+              <i class="icon-globe"></i>
+              News</li>
+              <li><a href="#">Local</a></li>
+              <li><a href="#">National</a></li>
+              <li><a href="#">International</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">
+              <i class="icon-calendar"></i>
+              Events</li>
+              <li><a href="#">
+              <i class="icon-music"></i>
+              Concerts</a></li>
+              <li><a href="#">Bands</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">
+              <i class="icon-film"></i>
+              Movies</a></li>
+              <li><a href="#">Theatre</a></li>
+              <li><a href="#">Singles</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">Dinning</li>
+              <li><a href="#">French</a></li>
+              <li><a href="#">Italian</a></li>
+              <li><a href="#">Sandwich Shop</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Diner</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">
+              <i class="icon-glass"></i>
+              Bars</li>
+              <li><a href="#">Whiskey Bar</a></li>
+              <li><a href="#">Wine Bar</a></li>
+              <li><a href="#">Pub</a></li>
+              <li><a href="#">Lounge</a></li>
+              <li><a href="#">Rock Club</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">
+              <i class="icon-shopping-cart"></i>
+              Shopping</li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Sporting Goods</a></li>
+          </ul>
+      </div><!--/.left-menu .left-menu-hidden-->
+        
+      </div><!--/.container-->
     </div><!--/.fly-out-menu-->
 
     <div class="container">
     <div class="row">
-      <div class="span3 left-menu left-menu-hidden">
-          <h3>Menu</h3>
-          <ul>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-              <li>Item6</li>
-              <li>Item7</li>
-              <li>Item8</li>
-              <li>Item9</li>
-              <li>Item10</li>
-          </ul>
-      </div>
-      <div class="span9">
+            
+      <div class="span12">
+      	<div class="pull-right">
           <h1>Welcome! Join a tribe?</h1>
           <p>Local at its best.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+    	<div class="row">
+   			 <div class="span12">
+             
+             <div id="example" class="example pagespan">
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"></div>
+				</div>
+			</div>
+
+			<button class="backward"><i class="icon-angle-left"></i></button>
+			<button class="forward"><i class="icon-angle-right"></i></button>
+
+			<div class="frame">
+				<ul>
+					<li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+					<li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li>
+					<li>19</li><li>20</li>
+				</ul>
+			</div>
+
+			<div class="controls">
+				<button data-action="toStart"><i class="icon-double-angle-left"></i> Start</button>
+				<span class="divider"></span>
+				<button class="prev"><i class="icon-angle-left"></i> Prev</button>
+				<span class="divider"></span>
+				<button data-action="add"><i class="icon-plus-sign"></i></button>
+				<button data-action="remove"><i class="icon-minus-sign"></i></button>
+				<span class="divider"></span>
+				<button class="next">Next <i class="icon-angle-right"></i></button>
+				<span class="divider"></span>
+				<button data-action="toEnd">End <i class="icon-double-angle-right"></i></button>
+			</div>
+		</div>
+
+		</div>
       </div>
     </div>
 
@@ -97,6 +182,11 @@
     
     <div id="footer">
       <div class="container">
+      	<ul class="inline pull-right legal">
+      		<li><a href="#">Privacy Policy</a></li>
+            <li>&middot;</li>
+      		<li><a href="#">Terms of Service</a></li>
+      	</ul>
         <p class="muted credit">Copyright Loocal 2013</p>
       </div>
     </div>
@@ -107,7 +197,9 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/sly.js"></script>
+    <script src="js/main.js"></script>
+    <!--<script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
@@ -118,12 +210,23 @@
     <script src="js/bootstrap-button.js"></script>
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>-->
+    
+    <!--<script>
+    $('#left-fly-out').hover(function() {
+       $('.left-menu').css({
+          'width': $('.left-menu').width(270),
+		  'height': $('.left-menu').height(100)
+       });
+       $('.left-menu').animate({'width': 'toggle'});
+    });
+    </script>-->
     
     <script>
     $('#left-fly-out').hover(function() {
        $('.left-menu').css({
           'width': $('.left-menu').width(270),
+		  'height':(($(document).height())-100)
        });
        $('.left-menu').animate({'width': 'toggle'});
     });
