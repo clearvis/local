@@ -5,7 +5,7 @@ jQuery(function ($) {
 	// ==========================================================================
 	//   Header example
 	// ==========================================================================
-	var $example = $('#example');
+	var $example = $('#card-scroll-cont');
 	var $frame = $example.find('.frame'); window.frr = $frame;
 	var sly = new Sly($frame, {
 		horizontal: 1,

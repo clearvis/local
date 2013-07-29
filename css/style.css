@@ -7,8 +7,17 @@ html,
         /* The html and body elements cannot have any padding or margin. */
 }
 
+html {
+    background: url(../img/google-map.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
 body {
 	font-size: 1em;
+    background-color: transparent;
 }
 	  	  
 a {
@@ -22,8 +31,8 @@ a {
 }
 
 .nav-pills > li {
-     margin: 0 4.5em;
-     width: 240px;
+     width: 15em;
+    margin-left: 5em;
 }
 
 .nav-pills > li > a {
@@ -112,35 +121,35 @@ a {
 *
 */
 	  
-.example { margin: 80px auto 40px; }
+.card-scroll-cont { margin: 80px auto 40px; }
 
-.example button, .example button { background: transparent; border: 0; color: #fff; opacity: .5; }
-.example button:hover, .example button:hover { opacity: 1; }
-.example button:disabled, .example button:disabled { opacity: .2; }
+.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #ff0000; opacity: .5; font-weight: bold;}
+.card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
+.card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.example .forward, .example .backward { float: left; width: 100px; height: 200px; font-size: 60px; }
-.example .forward { float: right; }
+.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 100px; height: 200px; font-size: 60px; }
+.card-scroll-cont .forward { float: right; }
 
-.example .frame { margin: 0 auto; width: 940px; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
-.example .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
-.example .frame ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: #eee; color: #3a3c47; text-align: center; cursor: pointer; }
-.example .frame ul li.active { color: #fff; background: #82bf4c; }
+.card-scroll-cont .frame { margin: 0 auto; width: 940px; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
+.card-scroll-cont .frame ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: #eee; color: #3a3c47; text-align: center; cursor: pointer; }
+.card-scroll-cont .frame ul li.active { color: #fff; background: #82bf4c; }
 
-.example .scrollbar { margin: 0 auto 30px; width: 940px; height: 2px; line-height: 0; }
-.example .scrollbar .handle { width: 100px; height: 100%; background: #fff; cursor: pointer; }
-.example .scrollbar .handle .mousearea { position: absolute; top: -9px; left: 0; width: 100%; height: 20px; }
+.card-scroll-cont .scrollbar { margin: 0 auto 30px; width: 940px; height: 2px; line-height: 0; }
+.card-scroll-cont .scrollbar .handle { width: 100px; height: 100%; background: #ff0000; cursor: pointer; }
+.card-scroll-cont .scrollbar .handle .mousearea { position: absolute; top: -9px; left: 0; width: 100%; height: 20px; }
 
-.example .pages { list-style: none; margin: 20px 0; padding: 0; text-align: center; }
-.example .pages li { display: inline-block; width: 14px; height: 14px; margin: 0 4px; text-indent: -999px; border-radius: 10px; cursor: pointer; overflow: hidden;
+.card-scroll-cont .pages { list-style: none; margin: 20px 0; padding: 0; text-align: center; }
+.card-scroll-cont .pages li { display: inline-block; width: 14px; height: 14px; margin: 0 4px; text-indent: -999px; border-radius: 10px; cursor: pointer; overflow: hidden;
 	background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
 }
-.example .pages li:hover { background: #aaa; }
-.example .pages li.active { background: #666; }
+.card-scroll-cont .pages li:hover { background: #aaa; }
+.card-scroll-cont .pages li.active { background: #666; }
 
-.example .controls { margin: 50px 0 0; text-align: center; }
-.example .controls .divider { display: inline-block; margin: 0 10px; }
-.example .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
-.example .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
+.card-scroll-cont .controls { margin: 50px 0 0; text-align: center; }
+.card-scroll-cont .controls .divider { display: inline-block; margin: 0 10px; }
+.card-scroll-cont .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
+.card-scroll-cont .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
 
 /* 3D shenanigans */
 .csstransforms3d .frame {
