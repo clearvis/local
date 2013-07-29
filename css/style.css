@@ -121,7 +121,11 @@ a {
 *
 */
 	  
-.card-scroll-cont { margin: 80px auto 40px; }
+.card-scroll-cont { margin: 350px auto 40px; }
+
+.pagespan {
+    width: 1140px;
+}
 
 .card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #ff0000; opacity: .5; font-weight: bold;}
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
@@ -153,7 +157,7 @@ a {
 
 /* 3D shenanigans */
 .csstransforms3d .frame {
-	height: 200px;
+	height: 120px;
 	line-height: 200px;
 	-webkit-perspective: 800px;
 	-ms-perspective: 800px;
