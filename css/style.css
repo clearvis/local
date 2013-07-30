@@ -148,13 +148,23 @@ a {
 *
 */
 	  
-.card-scroll-cont { margin: 250px auto 0; }
+.card-scroll-cont { margin: 210px auto 0; }
 
 .pagespan {
     /*width: 1140px;*/
 	width: 100%;
 	margin-left: 0 !important;
 	background: rgba(0, 0, 0, .65);
+}
+
+.ticker {
+	background: #000;
+	font-size: 2em;
+	color: #fff;
+}
+
+marquee {
+	padding: 10px 0;
 }
 
 .card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #fff; opacity: .5; font-weight: bold;}
