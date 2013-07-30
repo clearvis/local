@@ -114,6 +114,33 @@ a {
       .container .credit, .legal {
         margin: 20px 0;
       }
+
+/* Markers Styles
+*
+*
+*
+*/
+.marker {
+	width: 75px;
+	height: 75px;
+	border-radius: 100px;
+}
+
+.marker-green {
+	background: rgba(50,205,50, 0.3);
+}
+
+.marker-red {
+	background: rgba(255,0,0, 0.3);
+}
+
+.marker-yellow {
+	background: rgba(255,255,0, 0.4);
+}
+
+.marker-blue {
+	background: rgba(30,144,255, 0.3);
+}
 	  
 /* Cards Navigation
 *
@@ -121,26 +148,28 @@ a {
 *
 */
 	  
-.card-scroll-cont { margin: 350px auto 40px; }
+.card-scroll-cont { margin: 300px auto 0; }
 
 .pagespan {
-    width: 1140px;
+    /*width: 1140px;*/
+	width: 98%;
+	background: rgba(0, 0, 0, .65);
 }
 
-.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #ff0000; opacity: .5; font-weight: bold;}
+.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #fff; opacity: .5; font-weight: bold;}
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 100px; height: 200px; font-size: 60px; }
+.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 100px; height: 120px; font-size: 60px; }
 .card-scroll-cont .forward { float: right; }
 
-.card-scroll-cont .frame { margin: 0 auto; width: 940px; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame { margin: 0 auto; /*width: 940px;*/ width:80%; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
 .card-scroll-cont .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
-.card-scroll-cont .frame ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: #eee; color: #3a3c47; text-align: center; cursor: pointer; }
-.card-scroll-cont .frame ul li.active { color: #fff; background: #82bf4c; }
+.card-scroll-cont .frame ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: transparent; color: #3a3c47; text-align: center; cursor: pointer; }
+.card-scroll-cont .frame ul li.active { color: #fff; background: rgba(153, 155, 152, 0.16); }
 
-.card-scroll-cont .scrollbar { margin: 0 auto 30px; width: 940px; height: 2px; line-height: 0; }
-.card-scroll-cont .scrollbar .handle { width: 100px; height: 100%; background: #ff0000; cursor: pointer; }
+.card-scroll-cont .scrollbar { margin: 0 auto 10px; padding-top: 5px; width: 940px; height: 5px; line-height: 0; }
+.card-scroll-cont .scrollbar .handle { width: 100px; height: 100%; background: #fff; cursor: pointer; }
 .card-scroll-cont .scrollbar .handle .mousearea { position: absolute; top: -9px; left: 0; width: 100%; height: 20px; }
 
 .card-scroll-cont .pages { list-style: none; margin: 20px 0; padding: 0; text-align: center; }
@@ -150,7 +179,7 @@ a {
 .card-scroll-cont .pages li:hover { background: #aaa; }
 .card-scroll-cont .pages li.active { background: #666; }
 
-.card-scroll-cont .controls { margin: 50px 0 0; text-align: center; }
+.card-scroll-cont .controls { margin: 15px 0 0; text-align: center; }
 .card-scroll-cont .controls .divider { display: inline-block; margin: 0 10px; }
 .card-scroll-cont .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
 .card-scroll-cont .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
@@ -159,9 +188,9 @@ a {
 .csstransforms3d .frame {
 	height: 120px;
 	line-height: 200px;
-	-webkit-perspective: 800px;
-	-ms-perspective: 800px;
-	perspective: 800px;
+	-webkit-perspective: 700px;
+	-ms-perspective: 700px;
+	perspective: 700px;
 	-webkit-perspective-origin: 50% 50%;
 	-ms-perspective-origin: 50% 50%;
 	perspective-origin: 50% 50%;
@@ -173,22 +202,26 @@ a {
 }
 .csstransforms3d .frame ul li {
 	position: relative;
-	margin: 0 -25px;
-	border: 1px solid #3e404a;
-	-webkit-transform: rotateY(60deg) scale(0.9);
-	-ms-transform: rotateY(60deg) scale(0.9);
-	transform: rotateY(60deg) scale(0.9);
+	/*margin: 0 -25px;*/
+	margin: 0 -10px;
+	/*border: 1px solid rgba(187, 187, 190, 0.59);*/
+	-webkit-transform: rotateY(45deg) scale(0.9);
+	-ms-transform: rotateY(45deg) scale(0.9);
+	transform: rotateY(45deg) scale(0.9);
 	-webkit-transition: -webkit-transform 300ms ease-out;
 	transition: transform 300ms ease-out;
+	opacity: .5;
 }
 .csstransforms3d .frame ul li.active {
 	z-index: 10;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+	opacity: 1;
 }
 .csstransforms3d .frame ul li.active ~ li {
-	-webkit-transform: rotateY(-60deg) scale(0.9);
-	-ms-transform: rotateY(-60deg) scale(0.9);
-	transform: rotateY(-60deg) scale(0.9);
+	-webkit-transform: rotateY(-45deg) scale(0.9);
+	-ms-transform: rotateY(-45deg) scale(0.9);
+	transform: rotateY(-45deg) scale(0.9);
+	opacity: .8;
 }
