@@ -148,11 +148,12 @@ a {
 *
 */
 	  
-.card-scroll-cont { margin: 300px auto 0; }
+.card-scroll-cont { margin: 250px auto 0; }
 
 .pagespan {
     /*width: 1140px;*/
-	width: 98%;
+	width: 100%;
+	margin-left: 0 !important;
 	background: rgba(0, 0, 0, .65);
 }
 
@@ -167,6 +168,7 @@ a {
 .card-scroll-cont .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
 .card-scroll-cont .frame ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: transparent; color: #3a3c47; text-align: center; cursor: pointer; }
 .card-scroll-cont .frame ul li.active { color: #fff; background: rgba(153, 155, 152, 0.16); }
+.card-scroll-cont .frame li:hover { opacity: 1; }
 
 .card-scroll-cont .scrollbar { margin: 0 auto 10px; padding-top: 5px; width: 940px; height: 5px; line-height: 0; }
 .card-scroll-cont .scrollbar .handle { width: 100px; height: 100%; background: #fff; cursor: pointer; }
@@ -224,4 +226,159 @@ a {
 	-ms-transform: rotateY(-45deg) scale(0.9);
 	transform: rotateY(-45deg) scale(0.9);
 	opacity: .8;
+}
+.csstransforms3d .frame ul li ~ li:hover {
+	opacity: 1;
+}
+
+/* 1200 pixel Frame */
+.card-scroll-cont .frame1200 { margin: 0 auto; /*width: 940px;*/ width:1200px; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame1200 ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
+.card-scroll-cont .frame1200 ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: transparent; color: #3a3c47; text-align: center; cursor: pointer; }
+.card-scroll-cont .frame1200 ul li.active { color: #fff; background: rgba(153, 155, 152, 0.16); }
+.card-scroll-cont .frame1200 li:hover { opacity: 1; }
+
+.csstransforms3d .frame1200 {
+	height: 120px;
+	line-height: 200px;
+	-webkit-perspective: 700px;
+	-ms-perspective: 700px;
+	perspective: 700px;
+	-webkit-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+}
+.csstransforms3d .frame1200 ul {
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.csstransforms3d .frame1200 ul li {
+	position: relative;
+	/*margin: 0 -25px;*/
+	margin: 0 -18px;
+	/*border: 1px solid rgba(187, 187, 190, 0.59);*/
+	-webkit-transform: rotateY(45deg) scale(0.9);
+	-ms-transform: rotateY(45deg) scale(0.9);
+	transform: rotateY(45deg) scale(0.9);
+	-webkit-transition: -webkit-transform 300ms ease-out;
+	transition: transform 300ms ease-out;
+	opacity: .5;
+}
+.csstransforms3d .frame1200 ul li.active {
+	z-index: 10;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.csstransforms3d .frame1200 ul li.active ~ li {
+	-webkit-transform: rotateY(-45deg) scale(0.9);
+	-ms-transform: rotateY(-45deg) scale(0.9);
+	transform: rotateY(-45deg) scale(0.9);
+	opacity: .8;
+}
+.csstransforms3d .frame1200 ul li ~ li:hover {
+	opacity: 1;
+}
+
+/* 940 pixel Frame */
+.card-scroll-cont .frame940 { margin: 0 auto; width: 940px; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame940 ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
+.card-scroll-cont .frame940 ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: transparent; color: #3a3c47; text-align: center; cursor: pointer; }
+.card-scroll-cont .frame940 ul li.active { color: #fff; background: rgba(153, 155, 152, 0.16); }
+.card-scroll-cont .frame1200 li:hover { opacity: 1; }
+
+.csstransforms3d .frame940 {
+	height: 120px;
+	line-height: 200px;
+	-webkit-perspective: 700px;
+	-ms-perspective: 700px;
+	perspective: 700px;
+	-webkit-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+}
+.csstransforms3d .frame940 ul {
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.csstransforms3d .frame940 ul li {
+	position: relative;
+	margin: 0 -25px;
+	/*border: 1px solid rgba(187, 187, 190, 0.59);*/
+	-webkit-transform: rotateY(45deg) scale(0.9);
+	-ms-transform: rotateY(45deg) scale(0.9);
+	transform: rotateY(45deg) scale(0.9);
+	-webkit-transition: -webkit-transform 300ms ease-out;
+	transition: transform 300ms ease-out;
+	opacity: .5;
+}
+.csstransforms3d .frame940 ul li.active {
+	z-index: 10;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.csstransforms3d .frame940 ul li.active ~ li {
+	-webkit-transform: rotateY(-45deg) scale(0.9);
+	-ms-transform: rotateY(-45deg) scale(0.9);
+	transform: rotateY(-45deg) scale(0.9);
+	opacity: .8;
+}
+.csstransforms3d .frame940 ul li ~ li:hover {
+	opacity: 1;
+}
+
+/* 800 pixel Frame */
+.card-scroll-cont .frame800 { margin: 0 auto; /*width: 940px;*/ width:800px; height: 200px; line-height: 200px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame800 ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
+.card-scroll-cont .frame800 ul li { float: left; width: 190px; height: 100%; margin: 0 1px 0 0; padding: 0; background: transparent; color: #3a3c47; text-align: center; cursor: pointer; }
+.card-scroll-cont .frame800 ul li.active { color: #fff; background: rgba(153, 155, 152, 0.16); }
+.card-scroll-cont .frame800 li:hover { opacity: 1; }
+
+.csstransforms3d .frame800 {
+	height: 120px;
+	line-height: 200px;
+	-webkit-perspective: 700px;
+	-ms-perspective: 700px;
+	perspective: 700px;
+	-webkit-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+}
+.csstransforms3d .frame800 ul {
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.csstransforms3d .frame800 ul li {
+	position: relative;
+	/*margin: 0 -25px;*/
+	margin: 0 -28px;
+	/*border: 1px solid rgba(187, 187, 190, 0.59);*/
+	-webkit-transform: rotateY(45deg) scale(0.9);
+	-ms-transform: rotateY(45deg) scale(0.9);
+	transform: rotateY(45deg) scale(0.9);
+	-webkit-transition: -webkit-transform 300ms ease-out;
+	transition: transform 300ms ease-out;
+	opacity: .5;
+}
+.csstransforms3d .frame800 ul li.active {
+	z-index: 10;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.csstransforms3d .frame800 ul li.active ~ li {
+	-webkit-transform: rotateY(-45deg) scale(0.9);
+	-ms-transform: rotateY(-45deg) scale(0.9);
+	transform: rotateY(-45deg) scale(0.9);
+	opacity: .8;
+}
+.csstransforms3d .frame800 ul li ~ li:hover {
+	opacity: 1;
 }
