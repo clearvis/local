@@ -12,6 +12,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/flippant.css">
     <!--<style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -54,12 +55,16 @@
           </div>
                     
               <div class="nav-collapse collapse">
-                <div class="span6">
+                <div class="span5">
                     <ul class="nav nav-pills">
                       <li><a href="#">App Shortcuts</a></li>
                       <li><a href="#about">Personal Shortcuts</a></li>
                     </ul>
                 </div>
+                
+           <div class="span1 nav-bar-alert-cont">
+           		<div class="nav-bar-alert"><i class="icon-white icon-fire"></i></div>
+           </div>
             
           <div class="span3">
               <form class="navbar-search  pull-right">
@@ -207,23 +212,27 @@
     </div><!--/.container-->
    
     	<div class="row">
-   			 <div class="container">
-				 <div class="span2">
-				 <button type="button" id="full-width" class="btn btn-primary">Full Width</button>
-				 </div>
-				 
-				 <div class="span2">
-				 <button type="button" id="1200-px" class="btn btn-primary">1200 Pixels</button>
-				 </div>
-				 
-				 <div class="span2">
-				 <button type="button" id="940-px" class="btn btn-primary">940 Pixels</button>
-				 </div>
-				 
-				 <div class="span2">
-				 <button type="button" id="800-px" class="btn btn-primary">800 Pixels</button>
-				 </div>
-             </div>
+           <div class="container">
+               <div class="span2">
+               <button type="button" id="full-width" class="btn btn-primary">Full Width</button>
+               </div>
+               
+               <div class="span2">
+               <button type="button" id="1200-px" class="btn btn-primary">1200 Pixels</button>
+               </div>
+               
+               <div class="span2">
+               <button type="button" id="940-px" class="btn btn-primary">940 Pixels</button>
+               </div>
+               
+               <div class="span2">
+               <button type="button" id="800-px" class="btn btn-primary">800 Pixels</button>
+               </div>
+           </div>
+             
+             
+             
+             
              
              <div id="card-scroll-cont" class="card-scroll-cont pagespan">
              <div class="row">
@@ -246,9 +255,31 @@
 			<div class="frame">
 				
 				<ul>
-					<li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li>
-					<li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li>
-					<li><img src="img/card-190x120.png" width="190" height="120"></li><li><img src="img/card-190x120.png" width="190" height="120"></li>
+					<li><div class="card card-tweet"><h2>Mickey Mouse Tweeted:</h2><p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p></div></li>
+                    <li><div class="card card-photo"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					  <div class="hash-tag">#Malaysia #Petronas Towers</div><i class="icon-white icon-asterisk"></i></div></li>
+                      <li><div class="card card-article"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><h3>Pink Panther at Large</h3><img class="card-article-image" src="img/card-article.jpg" alt="article image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p><i class="icon icon-heart"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					 <i class="icon-white icon-asterisk"></i></div></li>
+                     <li><div class="card card-tweet"><h2>Heading</h2><p>Donec sed odio dui.</p><p><a class="btnflip btn" href="#">Modal &raquo;</a> <a class="btnflip btn cards" href="#">Card &raquo;</a></p></div></li>
+                     <li><div class="card card-tweet"><h2>Mickey Mouse Tweeted:</h2><p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p></div></li>
+                    <li><div class="card card-photo"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					  <div class="hash-tag">#Malaysia #Petronas Towers</div><i class="icon-white icon-asterisk"></i></div></li>
+                      <li><div class="card card-article"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><h3>Pink Panther at Large</h3><img class="card-article-image" src="img/card-article.jpg" alt="article image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p><i class="icon icon-heart"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					 <i class="icon-white icon-asterisk"></i></div></li>
+                     <li><div class="card card-tweet"><h2>Heading</h2><p>Donec sed odio dui.</p><p><a class="btnflip btn" href="#">Modal &raquo;</a> <a class="btnflip btn cards" href="#">Card &raquo;</a></p></div></li>
+                     <li><div class="card card-tweet"><h2>Mickey Mouse Tweeted:</h2><p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p></div></li>
+                    <li><div class="card card-photo"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					  <div class="hash-tag">#Malaysia #Petronas Towers</div><i class="icon-white icon-asterisk"></i></div></li>
+                      <li><div class="card card-article"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><h3>Pink Panther at Large</h3><img class="card-article-image" src="img/card-article.jpg" alt="article image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p><i class="icon icon-heart"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					 <i class="icon-white icon-asterisk"></i></div></li>
+                     <li><div class="card card-tweet"><h2>Heading</h2><p>Donec sed odio dui.</p><p><a class="btnflip btn" href="#">Modal &raquo;</a> <a class="btnflip btn cards" href="#">Card &raquo;</a></p></div></li>
+                     <li><div class="card card-tweet"><h2>Mickey Mouse Tweeted:</h2><p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p></div></li>
+                    <li><div class="card card-photo"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					  <div class="hash-tag">#Malaysia #Petronas Towers</div><i class="icon-white icon-asterisk"></i></div></li>
+                      <li><div class="card card-article"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><h3>Pink Panther at Large</h3><img class="card-article-image" src="img/card-article.jpg" alt="article image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p><i class="icon icon-heart"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+					 <i class="icon-white icon-asterisk"></i></div></li>
+                     <li><div class="card card-tweet"><h2>Heading</h2><p>Donec sed odio dui.</p><p><a class="btnflip btn" href="#">Modal &raquo;</a> <a class="btnflip btn cards" href="#">Card &raquo;</a></p></div></li>
+                     <li><div class="card card-tweet"><h2>Heading</h2><p>Donec sed odio dui.</p><p><a class="btnflip btn" href="#">Modal &raquo;</a> <a class="btnflip btn cards" href="#">Card &raquo;</a></p></div></li>
 				</ul>
 			</div>
 
@@ -295,6 +326,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/sly.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/flippant.js"></script>
+  	<script type="text/javascript" src="js/browsery.js"></script>
     <!--<script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
@@ -351,7 +384,7 @@
 		  $('.frame').removeClass('frame940 frame1200').toggleClass( "frame800", 1000, "easeOutSine" );
 		});
 	</script>
-    
+        
     <!--<script>
     $('#60-percent').click(function() {
        $('.frame').css({
