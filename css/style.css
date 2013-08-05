@@ -131,6 +131,7 @@ a {
 
       .container .credit, .legal {
         margin: 5px 0;
+		font-size: .75em;
       }
 
 /* Markers Styles
@@ -372,13 +373,25 @@ a {
 /* card styles */	
 .card {
 	position: relative;
-	width: 220px;
+	width: 240px;
 	height: 150px;
-	border-radius: .1em;
+	border-radius: 0 .25em .25em 0;
 	background: #fff;
 	-webkit-box-shadow: -3px -3px 7px rgba(0,0,0,0.3);
 	box-shadow: -3px -3px 7px rgba(0,0,0,0.3);
 }
+
+/*.card:hover {
+	position: absolute;
+	transform:scale(1.273,2);
+	-webkit-transform:scale(1.273,2);
+	-moz-transform:scale(1.273,2);
+	-o-transform:scale(1.273,2);
+	-ms-transform:scale(1.273,2);
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
+	z-index: 100;
+}*/
 
 .card > img.profile {
 	float: left;
@@ -404,7 +417,7 @@ a {
 }
 
 .card p {
-	font: 27%/1 Georgia, Times New Roman, serif;
+	font: 23%/1 Georgia, Times New Roman, serif;
 	color: #000;
 	margin: 0;
 	padding: 0 5px;
@@ -448,6 +461,7 @@ a {
 	font-weight: bold;
 	font-size: 30%;
 	line-height: 1;
+	text-align: center;
 }
 
 .card-photo {
@@ -460,7 +474,7 @@ a {
 	right: 7px;
 }
 
-.card-photo i.icon-asterisk {
+.card i.icon-asterisk {
 	position: absolute;
 	bottom: 7px;
 	right: 7px;
@@ -470,6 +484,11 @@ a {
 	position: absolute;
 	bottom: 7px;
 	left: 25px;
+}
+.card i.icon-tag {
+	position: absolute;
+	bottom: 10px;
+	right: 22%;
 }
 
 .card-photo .hash-tag {
@@ -483,18 +502,83 @@ a {
 	left: 25px;
 }
 
-.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #fff; opacity: .5; font-weight: bold;}
+.card-venue {
+	background: url(../img/card-venue.jpg) no-repeat center;
+}
+
+.card-venue-tags {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	text-align: right;
+}
+
+.card-venue-tags p {
+	color: #fff;
+	text-shadow: 0 0 4px #000;
+}
+
+.card-venue-tags p:before, card-venue-tags p:after {
+	content: "";
+}
+
+.card-venue-address span {
+	display: block;
+	font: 23%/1 Georgia, Times New Roman, serif;
+	line-height: 1.5;
+	color: #fff;
+	text-shadow: 0 0 4px #000;
+	width: 170px;
+	padding-right: 5px;
+	float: right;
+}
+
+.venue-user {
+	position: absolute;
+	bottom: 5px;
+	right: 30%;
+}
+
+.card-poi {
+	background: url(../img/card-poi.jpg) no-repeat center;
+}
+
+.card-article-message {
+	background: url(../img/card-article-message.jpg) no-repeat center;
+}
+
+.card-article-message2 {
+	background: url(../img/card-message-2.jpg) no-repeat center;
+}
+
+.card-coupon {
+	background: url(../img/card-coupon.jpg) no-repeat center;
+}
+
+.card-user-comment {
+	background: url(../img/card-user-comment.jpg) no-repeat center;
+}
+
+.card-tribe {
+	background: url(../img/card-tribe.jpg) no-repeat center;
+}
+
+.card-event {
+	background: url(../img/card-event.jpg) no-repeat center;
+}
+
+.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #000; opacity: .5; font-weight: bold;}
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 3%; padding-left: 2%; height: 165px; font-size: 60px; }
-.card-scroll-cont .forward { float: right; padding-left: 0; padding-right: 1%; }
+.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 3%; padding-left: 2%; height: 150px; font-size: 60px; position: absolute; top: 40px; z-index: 100;}
+.card-scroll-cont .forward { float: right; padding-left: 0; padding-right: 1%; right: 0; }
 
-.card-scroll-cont .frame { margin: 0 auto; /*width: 940px;*/ width:93%; height: 150px; line-height: 150px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame { margin: 5px auto 0; /*width: 940px;*/ width:100%; height: 150px; line-height: 150px; overflow: hidden; text-shadow: none; }
 .card-scroll-cont .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
-.card-scroll-cont .frame ul li { float: left; position: relative; width: 220px; height: 100%; margin: 0 1px 0 0; padding: 0; color: #3a3c47; text-align: left; line-height: 100%; cursor: pointer; /*-webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); border-radius: 3px;*/ }
+.card-scroll-cont .frame ul li { float: left; position: relative; width: 240px; height: 100%; margin: 0 1px 0 0; padding: 0; color: #3a3c47; text-align: left; line-height: 100%; cursor: pointer; /*-webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); border-radius: 3px;*/ }
 .card-scroll-cont .frame ul li.active { color: #fff; background: transparent; }
-.card-scroll-cont .frame li:hover { opacity: 1; }
+.card-scroll-cont .frame li:hover {	opacity: 1; }
 
 .card-scroll-cont .scrollbar { margin: 0 auto 5px; padding-top: 1px; width: 940px; height: 5px; line-height: 0; }
 .card-scroll-cont .scrollbar .handle { width: 100px; height: 100%; background: #fff; cursor: pointer; }
@@ -507,7 +591,11 @@ a {
 .card-scroll-cont .pages li:hover { background: #aaa; }
 .card-scroll-cont .pages li.active { background: #666; }
 
-.card-scroll-cont .controls { margin: 5px 0 0; text-align: center; }
+.card-scroll-cont .controls { 
+	margin: 5px 0 -30px;
+	text-align: center;
+	padding-top: 10px; 
+}
 .card-scroll-cont .controls .divider { display: inline-block; margin: 0 10px; }
 .card-scroll-cont .controls button { line-height: 1; vertical-align: middle; font-family: Novecento, sans-serif; }
 .card-scroll-cont .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
@@ -548,9 +636,9 @@ a {
 	opacity: 1;
 }
 
-.csstransforms3d .frame ul li.active div {
-  	-webkit-box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, .3);
-	box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, .3);
+.csstransforms3d .frame ul li.active > div.card {
+  	-webkit-box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, .2);
+	box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, .2);
 }
 
 .csstransforms3d .frame ul li.active ~ li {
