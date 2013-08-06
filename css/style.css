@@ -384,7 +384,7 @@ a {
 .card-back {
 	height: 300px;
 	width: 240px;
-	background: #fff;
+	background: url(../img/mickey.jpg) no-repeat, url(../img/twitter-card.png) 0 10px repeat;
 	margin-top: -150px;
 }
 
@@ -423,20 +423,20 @@ a {
 	box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
 
-.card p {
+.card p, .card-back p {
 	font: 23%/1 Georgia, Times New Roman, serif;
 	color: #000;
 	margin: 0;
 	padding: 0 5px;
 }
 
-.card p:before {  
+.card p:before, .card-back p:before {  
     content: open-quote; 
 	font-size: 50px;
 	float: left;
 	padding-right: 5px; 
 }  
-.card p:after {  
+.card p:after, .card-back p:after {  
     content: close-quote;  
 	font-size: 50px;
 	float: right;
@@ -461,7 +461,7 @@ a {
 	background: url(../img/mickey.jpg) no-repeat, url(../img/twitter-card.png) 0 10px repeat;
 }
 
-.card h3, .card h2 {
+.card h3, .card h2, .card-back h2 {
 	margin: 0;
 	padding: 10px 0 25px 55px;
 	color: #000;

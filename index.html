@@ -215,7 +215,6 @@
            <div class="container">
                <div class="span2">
                <button type="button" id="full-width" class="btn btn-primary">Full Width</button>
-               <div class="card card-event"><p>Back</p></div><div class="card-back">This is the back of our card!</div>
                </div>
                
                <div class="span2">
@@ -290,7 +289,7 @@
                      <li><div class="card card-coupon"></div></li>
                      <li><div class="card card-user-comment"></div></li>
                      <li><div class="card card-tribe"></div></li>
-                     <li><div class="card card-event"><p>Back</p></div><div class="card-back">This is the back of our card!</div></li>
+                     <li><div class="card card-event"><p>Back</p></div><div class="card-back"><h2>Mickey Mouse Tweeted:</h2><p>This is the back of our card!</p></div></li>
                      <li><div class="card card-tweet"><h2>Mickey Mouse Tweeted:</h2><p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p></div></li>
                     <li><div class="card card-photo"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
 					  <div class="hash-tag">#Malaysia #Petronas Towers</div><i class="icon-white icon-asterisk"></i></div></li>
@@ -459,7 +458,7 @@
 			
           $(this).next('.card-back').animate({marginTop:"-=300px"}, {
       queue: false,
-      duration: 1000
+      duration: 500
 	  });
 	  
 	   $( '.frame' ).css( "overflow", "visible" );
@@ -474,7 +473,7 @@
 			
           $(this).animate({marginTop:"+=300px"}, {
       queue: false,
-      duration: 1000
+      duration: 500
 	  });
 	  	  
 	   $( '.frame' ).css( "overflow", "hidden" );
