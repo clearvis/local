@@ -1705,9 +1705,9 @@
 			}
 
 			// Click on items navigation
-			if (itemNav && o.activateOn) {
+			/*if (itemNav && o.activateOn) {
 				$frame.on(o.activateOn + '.' + namespace, '*', activateHandler);
-			}
+			}*/
 
 			// Pages navigation
 			if ($pb[0] && o.activatePageOn) {
