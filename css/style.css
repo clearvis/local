@@ -85,7 +85,7 @@ a {
 .left-menu {
     position:absolute;
 	display: block;
-	top: -19px;
+	top: -4px;
 	left: -30px;
     width: 0px;
 	height:0px;
@@ -126,7 +126,7 @@ a {
       }
 
 .wrapper > .main-content {
-        padding-top: 30px;
+        padding-top: 41px;
       }
 
       .container .credit, .legal {
@@ -611,7 +611,7 @@ a {
 .card-scroll-cont .forward { float: right; padding-left: 0; padding-right: 1%; right: 0; }
 
 .card-scroll-cont .frame { margin: 5px auto 0; /*width: 940px;*/ width:100%; height: 150px; line-height: 150px; overflow: hidden; text-shadow: none; }
-.card-scroll-cont .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; font-size: 50px; }
+.card-scroll-cont .frame ul { list-style: none; margin: 2px 0 0 0; padding: 0; height: 100%; font-size: 50px; }
 .card-scroll-cont .frame ul li { float: left; position: relative; width: 260px; height: 100%; margin: 0 1px 0 0; padding: 0; color: #3a3c47; text-align: left; line-height: 100%; cursor: pointer; /*-webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); border-radius: 3px;*/ }
 .card-scroll-cont .frame ul li.active { color: #fff; background: transparent; }
 .card-scroll-cont .frame li:hover {	opacity: 1; }
@@ -657,9 +657,9 @@ a {
 	/*margin: 0 -25px;*/
 	margin: 0 -5px;
 	/*border: 1px solid rgba(187, 187, 190, 0.59);*/
-	-webkit-transform: rotateY(2deg) scale(1);
-	-ms-transform: rotateY(2deg) scale(1);
-	transform: rotateY(2deg) scale(1);
+	-webkit-transform: rotateY(1deg) scale(1);
+	-ms-transform: rotateY(1deg) scale(1);
+	transform: rotateY(1deg) scale(1);
 	-webkit-transition: -webkit-transform 300ms ease-out;
 	transition: transform 300ms ease-out;
 	opacity: 1;
@@ -675,7 +675,7 @@ a {
 }
 
 .csstransforms3d .frame ul li.active ~ li {
-	-webkit-transform: rotateY(-2deg) scale(1);
+	-webkit-transform: rotateY(-1deg) scale(1);
 	-ms-transform: rotateY(-1deg) scale(1);
 	transform: rotateY(-1deg) scale(1);
 	opacity: 1;
