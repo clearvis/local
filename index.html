@@ -271,11 +271,41 @@
 			<div class="frame">
 				
 				<ul>
-					<li><div class="card card-tweet"><h2>Mickey Mouse Tweeted:</h2><p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p></div><div class="card-back"><h2>Mickey Mouse Tweeted:</h2><p>This is the back of our card!</p></div></li>
-                    <li><div class="card card-photo"><img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
-					  <div class="hash-tag">#Malaysia #Petronas Towers</div><i class="icon-white icon-asterisk"></i></div>
-                      <div class="card-back"><h2>Mickey Mouse Tweeted:</h2><p>This is the back of our card!</p></div>
-                      </li>
+					<li>
+                        <div class="card-actions">
+                        	<div class="card-actions-icons">
+                              <i class="icon icon-lock"></i>
+                              <i class="icon icon-tags"></i>
+                              <i class="icon icon-bookmark"></i>
+                              <i class="icon icon-share-alt"></i>
+                              <i class="icon icon-trash"></i>
+                              <i class="icon icon-resize-full"></i>
+                            </div>
+                        </div>
+                        <div class="card-back"><h2>Mickey Mouse Tweeted:</h2><p>This is the back of our card!</p></div>
+                         <div class="card card-tweet">
+                            <h2>Mickey Mouse Tweeted:</h2>
+                            <p><a class="btnflip btn cards" href="#">Card</a> dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p>
+                          </div>
+                   </li>
+                    <li>
+                        <div class="card-actions">
+                        	<div class="card-actions-icons">
+                              <i class="icon icon-lock"></i>
+                              <i class="icon icon-tags"></i>
+                              <i class="icon icon-bookmark"></i>
+                              <i class="icon icon-share-alt"></i>
+                              <i class="icon icon-trash"></i>
+                              <i class="icon icon-resize-full"></i>
+                            </div>
+                        </div>
+                        <div class="card card-photo">
+                          <img class="profile" src="img/card-user.jpg" width="50" height="50" alt="user"><i class="icon-white icon-camera"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share">
+                          <div class="hash-tag">#Malaysia #Petronas Towers</div>
+                          <i class="icon-white icon-asterisk"></i>
+                        </div>
+                        <div class="card-back"><h2>Mickey Mouse Tweeted:</h2><p>This is the back of our card!</p></div>
+                    </li>
                     <li><div class="card card-venue"><img class="profile" src="img/card-venue-profile.png" width="50" height="50" alt="user"><h2>La Saut de loup</h2>
                     	<div class="card-venue-address"><span class="card-venue-location"><i class="icon-white icon-map-marker"></i> 123 Main St. 12345 Paris</span><span class="card-venue-phones"><i class="icon-white icon-headphones"></i> 123-456-7890</span><span class="card-venue-hours"><i class="icon-white icon-time"></i> 09:00 &#45; 01:00</span></div>
                     	<i class="icon-white icon-heart"></i><img class="share-icon" src="img/social-sharethis.png" width="16" height="16" alt="share"><img class="venue-user" src="img/card-venue-user.jpg" alt="user"><i class="icon-white icon-tag"></i><div class="card-venue-tags"><p>Terrace</p>
@@ -485,12 +515,12 @@
 		  $('.frame').removeClass('frame940 frame1200').toggleClass( "frame800", 1000, "easeOutSine" );
 		});
 	</script>
-        
-     <script>
+    
+    <script>
 		
-		$('.card').click(function() {
+		$('.icon-resize-full').click(function() {
 			
-          $(this).next('.card-back').animate({marginTop:"-=140px"}, {
+          $(this).next('.card-back').animate({marginTop:"-=135px"}, {
       queue: false,
       duration: 500
 	  });
@@ -506,7 +536,7 @@
 		
 		$('.card-back').click(function() {
 			
-          $(this).animate({marginTop:"+=140px"}, {
+          $(this).animate({marginTop:"+=135px"}, {
       queue: false,
       duration: 500
 	  });
@@ -520,6 +550,41 @@
 		});
 		
 	</script>
+        
+     <!--<script>
+		
+		$('.icon-resize-full').click(function() {
+			
+          $(this).next('.card-back').animate({marginTop:"-=135px"}, {
+      queue: false,
+      duration: 500
+	  });
+	  
+	   $( '.frame' ).css( "overflow", "visible" );
+	   //$( this ).switchClass( 'card', 'card-open' );
+
+		  //$('.frame').css( "height", 300, "easeOutSine" );
+		//},
+		//function() {
+			//$('.frame').css("height", 150, "easeOutSine");
+		});		
+		
+		$('.card-back').click(function() {
+			
+          $(this).animate({marginTop:"+=135px"}, {
+      queue: false,
+      duration: 500
+	  });
+	  	  
+	   $( '.frame' ).css( "overflow", "hidden" );
+	   
+		  //$('.frame').css( "height", 300, "easeOutSine" );
+		//},
+		//function() {
+			//$('.frame').css("height", 150, "easeOutSine");
+		});
+		
+	</script>-->
         
        <!-- $(‘#element’).on(‘click’, function () {
 $(this).css(‘color’, ‘red’);
