@@ -393,14 +393,27 @@ a {
 
 .card {
 	z-index: 3;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.card:hover {
+	-webkit-transform: scale(1.25,3);
+	-webkit-transform-origin: bottom left;
+	transform: scale(1.25,3);
+	transform-origin: bottom left;
 }
 
 .card-actions {
-	background: rgba(255,255,255,.7);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(32%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 32%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 32%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 32%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 32%,rgba(255,255,255,0) 100%); /* W3C */
 	z-index: 4;
 	opacity: 0;
 	-webkit-transition: opacity .5s ease-in; 
-	transition: opacity 1s ease-in; 
+	transition: opacity .25s ease-in; 
 }
 
 .card-actions-icons {
@@ -473,7 +486,7 @@ a {
 }  
 
 .card-article p {
-	width: 140px;
+	width: 180px;
   	float: right;
 	border-left: 5px solid #ccc;
 }
@@ -576,31 +589,31 @@ a {
 }
 
 .card-poi {
-	background: url(../img/card-poi.jpg) no-repeat center;
+	background: #fff url(../img/card-poi.png) no-repeat center;
 }
 
 .card-article-message {
-	background: url(../img/card-article-message.jpg) no-repeat center;
+	background: #fff url(../img/card-message.png) no-repeat center;
 }
 
-.card-article-message2 {
-	background: url(../img/card-message-2.jpg) no-repeat center;
+.card-message {
+	background: #fff url(../img/card-message.png) no-repeat center;
 }
 
 .card-coupon {
-	background: url(../img/card-coupon.jpg) no-repeat center;
+	background: #fff url(../img/card-coupon.jpg) no-repeat center;
 }
 
 .card-user-comment {
-	background: url(../img/card-user-comment.jpg) no-repeat center;
+	background: #fff url(../img/card-user-comment.png) no-repeat center;
 }
 
 .card-tribe {
-	background: url(../img/card-tribe.jpg) no-repeat center;
+	background: #fff url(../img/card-tribe.png) no-repeat center;
 }
 
 .card-event {
-	background: url(../img/card-event.jpg) no-repeat center;
+	background: #fff url(../img/card-event.jpg) no-repeat center;
 }
 
 .card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #000; opacity: .5; font-weight: bold;}
