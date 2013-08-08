@@ -1986,7 +1986,7 @@
 		speed:         0,       // Animations speed in milliseconds. 0 to disable animations.
 		easing:        'swing', // Easing for duration based (tweening) animations.
 		startAt:       0,       // Starting offset in pixels or items.
-		keyboardNavBy: null,    // Enable keyboard navigation by 'items' or 'pages'.
+		keyboardNavBy: 'item',    // Enable keyboard navigation by 'items' or 'pages'.
 
 		// Classes
 		draggedClass:  'dragged',  // Class for dragged elements (like SLIDEE or scrollbar handle).
