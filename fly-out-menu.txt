@@ -31,7 +31,7 @@
               <li><a href="#">Theatre</a></li>
               <li><a href="#">Singles</a></li>
               <li class="divider"></li>
-              <li class="nav-header">Dinning</li>
+              <li class="nav-header">Dining</li>
               <li><a href="#">French</a></li>
               <li><a href="#">Italian</a></li>
               <li><a href="#">Sandwich Shop</a></li>

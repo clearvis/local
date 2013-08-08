@@ -126,7 +126,7 @@ a {
       }
 
 .wrapper > .main-content {
-        padding-top: 41px;
+        padding-top: 65px;
       }
 
       .container .credit, .legal {
@@ -401,6 +401,8 @@ a {
 	-webkit-transform-origin: bottom left;
 	transform: scale(1.25,3);
 	transform-origin: bottom left;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .card-actions {
