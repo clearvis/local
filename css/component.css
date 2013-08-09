@@ -211,7 +211,12 @@ input.gn-search:focus {
 		color: white
 }
 
-.gn-menu-main a.gn-icon-search {
+a.alert-message {
+	color: #C00;
+	font-size: 1.5em;
+}
+
+.gn-menu-main a.gn-search {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -226,7 +231,6 @@ input.gn-search:focus {
 		font-weight: normal;
 		font-style: normal;
 		font-variant: normal;
-		font-family: 'ecoicons';
 		line-height: 60px;
 		speak: none;
 		-webkit-font-smoothing: antialiased;

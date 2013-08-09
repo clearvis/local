@@ -79,7 +79,7 @@
 	display: block;
 }
 
-.codrops-icon:before {
+/*.codrops-icon:before {
 	font-family: 'codropsicons';
 	margin: 0 4px;
 	speak: none;
@@ -89,7 +89,7 @@
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
-}
+}*/
 
 .codrops-icon-drop:before {
 	content: "\e001";
