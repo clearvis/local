@@ -479,6 +479,8 @@ a {
 	border-radius: 0 .25em .25em 0;
 	z-index: 3;
 	opacity: 0;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 150ms ease-in-out;
 }
 
 .card {
