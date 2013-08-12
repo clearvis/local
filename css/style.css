@@ -491,6 +491,7 @@ a {
 	transform-origin: bottom left;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	z-index: 10;
 }
 
 .card-actions {
@@ -743,12 +744,12 @@ a {
 .csstransforms3d .frame {
 	height: 150px;
 	line-height: 150px;
-	-webkit-perspective: 700px;
+	/*-webkit-perspective: 700px;
 	-ms-perspective: 700px;
 	perspective: 700px;
 	-webkit-perspective-origin: 50% 50%;
 	-ms-perspective-origin: 50% 50%;
-	perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;*/
 }
 .csstransforms3d .frame ul {
 	-webkit-transform-style: preserve-3d;
@@ -760,11 +761,11 @@ a {
 	/*margin: 0 -25px;*/
 	margin: 0 -5px;
 	/*border: 1px solid rgba(187, 187, 190, 0.59);*/
-	-webkit-transform: rotateY(1deg) scale(1);
+	/*-webkit-transform: rotateY(1deg) scale(1);
 	-ms-transform: rotateY(1deg) scale(1);
 	transform: rotateY(1deg) scale(1);
 	-webkit-transition: -webkit-transform 300ms ease-out;
-	transition: transform 300ms ease-out;
+	transition: transform 300ms ease-out;*/
 	opacity: 1;
 }
 .csstransforms3d .frame ul li.active {
@@ -778,9 +779,9 @@ a {
 }
 
 .csstransforms3d .frame ul li.active ~ li {
-	-webkit-transform: rotateY(-1deg) scale(1);
+	/*-webkit-transform: rotateY(-1deg) scale(1);
 	-ms-transform: rotateY(-1deg) scale(1);
-	transform: rotateY(-1deg) scale(1);
+	transform: rotateY(-1deg) scale(1);*/
 	opacity: 1;
 	/*-webkit-box-shadow: +2px +2px 10px rgba(0, 0, 0, 0.29); 
 	box-shadow: +2px +2px 10px rgba(0, 0, 0, 0.29);*/
