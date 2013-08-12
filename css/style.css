@@ -474,17 +474,32 @@ a {
 }
 
 .card-back {
-	background: url(../img/mickey.jpg) no-repeat, url(../img/twitter-card.png) 0 10px repeat;
+	background: url(../img/card-back-tweet.jpg) top left no-repeat;
+	background-size: cover;
 	border-radius: 0 .25em .25em 0;
-	z-index: 2;
+	z-index: 3;
+	opacity: 0;
 }
 
 .card {
-	z-index: 3;
+	z-index: 2;
 	-webkit-transition: all .2s ease-in-out;
 }
 
-.card:hover {
+.card-back:hover {
+	width: 325px;
+	height: 393px;
+	position: absolute;
+	top: -240px;
+	left: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	z-index: 10;
+	opacity: 1;
+	background-size: cover;
+}
+
+/*.card:hover {
 	-webkit-transform: scale(1.25,3);
 	-webkit-transform-origin: bottom left;
 	transform: scale(1.25,3);
@@ -492,7 +507,7 @@ a {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	z-index: 10;
-}
+}*/
 
 .card-actions {
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 100%); /* FF3.6+ */
