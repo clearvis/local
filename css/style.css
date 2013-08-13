@@ -191,6 +191,16 @@ a {
     display: none;
 }
 
+/* drag .container-fluid to sides of screen
+*
+*
+*
+*/
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
 /* Drags Footer to page bottom
 *
 *
@@ -214,7 +224,7 @@ a {
       }
 
 .wrapper > .main-content {
-        padding-top: 65px;
+        padding-top: 60px;
       }
 
       .container .credit, .legal {
@@ -276,6 +286,12 @@ a {
 .marker-inner-blue {
 	background: rgba(30,144,255, 0.4);
 }
+
+.side-opacity {
+	opacity: .5;
+	background-color: #666;
+	height: 75px;
+}
 	  
 /* Cards Navigation
 *
@@ -292,7 +308,7 @@ a {
 .pagespan {
     /*width: 1140px;*/
 	width: 100%;
-	/*margin-left: 0 !important;*/
+	margin-left: 0 !important;
 	background: rgba(0, 0, 0, 1);
 }
 
