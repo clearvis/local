@@ -346,7 +346,7 @@ a {
 }
 
 .ticker p {  
-    -webkit-transform:translateX(100%);  
+    -webkit-transform:translateX(1000px);  
 	transform:translateX(100%);
 }
 
@@ -361,7 +361,7 @@ a {
 
     @-webkit-keyframes left-one {  
         0%  {  
-            -webkit-transform:translateX(100%); 
+            -webkit-transform:translateX(1000px); 
         }  
         10% {  
             -webkit-transform:translateX(0); 
@@ -370,18 +370,18 @@ a {
             -webkit-transform:translateX(0);  
         }  
         50% {  
-            -webkit-transform:translateX(-100%);
+            -webkit-transform:translateX(-1000px);
         }  
         100% {  
-            -webkit-transform:translateX(-100%); 
+            -webkit-transform:translateX(-1000px); 
         }  
     }  
     @-webkit-keyframes left-two {  
         0% {  
-            -webkit-transform:translateX(100%);  
+            -webkit-transform:translateX(1000px);  
         }  
         50% {  
-            -webkit-transform:translateX(100%); 
+            -webkit-transform:translateX(1000px); 
         }  
         60% {  
             -webkit-transform:translateX(0); 
@@ -390,7 +390,7 @@ a {
             -webkit-transform:translateX(0);
         }  
         100%{  
-            -webkit-transform:translateX(-100%);
+            -webkit-transform:translateX(-1000px);
         }  
     }  
 
