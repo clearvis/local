@@ -320,7 +320,8 @@
       </div>-->
              
              <div class="row">
-             	<div class="container">
+             	<button class="ticker-toggle"><i class="icon-white icon-chevron-down icon-chevron-up"></i></button>
+             	<div class="container ticker-container">
              	<div class="ticker">
              		<p>Top Trends For All Your Tribes In 30 Seconds</p>
              		<p>Hot Events In Your Neighborhood In 30 Seconds</p>
@@ -555,6 +556,29 @@
     
     <script>
 			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+        
+        <!--<script>
+			$('.ticker-toggle').click(function () {
+			  $('.ticker-container').animate({
+				  height: 0,
+				}, 5000, function() {
+				  // Animation complete.
+				});
+			});
+		</script>-->
+        
+        <script>
+			$('.ticker-toggle').click(function () {
+			  $('.ticker-container').toggle("slow");
+			  //if ($('.ticker-toggle').css('top', '0') == true) {
+				 //$('.ticker-toggle').animate({
+					 // top: "-30px"
+					//}, 1500 );
+					$('.ticker-toggle').toggleClass( "ticker-toggle-open", 1000, "easeOutSine");
+					$('.icon-white').toggleClass('icon-chevron-down', 'icon-chevron-up');
+			  //}
+			});
 		</script>
     
     <!--<script>
