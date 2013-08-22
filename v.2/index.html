@@ -322,7 +322,7 @@
              	<button class="ticker-toggle"><i class="icon-white icon-chevron-down icon-chevron-up"></i></button>
              	<div class="container ticker-container">
                 	<i class="gn-icon ticker-alert" data-icon="&#xe00b;"></i>
-                    <span class="pull-right">Last 5</span>
+                    <span class="pull-right gn-icon ticker-alert-refresh" data-icon="&#xe00f;">Last 5</span>
              	<div class="ticker">
              		<p>Top Trends For All Your Tribes In 30 Seconds</p>
              		<p>Hot Events In Your Neighborhood In 30 Seconds</p>
@@ -335,8 +335,31 @@
 					<div class="mousearea"></div>
 				</div>
 			</div>-->
-            
-            <div class="container card-filter"></div>
+            <div class="row">
+            <div class="container card-filter">
+            <div class="row-fluid">
+      			<div class="span2">
+ 					<p>120 Items <span><a href="#">View All</a></span></p>
+        		</div>
+                
+                <div class="span10">
+                <p>Filter by</p>
+                	 <form action="">
+                        <label class="checkbox inline">
+                          <input type="checkbox" id="inlineCheckbox1" value="option1"> Images
+                        </label>
+                        <label class="checkbox inline">
+                          <input type="checkbox" id="inlineCheckbox2" value="option2"> Videos
+                        </label>
+                        <label class="checkbox inline">
+                          <input type="checkbox" id="inlineCheckbox3" value="option3"> Tribes
+                        </label>
+               		 </form>
+                </div>
+        
+            </div>
+            </div>
+            </div>
 
 			<button class="backward"><!--<i class="icon icon-backward">--></i></button>
 			<button class="forward"><!--<i class="icon icon-forward">--></i></button>
@@ -575,6 +598,13 @@
 					 // top: "-30px"
 					//}, 1500 );
 					$('.ticker-toggle').toggleClass( "ticker-toggle-open", 1000, "easeOutSine");
+					//$('.card-scroll-cont .forward').css( "top", "40px" );
+					//if('.ticker-toggle .ticker-toggle-open') {
+					$('.card-scroll-cont .forward, .card-scroll-cont .backward').css( "top", "48px" );
+					//} 
+					//else {
+						//$('.card-scroll-cont .forward').css( "top", "83px" );
+					//}
 					$('.icon-white').toggleClass('icon-chevron-down', 'icon-chevron-up');
 			  //}
 			});
