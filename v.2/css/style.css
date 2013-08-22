@@ -283,13 +283,15 @@ a {
 	background-color: #ffffbf;
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;
+	font-size: 1.25em;
+	color: #000;
+	line-height: 35px;
 }
 
 .ticker {
-	font-size: 1.25em;
-	color: #fff;
 	height: 35px;
-	width: 1170px;
+	line-height: 35px;
+	width: 90%;
     overflow: hidden;  
     position: relative;  
    /* border: 1px solid #000;  
@@ -328,6 +330,19 @@ a {
 	border-right: 2px #fff solid !important;
 	border-left: 2px #fff solid !important;
 	border-radius: 2px;
+}
+
+.ticker-alert {
+	color: #000;
+	font-size: 24px;
+	float: left;
+	display: inline-block;
+}
+
+.gn-icon.ticker-alert::before {
+	width: 24px;
+	height: 24px;
+	line-height: 35px;
 }
 
 .ticker p {
@@ -470,6 +485,9 @@ a {
 			transform:translateX(-100%);
         }  
     }  
+	
+/* card filter container */	
+
 
 /* card styles */	
 .card, .card-actions, .card-back, .card-open {
@@ -737,7 +755,7 @@ a {
 	background: #fff url(../img/card-event.jpg) no-repeat center;
 }
 
-.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #000; opacity: .5; font-weight: bold;}
+.card-scroll-cont button, .card-scroll-cont button { background: transparent; border: 0; color: #fff; opacity: .5; font-weight: bold;}
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
