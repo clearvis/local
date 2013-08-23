@@ -342,73 +342,73 @@ button.ticker-toggle-open {
 
 @-webkit-keyframes ticker-alert {  
         0%  {  
-            -webkit-transform:translateY(0); 
+            top: -30px; 
         }  
         10% {  
-            -webkit-transform:translateY(0); 
+            top: -30px; 
         }  
 		20%  {  
-            -webkit-transform:translateY(0); 
+            top: -30px; 
         }  
         30% {  
-            -webkit-transform:translateY(-3px); 
+            top: -30px; 
         } 
 		40%  {  
-            -webkit-transform:translateY(-6px); 
+            top: -30px; 
         }  
         50% {  
-            -webkit-transform:translateY(-10px); 
+            top: -50px; 
         }   
 		60%  {  
-            -webkit-transform:translateY(-6px); 
+            top: -30px; 
         }  
         70% {  
-            -webkit-transform:translateY(-3px); 
+            top: -30px; 
         }  
 		80%  {  
-            -webkit-transform:translateY(0); 
+            top: -30px; 
         }  
         90% {  
-            -webkit-transform:translateY(0); 
+            top: -30px; 
         } 
 		100%  {  
-            -webkit-transform:translateY(0); 
+            top: -30px; 
         }  
     }  
 	
 @keyframes ticker-alert {  
         0%  {  
-            transform:translateY(0); 
+            top: -30px; 
         }  
         10% {  
-            transform:translateY(0); 
+            top: -30px; 
         }  
 		20%  {  
-            transform:translateY(0); 
+            top: -30px; 
         }  
         30% {  
-            transform:translateY(-3px); 
+            top: -30px; 
         } 
 		40%  {  
-            transform:translateY(-6px); 
+            top: -30px; 
         }  
         50% {  
-            transform:translateY(-10px); 
+            top: -50px; 
         }   
 		60%  {  
-            transform:translateY(-6px); 
+            top: -30px; 
         }  
         70% {  
-            transform:translateY(-3px); 
+            top: -30px; 
         }  
 		80%  {  
-            transform:translateY(0); 
+            top: -30px; 
         }  
         90% {  
-            transform:translateY(0); 
+            top: -30px; 
         } 
 		100%  {  
-            transform:translateY(0); 
+            top: -30px; 
         }  
     }   
 
