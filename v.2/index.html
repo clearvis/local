@@ -598,12 +598,14 @@
 					 // top: "-30px"
 					//}, 1500 );
 					$('.ticker-toggle').toggleClass( "ticker-toggle-open", 1000, "easeOutSine");
+					$('.card-scroll-cont .forward').toggleClass( "forward-open", 1000, "easeOutSine");
+					$('.card-scroll-cont .backward').toggleClass( "backward-open", 1000, "easeOutSine");
 					//$('.card-scroll-cont .forward').css( "top", "40px" );
 					//if('.ticker-toggle .ticker-toggle-open') {
-					$('.card-scroll-cont .forward, .card-scroll-cont .backward').css( "top", "48px" );
+					//$('.card-scroll-cont .forward, .card-scroll-cont .backward').css( "top", "48px" );
 					//} 
-					//else {
-						//$('.card-scroll-cont .forward').css( "top", "83px" );
+					//else if ('.ticker-toggle') {
+						//$('.card-scroll-cont .forward, .card-scroll-cont .backward').css( "top", "83px" );
 					//}
 					$('.icon-white').toggleClass('icon-chevron-down', 'icon-chevron-up');
 			  //}
