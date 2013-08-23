@@ -77,13 +77,13 @@
 }
 
 .gn-menu-main > li:nth-child(-n+2) {
-		float: left;
+		/*float: left;*/
 		border-right: 1px solid #fff;
 		border-left: none;
 }
 
 .gn-menu-main > li {
-		float: right;
+		float: left;
 		border-right: none;
 		border-left: 1px solid #fff;
 		padding-right: 30px;
@@ -115,8 +115,9 @@
 		top: 60px;
 		bottom: 0;
 		left: 0;
-		overflow-y: hidden;
-		overflow-y: hidden;
+		overflow: hidden;
+		/*overflow-y: hidden;
+		overflow-y: hidden;*/
 		width: 60px;
 		border-top: 1px solid #c6d0da;
 		background: white;
@@ -238,11 +239,6 @@ input.gn-search:focus {
 
 .no-touch .gn-menu li.gn-search-item:hover .gn-search:-ms-input-placeholder {
 		color: white
-}
-
-a.alert-message {
-	color: #C00;
-	font-size: 1.5em;
 }
 
 .gn-menu-main a.gn-search {

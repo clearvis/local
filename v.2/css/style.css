@@ -113,7 +113,6 @@ a {
 }
 
 /* Top Nav Custom Styles */
-
 .navbar .brand {
 	padding: 5px 10px;
 }
@@ -152,6 +151,78 @@ a {
 	vertical-align: middle;
 }
 
+/* CLient Menu Bar Top Blue BG */
+.client-menu {
+	position: fixed;
+	top: 60px;
+	height: 40px;
+	background: #336799;
+	font-size: 1em;
+	color: #fff;
+}
+
+.client-menu a {
+	color: #fff;
+}
+
+.client-menu a:hover {
+	text-decoration: none;
+}
+
+.client-menu ul.inline > li {
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 40px;
+}
+
+.client-menu ul.inline > li:nth-child(-n+2) {
+	padding-right: 0;
+}
+
+.client-menu ul.inline > li:first-child {
+	float: left;
+	padding-left: 0;
+}
+
+.client-menu .caret {
+	vertical-align: middle;
+	margin-top: 0;
+	margin-left: 4px;
+	border-top: 4px solid #fff;
+}
+
+.brand {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.tagline {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/*a.alert-message {
+	color: #C00;
+	font-size: 1.5em;
+}*/
+
+/* Clock Format */
+#HourDiv, #MinutDiv, #SecDiv {
+	float:left;
+	color:#5f6f81;
+	width:40px;
+	text-align:center;
+	font-size:25px;
+}
+
+span.time-divider {
+	float:left;
+	color:#5f6f81;
+	font-size:25px;
+}
+
 /* drag .container-fluid to sides of screen
 *
 *
@@ -185,7 +256,7 @@ a {
       }
 
 .wrapper > .main-content {
-        padding-top: 60px;
+        padding-top: 100px;
       }
 
       .row-fluid .credit, .legal {
@@ -249,7 +320,7 @@ a {
 }
 
 .side-opacity {
-	opacity: .5;
+	opacity: 0;
 	background-color: #666;
 	height: 75px;
 }
@@ -876,7 +947,7 @@ button.ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 83px; z-index: 100; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 83px; z-index: 10; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
 .card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav.png) no-repeat; padding-right: 0; right: 0; }
 
 .card-scroll-cont .forward-open, .card-scroll-cont .backward-open {

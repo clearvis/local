@@ -82,6 +82,7 @@
     </div>-->
     
     <div class="row-fluid">
+    
     <ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
@@ -141,18 +142,50 @@
 						</div>
 					</nav>
 				</li>
-				<li><a class="brand" href="#">Loocal</a></li>
-				
+                <li id="main-nav-clock">
+                	<div id="HourDiv"></div>
+                    <span class="time-divider">:</span>
+                    <div id="MinutDiv"></div>
+                    <span class="time-divider">:</span>
+                    <div id="SecDiv"></div>
+                </li>
+				<li><a class="brand" href="#">Loocal.com</a></li>
+				<li class="tagline">Real time everything.</li>
 				
                 
-                <li class="main-search-item">
+                <!--<li class="main-search-item">
 									<input placeholder="Search" type="search" class="gn-search">
 									<a class="gn-icon main-search" data-icon="&#xe006;"><span>Search</span></a>
 								</li>
 				<li><a class="codrops-icon codrops-drop alert-message" data-icon="&#xe00a;" aria-hidden="true" href="#"></a></li>
 				<li><a class="codrops-icon codrops-prev" data-icon="&#xe009;" href="#"><span>Hi Jim</span></a></li>
-				<li><a class="codrops-icon codrops-drop" data-icon="&#xe007;" href="#"><span>My Cards (10)</span></a></li>
+				<li><a class="codrops-icon codrops-drop" data-icon="&#xe007;" href="#"><span>My Cards (10)</span></a></li>-->
 			</ul>
+    </div>
+    
+    <div class="row-fluid client-menu">
+    	<div class="container">
+          <ul class="inline">
+              <li>
+              		<form class="navbar-search pull-left">
+                      <input type="text" class="search-query" placeholder="Search">
+                    </form>
+              </li>
+              <li><a class="codrops-icon codrops-drop" data-icon="&#xe007;" href="#"><span>&nbsp;My Cards</span></a></li>
+              <li class="dropdown">
+              		<a class="dropdown-toggle codrops-icon codrops-prev" data-icon="&#xe009;" data-toggle="dropdown" href="#">
+                      <span>&nbsp;Tammy</span>
+                      <b class="caret"></b>
+                    </a>
+                    		<ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Action</a></li>
+                            </ul>
+              </li>
+              <li><a class="codrops-icon codrops-drop alert-message" data-icon="&#xe00a;" href="#">&nbsp;Add What&acute;s Hot in your Area</a></li>
+          </ul>
+        </div>
     </div>
         
     <div class="main-content">
@@ -607,10 +640,45 @@
 					//else if ('.ticker-toggle') {
 						//$('.card-scroll-cont .forward, .card-scroll-cont .backward').css( "top", "83px" );
 					//}
-					$('.icon-white').toggleClass('icon-chevron-down', 'icon-chevron-up');
+					$('.ticker-toggle .icon-white').toggleClass('icon-chevron-down', 'icon-chevron-up');
 			  //}
 			});
 		</script>
+        
+        <!--<script type="text/javascript">
+		  function clock() {
+			 var now = new Date();
+			 var outStr = now.getHours()+':'+now.getMinutes()+':'+now.getSeconds();
+			 document.getElementById('clockDiv').innerHTML=outStr;
+			 setTimeout('clock()',1000);
+		  }
+		  clock();
+		  </script> -->
+          
+          <script type="text/javascript">
+			  $(document).ready(function() {
+			  function myDate(){
+			  var now = new Date();
+			
+			  var outHour = now.getHours();
+			  if (outHour >12){newHour = outHour-12;outHour = newHour;}
+			  if(outHour<10){document.getElementById('HourDiv').innerHTML="0"+outHour;}
+			  else{document.getElementById('HourDiv').innerHTML=outHour;}
+			
+			  var outMin = now.getMinutes();
+			  if(outMin<10){document.getElementById('MinutDiv').innerHTML="0"+outMin;}
+			  else{document.getElementById('MinutDiv').innerHTML=outMin;}
+			
+			  var outSec = now.getSeconds();
+			  if(outSec<10){document.getElementById('SecDiv').innerHTML="0"+outSec;}
+			  else{document.getElementById('SecDiv').innerHTML=outSec;}
+			
+			  } 
+			  myDate();
+			  setInterval(function(){   myDate();}, 1000);
+			
+			  });
+		  </script>
     
     <!--<script>
     $('#left-fly-out').hover(function() {
