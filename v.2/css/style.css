@@ -122,7 +122,7 @@ a {
 } 
 
 .navbar-search .search-query {
-	padding: 6px 14px;
+	padding: 0 14px;
 	height: 25px;
 	line-height: 25px;
 	-webkit-border-radius: 5px;
@@ -210,9 +210,13 @@ a {
 	font-weight: bold;
 }
 
-.tagline {
+.tagline, .tidyTime {
 	font-size: 1em;
 	font-weight: bold;
+}
+
+.tidyTime {
+	color: #c00;
 }
 
 /*a.alert-message {
