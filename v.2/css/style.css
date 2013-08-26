@@ -117,6 +117,18 @@ a {
 	padding: 5px 10px;
 }
 
+.navbar-search {
+	margin: 0;
+} 
+
+.navbar-search .search-query {
+	padding: 6px 14px;
+	height: 25px;
+	line-height: 25px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}	
+
 .nav-pills > li {
      width: 15em;
     margin-left: 5em;
