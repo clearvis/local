@@ -340,6 +340,31 @@ span.time-divider {
 	background-color: #666;
 	height: 75px;
 }
+
+/* Cards Containers
+*
+*
+*
+*/
+#card-wall-medium-wrapper {
+	position: relative;
+	margin-top: -500px;
+	z-index: 1;
+	height: 0;
+	background: #336799;
+	visibility: hidden;
+}
+
+.card-wall-medium {
+	overflow-y: scroll;
+	height: 0;
+}
+
+.card-wall-medium > img {
+    width: 23.404255319148934%;
+    *width: 23.351063829787233%;
+	margin: 0 10px 10px 0;
+}
 	  
 /* Cards Navigation
 *
@@ -351,6 +376,7 @@ span.time-divider {
 	margin: 0 auto;
 	position: fixed;
 	bottom: 40px;
+	z-index: 2;
 }
 
 .pagespan {
