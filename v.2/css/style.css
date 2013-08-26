@@ -963,7 +963,7 @@ button.ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 83px; z-index: 10; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 83px; z-index: 9; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
 .card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav.png) no-repeat; padding-right: 0; right: 0; }
 
 .card-scroll-cont .forward-open, .card-scroll-cont .backward-open {
