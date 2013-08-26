@@ -709,7 +709,7 @@ button.ticker-toggle-open {
 }
 
 .card-back {
-	background: url(../img/card-back-tweet.jpg) top left no-repeat;
+	/*background: url(../img/card-back-tweet.jpg) top left no-repeat;*/
 	background-size: cover;
 	border-radius: 0 .25em .25em 0;
 	z-index: 3;
@@ -734,6 +734,13 @@ button.ticker-toggle-open {
 	z-index: 10;
 	opacity: 1;
 	background-size: cover;
+}
+
+.card-back-heading {
+	margin-left: 80px;
+	font-size: .35em;
+	color: #000;
+	text-align: justify;
 }
 
 /*.card:hover {
@@ -785,7 +792,7 @@ button.ticker-toggle-open {
 	z-index: 100;
 }*/
 
-.card > img.profile {
+.card > img.profile, .card-back > img.profile {
 	float: left;
 	margin: 5px 0 0 5px;
 	border: 2px #ccc solid;
@@ -811,8 +818,40 @@ button.ticker-toggle-open {
 .card p, .card-back p {
 	font: 23%/1 Georgia, Times New Roman, serif;
 	color: #000;
-	margin: 0;
-	padding: 0 5px;
+}
+
+.card-back-tweet {
+	margin-top: 30px;
+	text-align: justify;
+	padding: 0 20px;
+}
+
+.card-back-tweet-photo {
+	display: block;
+	width: 216px;
+	margin-top: 35px;
+	margin-left: 54px;
+	text-align: center;
+}
+
+.card-back-form {
+	width: 250px;
+	margin: 10px auto;
+}
+
+.card-back-form input {
+	height: 30px;
+	width: inherit;
+}
+
+.card-back-form button {
+	background: #336799 !important;
+	color: #fff !important;
+	opacity: .9 !important;
+}
+
+.card-back-form button:hover {
+	opacity: 1 !important;
 }
 
 .card p:before, .card-back p:before {  
