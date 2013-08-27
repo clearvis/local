@@ -354,7 +354,6 @@ span.time-divider {
 	height: 75vh;
 	z-index: 1;
 	background: #336799;
-	display: block;
 }
 
 .card-wall-medium {
@@ -379,7 +378,6 @@ span.time-divider {
 	position: fixed;
 	bottom: 40px;
 	z-index: 2;
-	display: none !important;
 }
 
 .pagespan {

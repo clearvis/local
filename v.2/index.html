@@ -468,7 +468,7 @@
             <div class="container card-filter">
             <div class="row-fluid">
       			<div class="span2">
- 					<p>120 Items <span><a href="#">View All</a></span></p>
+ 					<p>120 Items <span><a class="js-view-medium" href="#">View All</a></span></p>
         		</div>
                 
                 <div class="span10">
@@ -889,7 +889,13 @@
           
           <script>
 		  	$('.card-wall-medium').height(function(){
-			   return $(window).height() * .75 - 85;
+			   return $(window).height() * .75 - 83;
+			});
+			
+			$('#card-wall-medium-wrapper').hide();
+				$('.js-view-medium').click(function() {
+					$('#card-wall-medium-wrapper').toggle("slow");
+					$('.card-scroll-cont').hide();
 			});
 		  </script>	
     
