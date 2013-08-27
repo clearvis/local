@@ -347,17 +347,19 @@ span.time-divider {
 *
 */
 #card-wall-medium-wrapper {
-	position: relative;
-	margin-top: -500px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75vh;
 	z-index: 1;
-	height: 0;
 	background: #336799;
-	visibility: hidden;
+	display: block;
 }
 
 .card-wall-medium {
 	overflow-y: scroll;
-	height: 0;
+	height: calc(75vh - 90px);
 }
 
 .card-wall-medium > img {
@@ -377,6 +379,7 @@ span.time-divider {
 	position: fixed;
 	bottom: 40px;
 	z-index: 2;
+	display: none !important;
 }
 
 .pagespan {

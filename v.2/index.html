@@ -331,7 +331,7 @@
     </div>
     </div><!--/.container-->
              
-             <div id="card-wall-medium-wrapper" class="container-fluid">
+             <div id="card-wall-medium-wrapper" class="container-fluid clearfix">
              <div class="container">
              
              <div class="container card-filter">
@@ -886,6 +886,12 @@
 			
 			  });
 		  </script>
+          
+          <script>
+		  	$('.card-wall-medium').height(function(){
+			   return $(window).height() * .75 - 85;
+			});
+		  </script>	
     
     <!--<script>
     $('#left-fly-out').hover(function() {
