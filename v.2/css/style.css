@@ -117,6 +117,18 @@ a {
 	padding: 5px 10px;
 }
 
+.navbar-search {
+	margin: 0;
+} 
+
+.navbar-search .search-query {
+	padding: 0 14px;
+	height: 25px;
+	line-height: 25px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}	
+
 .nav-pills > li {
      width: 15em;
     margin-left: 5em;
@@ -198,9 +210,13 @@ a {
 	font-weight: bold;
 }
 
-.tagline {
+.tagline, .tidyTime {
 	font-size: 1em;
 	font-weight: bold;
+}
+
+.tidyTime {
+	color: #c00;
 }
 
 /*a.alert-message {
@@ -324,6 +340,31 @@ span.time-divider {
 	background-color: #666;
 	height: 75px;
 }
+
+/* Cards Containers
+*
+*
+*
+*/
+#card-wall-medium-wrapper {
+	position: relative;
+	margin-top: -500px;
+	z-index: 1;
+	height: 0;
+	background: #336799;
+	visibility: hidden;
+}
+
+.card-wall-medium {
+	overflow-y: scroll;
+	height: 0;
+}
+
+.card-wall-medium > img {
+    width: 23.404255319148934%;
+    *width: 23.351063829787233%;
+	margin: 0 10px 10px 0;
+}
 	  
 /* Cards Navigation
 *
@@ -335,6 +376,7 @@ span.time-divider {
 	margin: 0 auto;
 	position: fixed;
 	bottom: 40px;
+	z-index: 2;
 }
 
 .pagespan {
@@ -693,7 +735,7 @@ button.ticker-toggle-open {
 }
 
 .card-back {
-	background: url(../img/card-back-tweet.jpg) top left no-repeat;
+	/*background: url(../img/card-back-tweet.jpg) top left no-repeat;*/
 	background-size: cover;
 	border-radius: 0 .25em .25em 0;
 	z-index: 3;
@@ -718,6 +760,13 @@ button.ticker-toggle-open {
 	z-index: 10;
 	opacity: 1;
 	background-size: cover;
+}
+
+.card-back-heading {
+	margin-left: 80px;
+	font-size: .35em;
+	color: #000;
+	text-align: justify;
 }
 
 /*.card:hover {
@@ -769,7 +818,7 @@ button.ticker-toggle-open {
 	z-index: 100;
 }*/
 
-.card > img.profile {
+.card > img.profile, .card-back > img.profile {
 	float: left;
 	margin: 5px 0 0 5px;
 	border: 2px #ccc solid;
@@ -795,8 +844,40 @@ button.ticker-toggle-open {
 .card p, .card-back p {
 	font: 23%/1 Georgia, Times New Roman, serif;
 	color: #000;
-	margin: 0;
-	padding: 0 5px;
+}
+
+.card-back-tweet {
+	margin-top: 30px;
+	text-align: justify;
+	padding: 0 20px;
+}
+
+.card-back-tweet-photo {
+	display: block;
+	width: 216px;
+	margin-top: 35px;
+	margin-left: 54px;
+	text-align: center;
+}
+
+.card-back-form {
+	width: 250px;
+	margin: 10px auto;
+}
+
+.card-back-form input {
+	height: 30px;
+	width: inherit;
+}
+
+.card-back-form button {
+	background: #336799 !important;
+	color: #fff !important;
+	opacity: .9 !important;
+}
+
+.card-back-form button:hover {
+	opacity: 1 !important;
 }
 
 .card p:before, .card-back p:before {  
@@ -947,7 +1028,7 @@ button.ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 83px; z-index: 10; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 83px; z-index: 9; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
 .card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav.png) no-repeat; padding-right: 0; right: 0; }
 
 .card-scroll-cont .forward-open, .card-scroll-cont .backward-open {
