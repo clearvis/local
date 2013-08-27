@@ -346,7 +346,7 @@ span.time-divider {
 *
 *
 */
-#card-wall-medium-wrapper {
+#card-wall-medium-wrapper, #card-wall-large-wrapper {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -356,7 +356,7 @@ span.time-divider {
 	background: #336799;
 }
 
-.card-wall-medium {
+.card-wall-medium, .card-wall-large {
 	overflow-y: scroll;
 	height: calc(75vh - 90px);
 }
@@ -365,6 +365,12 @@ span.time-divider {
     width: 23.404255319148934%;
     *width: 23.351063829787233%;
 	margin: 0 10px 10px 0;
+}
+
+.card-wall-large > img {
+    width: 31.914893617021278%;
+  	*width: 31.861702127659576%;
+	margin: 0 1% 10px 0;
 }
 	  
 /* Cards Navigation
