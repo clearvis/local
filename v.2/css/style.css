@@ -314,6 +314,32 @@ span.time-divider {
 	border: 2px solid #CCC;
 }
 
+.on-hand-card-first {
+	position: relative;
+}
+
+.on-hand-indicator {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	color: #336799;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 21px;
+	border: 2px solid #ccc;
+	border-radius: 100%;
+}
+ 
+.on-hand-card > img {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
 /* Markers Styles
 *
 *
@@ -380,7 +406,7 @@ span.time-divider {
 *
 *
 */
-#card-wall-medium-wrapper, #card-wall-large-wrapper {
+#card-wall-medium-wrapper, #card-wall-large-wrapper, #card-wall-205x293-wrapper {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -390,7 +416,7 @@ span.time-divider {
 	background: #336799;
 }
 
-.card-wall-medium, .card-wall-large {
+.card-wall-medium, .card-wall-large, .card-wall-205x293 {
 	overflow-y: scroll;
 	height: calc(75vh - 90px);
 }
@@ -401,10 +427,10 @@ span.time-divider {
 	margin: 0 10px 10px 0;
 }
 
-.card-wall-large > img {
-    width: 31.914893617021278%;
-  	*width: 31.861702127659576%;
-	margin: 0 1% 10px 0;
+.card-wall-large > img, .card-wall-205x293 > img {
+    width: 18%;
+ 	*width: 18%;
+	margin: 0 1.5% 10px 0;
 }
 	  
 /* Cards Navigation
