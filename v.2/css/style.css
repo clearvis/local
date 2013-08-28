@@ -279,6 +279,40 @@ span.time-divider {
         margin: 10px 5px;
 		font-size: .75em;
       }
+	  
+/* .on-hand div
+*
+*
+*
+*/
+.on-hand {
+	width: 50%;
+	height: 121px;
+	background: rgba( 255, 255, 255, .8);
+	padding: 10px 5px;
+	overflow: hidden;
+}
+
+.on-hand-inner {
+	width: 1170px;
+}
+
+.on-hand-inner > p {
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	font-weight: bold;
+	text-shadow: text-shadow: 0px 0px 4px #ffffff;
+}
+
+.on-hand-card {
+	height: 100px;
+	width: 125px;
+	display: inline-block;
+	float: none;
+	margin: 0 5px;
+	border: 2px solid #CCC;
+}
 
 /* Markers Styles
 *
