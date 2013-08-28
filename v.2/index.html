@@ -146,8 +146,8 @@
                 	<div id="HourDiv"></div>
                     <span class="time-divider">:</span>
                     <div id="MinutDiv"></div>
-                    <span class="time-divider">:</span>
-                    <div id="SecDiv"></div>
+                    <!--<span class="time-divider">:</span>
+                    <div id="SecDiv"></div>-->
                 </li>
                 
 				<li><a class="brand" href="#">Loocal.com</a></li>
@@ -564,7 +564,7 @@
              
              <div class="row ticker-wrapper">
              	<button class="ticker-toggle"><i class="icon-white icon-chevron-down icon-chevron-up"></i></button>
-             	<div class="container ticker-container">
+             	<div id="js-ticker-container" class="container ticker-container">
                 	<i class="gn-icon ticker-alert" data-icon="&#xe00b;"></i>
                     <span class="pull-right gn-icon ticker-alert-refresh" data-icon="&#xe00f;">Last 5</span>
              	<div class="ticker">
@@ -951,7 +951,7 @@
         
         <script>
 			$('.ticker-toggle').click(function () {
-			  $('.ticker-container').toggle("slow");
+			  $('#js-ticker-container').toggle("slow");
 			  //if ($('.ticker-toggle').css('top', '0') == true) {
 				 //$('.ticker-toggle').animate({
 					 // top: "-30px"
@@ -995,9 +995,9 @@
 			  if(outMin<10){document.getElementById('MinutDiv').innerHTML="0"+outMin;}
 			  else{document.getElementById('MinutDiv').innerHTML=outMin;}
 			
-			  var outSec = now.getSeconds();
+			  /*var outSec = now.getSeconds();
 			  if(outSec<10){document.getElementById('SecDiv').innerHTML="0"+outSec;}
-			  else{document.getElementById('SecDiv').innerHTML=outSec;}
+			  else{document.getElementById('SecDiv').innerHTML=outSec;}*/
 			
 			  } 
 			  myDate();
