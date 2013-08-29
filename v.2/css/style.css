@@ -451,6 +451,73 @@ span.time-divider {
 	height: 400px;
 	background: #fff;
 }
+
+/* Cards styling */
+.wall-card-large {
+	width: 48.93617021276595%;
+  	*width: 48.88297872340425%;
+	margin: 1em .5%;
+  	*margin: 1em .5%;
+	display: inline-block;
+	float: left;
+	padding: 1em 1em;
+}
+
+.wall-card-large {
+	background: #fff;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.wall-card-large > h3 {
+	line-height: 1;
+	margin: 0 0 10px;
+	text-align: left;
+}
+
+.wall-card-large-image {
+	width: 100%;
+	background: #E6E6E6;
+	margin-bottom: 5px;
+}
+
+.wall-card-large > p {
+	text-align: left;
+}
+
+.wall-card-large > hr {
+	border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+.wall-card-large .user-avatar {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 1em;
+}
+
+.post-time {
+	text-align: left;
+	margin-bottom: .5em; 
+}
+
+.post-user-bold {
+	font-weight: bold;
+}
+
+.wall-card-large-comments {
+	background: #E6E6E6;
+	padding: .5em;
+	text-align: left;
+}
+
+.wall-card-large-comments p:before {
+	content: url(../img/card-venue-user.jpg);
+	vertical-align: middle;
+}
 	  
 /* Cards Navigation
 *
