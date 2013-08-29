@@ -514,7 +514,7 @@ span.time-divider {
 }
 
 /* Cards styling */
-.wall-card-large {
+.wall-card-large, .wall-card-large.item2 {
 	width: 48.93617021276595%;
   	*width: 48.88297872340425%;
 	margin: 1em .5%;
