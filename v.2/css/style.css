@@ -414,13 +414,25 @@ span.time-divider {
 	right: 0;
 	height: calc( 85vh - 5px );
 	z-index: 1;
-	background: #336799;
+	background: transparent;
 }
 
-.card-wall-medium, .card-wall-large, .card-wall-205x293 {
+.card-filter-inner {
+	background: #336799;
+	border-bottom: 2px solid #fff;
+	border-radius: .5em .5em 0 0;
+	padding-left: 30px;
+}
+
+.card-wall-205x293 > .span11 { 
+	padding: 20px 0 0 30px;
+}
+
+.card-wall-medium > .span11, .card-wall-large > .span11, .card-wall-205x293 > .span11 {
 	overflow-y: scroll;
 	/*height: calc(85vh - 90px);*/
 	height: 75vh;
+	background: #336799;
 }
 
 .card-wall-medium > img {
@@ -435,7 +447,7 @@ span.time-divider {
 	margin: 0 1.5% 10px 0;
 }
 
-.card-wall-205x293 .span1, .card-wall-index {
+.card-wall-205x293 .span1, .card-wall-medium .span1, .card-wall-large .span1, .card-wall-index {
 	height: 400px;
 	background: #fff;
 }
@@ -760,7 +772,7 @@ button.ticker-toggle-open {
 
 .card-filter p, .card-filter label {
 	font-size: 1em;
-	line-height: 40px;
+	line-height: 39px;
 	color: #fff;
 	margin: 0;
 	display: inline;
