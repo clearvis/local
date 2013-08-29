@@ -447,9 +447,62 @@ span.time-divider {
 	margin: 0 1.5% 10px 0;
 }
 
-.card-wall-205x293 .span1, .card-wall-medium .span1, .card-wall-large .span1, .card-wall-index {
+.card-wall-205x293 .span1, .card-wall-medium .span1 {
 	height: 400px;
 	background: #fff;
+}
+
+/*.card-wall-large .span11 {
+	margin-left: 0 !important;
+}*/
+
+.side-on-hand {
+	position: relative;
+	padding: 3px;
+	background: rgba( 255, 255, 255, .8);
+	height: 250px;
+	overflow: hidden;
+	transition: height 2s;
+	-webkit-transition: height 2s;
+}
+
+.side-on-hand:before {
+	content: url(../img/arrow-down.png);
+	position: absolute;
+	top: 190px;
+	left: 50%;
+	margin-left: -30px;
+	opacity: .7;
+}
+
+.side-on-hand:hover:before {
+	content: url(../img/arrow-down.png);
+	left: -9999em;
+}
+
+.side-on-hand:hover {
+	height: 600px;
+	cursor: pointer;
+}
+
+.side-on-hand-inner {
+	height: 600px;
+}
+
+.side-on-hand-inner p {
+	font-size: .75em;
+	margin-bottom: 0;
+}
+
+.side-on-hand-card {
+	width: inherit;
+	margin: 4px 0;
+	border: 1px solid #999;
+}
+
+.side-on-hand-card img {
+	width: 100%;
+	height: auto;
 }
 
 /* Cards styling */
@@ -483,6 +536,7 @@ span.time-divider {
 
 .wall-card-large > p {
 	text-align: left;
+	font-size: .75em;
 }
 
 .wall-card-large > hr {
@@ -514,9 +568,22 @@ span.time-divider {
 	text-align: left;
 }
 
-.wall-card-large-comments p:before {
-	content: url(../img/card-venue-user.jpg);
+.wall-card-large-comments img {
+	float: left;
 	vertical-align: middle;
+}
+
+.wall-card-large-comments p {
+	margin-left: 30px;
+	font-size: .75em;
+}
+
+.large-card-actions {
+	text-align: left;
+}
+
+.large-card-actions i {
+	margin-right: 1em;
 }
 	  
 /* Cards Navigation
