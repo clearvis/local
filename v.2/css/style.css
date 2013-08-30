@@ -468,7 +468,7 @@ span.time-divider {
 	margin-left: 0 !important;
 }*/
 
-.side-on-hand {
+.side-on-hand, .card-wall-index {
 	position: relative;
 	padding: 3px;
 	background: rgba( 255, 255, 255, .8);
@@ -478,6 +478,38 @@ span.time-divider {
 	-webkit-transition: height 2s;
 }
 
+.card-wall-index {
+	height: 395px;
+}
+
+.card-wall-index ul {
+	list-style: none;
+}
+
+.card-wall-index-list li {
+	width: 100%;
+	height: 75px;
+	background: #CCC;
+	border: 1px solid #666;
+	overflow: hidden;
+	margin: 3px 0;
+}
+
+.card-wall-index-list li a {
+	display: block;
+	width: 100%;
+	height: auto;
+	opacity: .3;
+}
+
+.card-wall-index-list li.active a {
+	opacity: 1;
+}
+
+.card-wall-index-list.nav > li > a > img{
+	max-width: 100%;
+	height: auto;
+}
 .side-on-hand:before {
 	content: url(../img/arrow-down.png);
 	position: absolute;

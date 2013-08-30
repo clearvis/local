@@ -401,64 +401,9 @@
             </div>
             
             
-            <!-- Large All Card Container -->
-			  <!--<div class="row-fluid">
-				<div class="card-wall-large span12">
-				  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-                  <img src="img/large-card-206x549.jpg" alt="">
-				  <img src="img/large-card-206x549.jpg" alt="">
-				</div>				
-			  </div>
-              
-			</div>--><!-- .container -->
+            <!-- Large All Card Container -->			 		
 			
-			
-			<div class="row-fluid">
+		  <div class="row-fluid">
 				<div class="card-wall-large span11">
                 	
                 	<div class="span1 hidden-phone">
@@ -485,7 +430,10 @@
                     
                     
                     <div class="span11">
+                    <!-- Start Masonry Container -->
                     <div class="masonry-container">
+                    
+                  <div id="top"></div>
                     
                  		<div class="wall-card-large">
                  			
@@ -612,6 +560,8 @@
                  			<form action=""><input class="span12" type="text" placeholder="Comment"></form>
                  			</div>
                  		</div>
+                        
+                        <div id="middle"></div>
                  		
                  		<div class="wall-card-large">
                  			
@@ -743,6 +693,8 @@
                  			<form action=""><input class="span12" type="text" placeholder="Comment"></form>
                  			</div>
                  		</div>
+                        
+                    <div id="bottom"></div>
                  		
                  		<div class="wall-card-large">
                  			
@@ -778,6 +730,9 @@
                  				<p>Commodi, deserunt, nisi inventore similique perferendis nemo labore voluptas iure repellendus in tempora dolor dolorum.</p>
                  			<form action=""><input class="span12" type="text" placeholder="Comment"></form>
                  			</div>
+                            
+                            <div id="bottom"></div>
+                            
                  		</div>
                  	<!-- Card Divs end above here 
                  	*
@@ -789,7 +744,16 @@
                  
 				</div>	
                 
-                <div class="span1 card-wall-index hidden-phone"></div>
+                <div id="card-wall-index" class="span1 navbar card-wall-index hidden-phone">
+                	<ul class="card-wall-index-list nav">
+                		<li class="card-wall-index-item1 active"><a href="#top" id="top"><img src="img/on-hand-koala.jpg"></a></li>
+                		<li class="card-wall-index-item2"><a href="#middle" id="middle"><img src="img/on-hand-koala.jpg"></a></li>
+                		<li class="card-wall-index-item3"><a href="#bottom" id="bottom"><img src="img/on-hand-koala.jpg"></a></li>
+                		<li><a href="" id="top"><img src="img/on-hand-koala.jpg"></a></li>
+                		<li><a href="" id=""><img src="img/on-hand-koala.jpg"></a></li>
+                	</ul>
+              </div>
+                
 			  </div>
 			  
 			</div><!-- .container -->
@@ -1439,7 +1403,9 @@
     <script src="js/gnmenu.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
     <script src="js/masonry.js"></script>
-    <!--<script type="text/javascript" src="js/tidyTime.min.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <!--<script src="js/bootstrap-affix.js"></script>
+    <script type="text/javascript" src="js/tidyTime.min.js"></script>
 	<script type="text/javascript" src="js/tidy-time.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
@@ -1464,8 +1430,8 @@
     </script>-->
     
     <script>
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
+		new gnMenu( document.getElementById( 'gn-menu' ) );
+	</script>
         
         <!--<script>
 			$('.ticker-toggle').click(function () {
@@ -1709,6 +1675,52 @@ $(this).css(‘color’, ‘red’);
       
     });
     </script>-->
+    
+    
+
+<script>
+$(document).ready(function(){
+  $('.card-wall-index-list li.active').click(function(){
+    alert($('.card-wall-large > .span11').scrollTop()+" px");
+  });
+  
+  if($('.card-wall-large > .span11').scrollTop() === 100) {
+   alert($('.card-wall-large > .span11').scrollTop()+" px");
+}
+  
+});
+</script>
+<script>
+$('.card-wall-large > .span11').scroll(function() {    
+
+
+
+    var scroll = $('.card-wall-large > .span11').scrollTop();
+	
+	if (scroll >= 749) {
+       
+        $(".card-wall-index-item1").removeClass("active");
+    } else {
+		if (scroll <= 748) {
+			$(".card-wall-index-item1").addClass("active");
+		}
+	}
+
+    if (scroll >= 750) {
+        $(".card-wall-index-item2").addClass("active");
+    } else {
+        $(".card-wall-index-item2").removeClass("active");
+    }
+	
+	if (scroll >= 1500) {
+        $(".card-wall-index-item3").addClass("active");
+    } else {
+        $(".card-wall-index-item3").removeClass("active");
+    }
+	
+	
+});
+</script>
 
   </body>
 </html>
