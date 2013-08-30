@@ -1138,6 +1138,7 @@
 			<button class="backward"><!--<i class="icon icon-backward">--></i></button>
 			<button class="forward"><!--<i class="icon icon-forward">--></i></button>
 
+  			<!-- Card Frame starts here -->
 			<div class="frame">
             
 				<ul>
@@ -1429,7 +1430,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="js/jquery.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
     <script src="js/sly.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/flippant.js"></script>
@@ -1573,13 +1574,17 @@
 		  </script>	
 		  
 		  <script>
+		  
 		  	var $container = jQuery('.masonry-container');
 				// initialize
 				$container.masonry({
-				   itemSelector: '.wall-card-large'
+				   itemSelector: '.wall-card-large',
+				   containerStyle: null
 				});
+			$container.masonry('destroy')
+						
 		  </script>
-    
+              
     <!--<script>
     $('#left-fly-out').hover(function() {
        $('.left-menu').css({
