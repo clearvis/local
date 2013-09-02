@@ -415,10 +415,13 @@ span.time-divider {
 	height: calc( 85vh - 5px );
 	z-index: 1;
 	background: transparent;
+	display: none;
 }
 
-.masonry-container {
-	position: relative;
+.masonry-container:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .card-filter-inner {
@@ -445,6 +448,7 @@ span.time-divider {
 	/*height: calc(85vh - 90px);*/
 	height: 75vh;
 	background: #336799;
+	display: block;
 }
 
 .card-wall-medium > img {
@@ -551,12 +555,12 @@ span.time-divider {
 
 /* Cards styling */
 .wall-card-large, .wall-card-large.item2 {
-	width: 48.93617021276595%;
-  	*width: 48.88297872340425%;
+	width: 31.914893617021278%;
+  	*width: 31.861702127659576%;
 	margin: 1em .5%;
   	*margin: 1em .5%;
-	display: inline-block;
 	float: left;
+	display: inline-block;
 	padding: 1em 1em;
 }
 

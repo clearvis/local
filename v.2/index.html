@@ -11,7 +11,7 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/flippant.css">
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -21,7 +21,7 @@
       }
     </style>-->
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    
+    <link href="css/style.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/modernizr.custom.js"></script>
 
@@ -669,7 +669,7 @@
                  			</div>           			
                  			
                    			<div class="wall-card-large-image">
-                 			<img src="img/vp-01.jpg" alt="">
+                 			<!--<img src="img/vp-01.jpg" alt="">-->
                  			</div>
                  			<p>Sample description text</p>
                  			
@@ -1505,7 +1505,7 @@
 			   return $(window).height() * .85;
 			});*/
 			
-			$('#card-wall-medium-wrapper, #card-wall-large-wrapper, #card-wall-205x293-wrapper').hide();
+			$('#card-wall-medium-wrapper, #card-wall-205x293-wrapper').hide();
 			
 				$('.js-view-medium').click(function() {
 					$('#card-wall-medium-wrapper').toggle("fast");
@@ -1527,27 +1527,64 @@
 					$('.card-scroll-cont').show("fast");
 				});
 				
+			jQuery( document ).ready(function() {
+				
+				
+				
 				$('.js-view-large').click(function() {
-					$('#card-wall-large-wrapper').toggle("fast");
-					$('.card-scroll-cont').hide("fast");
+					//$('#card-wall-large-wrapper').show("fast");
+					$('#card-wall-large-wrapper').css("display", "block");
+				  	$('.card-scroll-cont').hide("fast");
+					
+					var $container = jQuery('.masonry-container');
+					// initialize
+					$container.masonry({
+					   itemSelector: '.wall-card-large'
+					   //containerStyle: null
+					});
+					//$container.masonry('destroy')
+					//$(window).resize()
+					//$(window).trigger('resize');
+					
 				});
 				
 				$('.js-close-large').click(function() {
-					$('#card-wall-large-wrapper').toggle("fast");
+					$('#card-wall-large-wrapper').hide("fast");
 					$('.card-scroll-cont').show("fast");
 				});
+				
+			});
+			
+			/*docReady( function() {
+			var container = document.querySelector('.masonry-container');
+			var msnry = new Masonry( container, {
+			  //columnWidth: 600
+			});
+			var wall = document.querySelector('#card-wall-large-wrapper');
+		  
+			var showButton = document.querySelector('.js-view-large');
+			eventie.bind( showButton, 'click', function() {
+			  // show container
+			  wall.style.display = 'block';
+			  // layout masonry now that items are shown
+			  msnry.layout();
+			});
+		  
+		  });*/
 				
 		  </script>	
 		  
 		  <script>
-		  
+		  /*jQuery( document ).ready(function() {
 		  	var $container = jQuery('.masonry-container');
 				// initialize
 				$container.masonry({
 				   itemSelector: '.wall-card-large',
+				   columnWidth: 60,
 				   containerStyle: null
 				});
-			$container.masonry('destroy')
+			});*/
+			//$container.masonry('destroy')
 						
 		  </script>
               
