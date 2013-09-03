@@ -431,6 +431,13 @@ span.time-divider {
 	padding-left: 30px;
 }
 
+.card-filter-inner ul {
+	margin: 0;
+	float: left;
+	font-size: 1em;
+	line-height: 39px;
+}
+
 .filter-bar button {
 	background: transparent;
 	border: 0;
@@ -956,7 +963,7 @@ button.ticker-toggle-open {
 	font-size: 1em;
 	line-height: 39px;
 	color: #fff;
-	margin: 0;
+	margin: 0 .5em 0 0;
 	display: inline;
 }
 

@@ -372,13 +372,13 @@
            		 	<div class="span1 hidden-phone"></div>
            		 	<div class="card-filter-inner span11">
            		 	
-						<div class="span3 filter-bar">
+						<div class="span2 filter-bar">
 							<p>120 Items <span class="js-close-large"><button>Close&nbsp;<i class="icon-white icon-chevron-down icon-chevron-up"></i></button></span></p>
 						</div>
                 
-						  <div class="span6">
-						  <p>Filter by</p>
-							   <form action="">
+						  <div class="span8 clearfix">
+						  <p class="pull-left">Filter by</p>
+							   <!--<form action="">
 								  <label class="checkbox inline">
 									<input type="checkbox" id="inlineCheckbox1" value="option1"> Images
 								  </label>
@@ -388,10 +388,20 @@
 								  <label class="checkbox inline">
 									<input type="checkbox" id="inlineCheckbox3" value="option3"> Tribes
 								  </label>
-							   </form>
+							   </form>-->
+                               <ul id="filters" class="inline">
+                                <li><a href="#" data-filter="*">Show all</a></li>
+                                <li><a href="#" data-filter=".poi">POI</a></li>
+                                <li><a href="#" data-filter=".picture">Picture</a></li>
+                                <li><a href="#" data-filter=".post">Post</a></li>
+                                <li><a href="#" data-filter=".tweet">Tweet</a></li>
+                                <li><a href="#" data-filter=".venue">Venue</a></li>
+                                <li><a href="#" data-filter=".article">Article</a></li>
+                                <li><a href="#" data-filter=".coupon">Coupon</a></li>
+                              </ul>
 						  </div>
                    	
-                   		 <div class="span3 filter-bar">
+                   		 <div class="span2 filter-bar">
 							<p><span class="js-close-large pull-right"><button>Close&nbsp;<i class="icon-white icon-chevron-down icon-chevron-up"></i></button></span></p>
 						</div>
                    	
@@ -435,7 +445,7 @@
                     
                   <div id="top"></div>
                     
-                 		<div class="wall-card-large">
+                 		<div class="wall-card-large poi">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -468,7 +478,7 @@
                  			</div>
                  	   </div>
                  		
-                 		<div class="wall-card-large item2">
+                 		<div class="wall-card-large picture">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -495,7 +505,7 @@
                  			</div>
                  		</div>
                  		
-                 		<div class="wall-card-large">
+                 		<div class="wall-card-large post">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -530,7 +540,7 @@
                  			</div>
                  		</div>
                  		
-                 		<div class="wall-card-large item2">
+                 		<div class="wall-card-large tweet">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -563,7 +573,7 @@
                         
                         <div id="middle"></div>
                  		
-                 		<div class="wall-card-large">
+                 		<div class="wall-card-large venue">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -590,7 +600,7 @@
                  			</div>
                  		</div>
                  		
-                 		<div class="wall-card-large item2">
+                 		<div class="wall-card-large article">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -626,7 +636,7 @@
                  			</div>
                  		</div>
                  		
-                 		<div class="wall-card-large">
+                 		<div class="wall-card-large tribe">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -661,7 +671,7 @@
                  			</div>
                  		</div>
                  		
-                 		<div class="wall-card-large item2">
+                 		<div class="wall-card-large coupon">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -669,7 +679,7 @@
                  			</div>           			
                  			
                    			<div class="wall-card-large-image">
-                 			<!--<img src="img/vp-01.jpg" alt="">-->
+                 			<img src="img/vp-01.jpg" alt="">
                  			</div>
                  			<p>Sample description text</p>
                  			
@@ -696,7 +706,7 @@
                         
                     <div id="bottom"></div>
                  		
-                 		<div class="wall-card-large">
+                 		<div class="wall-card-large secret">
                  			
                  			<div class="post-time clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
@@ -1757,6 +1767,12 @@ $('.card-wall-large > .span11').scroll(function() {
 	
 	
 });
+
+	/*$('.js-wall-card-slider').on('change', function () {
+    var v = $(this).val();
+    $('.wall-card-large').css('width', v + '%')
+    $('span').html(v);
+	});*/
 </script>
 
   </body>
