@@ -616,7 +616,7 @@ span.time-divider {
 }
 
 /* Cards styling */
-.wall-card-large, .wall-card-large.item2 {
+.wall-card-large {
 	width: 31.914893617021278%;
   	*width: 31.861702127659576%;
 	margin: 1em .5%;
@@ -624,6 +624,36 @@ span.time-divider {
 	float: left;
 	display: inline-block;
 	padding: 1em 1em;
+}
+
+.wall-card-large_5 {
+	width: 40.42553191489362%;
+    *width: 40.37234042553192%;
+}
+
+.wall-card-large_7 {
+	 width: 57.44680851063829%;
+  	*width: 57.39361702127659%;
+}
+
+.wall-card-large_9 {
+	width: 74.46808510638297%;
+  	*width: 74.41489361702126%;
+}
+
+.wall-card-large_3 {
+	width: 23.404255319148934%;
+  	*width: 23.351063829787233%;
+}
+
+.wall-card-large_8 {
+	 width: 65.95744680851064%;
+  	*width: 65.90425531914893%;
+}
+
+.wall-card-large_full {
+	width: 98%;
+  	*width: 97.94680851063829%;
 }
 
 .wall-card-large {
