@@ -628,44 +628,44 @@ span.time-divider {
 
 .wall-card-large {
 	background: #fff;
-	border: 3px solid #fff;
+	border: 5px solid #CCC;
 	text-align: center;
 }
 
 .poi {
-	background: #9FF;
+	border: 5px solid #9FF;
 }
 
 .picture {
-	background: #CFF;
+	border: 5px solid #CFF;
 }
 
 .post {
-	background: #CCF;
+	border: 5px solid #CCF;
 }
 
 .tweet {
-	background: #CFF;
+	border: 5px solid #CFF;
 }
 
 .venue {
-	background: #FFE1FF;
+	border: 5px solid #FFE1FF;
 }
 
 .article {
-	background: #FFE3E7;
+	border: 5px solid #FFE3E7;
 }
 
 .coupon {
-	background: #FFFFCC;
+	border: 5px solid #FFFFCC;
 }
 
 .tribe {
-	background: #9FC;
+	border: 5px solid #9FC;
 }
 
 .secret {
-	background: #FCDCBC;
+	border: 5px solid #FCDCBC;
 }
 
 .wall-card-large > h3 {
