@@ -1488,11 +1488,11 @@
            		 	<div class="span1 hidden-phone"></div>
            		 	<div class="card-filter-inner span11">
            		 	
-						<div class="span2">
-							<p>120 Items <span><a class="js-close-medium" href="#">Close</a></span></p>
+						<div class="span2 filter-bar">
+							<p>120 Items <span class="js-close-medium"><button>Close&nbsp;<i class="icon-white icon-chevron-down icon-chevron-up"></i></button></span></p>
 						</div>
                 
-						  <div class="span10">
+						  <div class="span8">
 						  <p>Filter by</p>
 							   <form action="">
 								  <label class="checkbox inline">
@@ -1506,6 +1506,10 @@
 								  </label>
 							   </form>
 						  </div>
+                   	
+                   		<div class="span2 filter-bar">
+							<p><span class="js-close-medium pull-right"><button>Close&nbsp;<i class="icon-white icon-chevron-down icon-chevron-up"></i></button></span></p>
+						</div>
                    	
                    	</div>
             		
@@ -2067,7 +2071,7 @@
             <div class="container card-filter">
             <div class="row-fluid">
       			<div class="span3">
- 					<p>120 Items <span><a class="js-view-medium" href="#">View Medium</a></span></p>
+ 					<p>120 Items <span class="js-view-medium"><button>View Medium&nbsp;<i class="icon-white icon-chevron-up"></i></button></span></p>
         		</div>
                 
                 <div class="span2">
@@ -2383,7 +2387,14 @@
             <li>&middot;</li>
       		<li><a href="#">Terms of Service</a></li>
       	</ul>
-        <p class="muted credit">Copyright Loocal 2013</p>
+        <div class="span4">
+        <ul class="inline">
+        <li class="muted credit">Copyright Loocal 2013</li>
+        <li><span class="js-view-medium"><button>Medium Wall&nbsp;<i class="icon-white icon-chevron-up"></i></button></span></li>
+        <li><span class="js-footer-view-large"><button>Large Wall&nbsp;<i class="icon-white icon-chevron-up"></i></button></span></li>
+        </ul>
+        </div>
+        
       </div>
     </div>
 
@@ -2511,14 +2522,22 @@
 			
 				$('.js-view-medium').click(function() {
 					$('#card-wall-medium-wrapper').toggle("fast");
-					$('.card-scroll-cont').hide("fast");
-				});
+					$('.card-scroll-cont, .js-footer-view-large').toggle("fast");
+					$('.js-view-medium .icon-white').toggleClass('icon-chevron-down');			
+				})
 				
 				$('.js-close-medium').click(function() {
 					$('#card-wall-medium-wrapper').toggle("fast");
-					$('.card-scroll-cont').show("fast");
+					$('.card-scroll-cont, .js-footer-view-large').show("fast");
+					$('.js-view-medium .icon-white').removeClass('icon-chevron-down');
 				});
 				
+				$('.js-footer-view-large').click(function() {
+					$('#card-wall-large-wrapper').toggle("fast");
+					$('.card-scroll-cont, .js-view-medium').toggle("fast");
+					$('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');			
+				})
+								
 				$('.js-view-205x293').click(function() {
 					$('#card-wall-205x293-wrapper').toggle("fast");
 					$('.card-scroll-cont').hide("fast");
@@ -2536,7 +2555,8 @@
 				$('.js-view-large').click(function() {
 					//$('#card-wall-large-wrapper').show("fast");
 					$('#card-wall-large-wrapper').css("display", "block");
-				  	$('.card-scroll-cont').hide("fast");
+				  	$('.card-scroll-cont, .js-view-medium').hide("fast");
+				  	$('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');
 					
 					/*var $container = jQuery('.masonry-container');
 					// initialize
@@ -2576,7 +2596,8 @@
 				
 				$('.js-close-large').click(function() {
 					$('#card-wall-large-wrapper').hide("fast");
-					$('.card-scroll-cont').show("fast");
+					$('.card-scroll-cont, .js-view-medium').show("fast");
+					$('.js-footer-view-large .icon-white').removeClass('icon-chevron-down');
 				});
 				
 			});
