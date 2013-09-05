@@ -513,58 +513,93 @@ span.time-divider {
 	display: block;
 }
 
-.card-wall-large > .span11::-webkit-scrollbar {
+.card-wall-large > .span11::-webkit-scrollbar, .card-wall-medium > .span11::-webkit-scrollbar {
     width: 8px;
 }
 
 /* Track */
-.card-wall-large > .span11::-webkit-scrollbar-track {
+.card-wall-large > .span11::-webkit-scrollbar-track, .card-wall-medium > .span11::-webkit-srollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
  
 /* Handle */
-.card-wall-large > .span11::-webkit-scrollbar-thumb {
+.card-wall-large > .span11::-webkit-scrollbar-thumb, .card-wall-medium > .span11::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background: rgba(255,255,255,1); 
     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
 	height: 150px;
 }
-.card-wall-large > .span11::-webkit-scrollbar-thumb:window-inactive {
+.card-wall-large > .span11::-webkit-scrollbar-thumb:window-inactive, .card-wall-medium > .span11::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,255,255,0.4); 
 }
 
-@-moz-document url-prefix(http://),url-prefix(https://) {
-.card-wall-large > .span11::scrollbar {
-   -moz-appearance: none !important;
-   background: rgb(0,255,0) !important;
+/*medium cards 
+*
+*
+*/
+
+.wall-card-medium-wrapper {
+	margin: 0 auto;
 }
-.card-wall-large > .span11::thumb, .card-wall-large > .span11::scrollbarbutton {
-   -moz-appearance: none !important;
-   background-color: rgb(0,0,255) !important;
+	
+.wall-card-medium {
+    width: 18%;
+  	*width: 18%;
+	height: 172px;
+	margin: 1em 0 0 1.2%;
+	float: left;
+	display: inline-block;
+	position: relative;
 }
 
-.card-wall-large > .span11::thumb:hover, .card-wall-large > .span11::scrollbarbutton:hover {
-   -moz-appearance: none !important;
-   background-color: rgb(255,0,0) !important;
+.wall-card-medium > img, .wall-card-medium_back {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 172px;
+	background: #fff;
+	-webkit-box-shadow: -3px -3px 7px rgba(0,0,0,0.3);
+	box-shadow: -3px -3px 7px rgba(0,0,0,0.3);
+	overflow: hidden;
 }
 
-.card-wall-large > .span11::scrollbarbutton {
-   display: none !important;
+.wall-card-medium_back {
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 150ms ease-in-out;
 }
 
-.card-wall-large > .span11::scrollbar[orient="vertical"] {
-  min-width: 15px !important;
-}
+.wall-card-medium > img {
+	z-index: 1;
+	-webkit-transition: all .2s ease-in-out;
 }
 
+.wall-card-medium .card-back-heading {
+	font-size: 1em;
+}
 
-.card-wall-medium > img {
-    width: 23.404255319148934%;
-    *width: 23.351063829787233%;
-	margin: 0 10px 10px 0;
+.wall-card-medium .card-back-tweet {
+	font-size: .75em;
+	line-height: 1.2;
+}
+
+.wall-card-medium_back:hover {
+	width: 325px;
+	height: 393px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	z-index: 10;
+	opacity: 1;
+	background-size: cover;
+	cursor: pointer;
 }
 
 .card-wall-205x293 img {
@@ -573,12 +608,6 @@ span.time-divider {
 	margin: 0 1.5% 10px 0;
 }
 
-
-
-.card-wall-205x293 .span1, .card-wall-medium .span1 {
-	height: 400px;
-	background: #fff;
-}
 
 /*.card-wall-large .span11 {
 	margin-left: 0 !important;
@@ -1282,7 +1311,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	z-index: 100;
 }*/
 
-.card > img.profile, .card-back > img.profile {
+.card > img.profile, .card-back > img.profile, .wall-card-medium_back >img.profile {
 	float: left;
 	margin: 5px 0 0 5px;
 	border: 2px #ccc solid;
@@ -1344,13 +1373,13 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	opacity: 1 !important;
 }
 
-.card p:before, .card-back p:before {  
+.card p:before, .card-back p:before, .wall-card-medium_back p:before {  
     content: open-quote; 
 	font-size: 50px;
 	float: left;
 	padding-right: 5px; 
 }  
-.card p:after, .card-back p:after {  
+.card p:after, .card-back p:after, .wall-card-medium_back p:after {  
     content: close-quote;  
 	font-size: 50px;
 	float: right;
