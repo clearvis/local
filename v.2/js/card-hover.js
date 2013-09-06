@@ -1,6 +1,6 @@
 var CARDBACK = {
 	current: null,
-	delay: 600,
+	delay: 1000,
 	timer: null,
 	setDialogs: function () {
 		var screenWidth =  $('.card-wall-medium').width(),
@@ -34,18 +34,18 @@ var CARDBACK = {
 
 			// re-position if it's off the right of the screen
 			if (offset.left + ( width * 2 ) > screenWidth) {
-				left = -36;
+				left = -163;
 				//console.log(screenWidth);
 				//$(this).addClass('left');
 			}
 			else {
 				//$(this).removeClass('left');
-				left = 0;
+				left = 163;
 			}
 			
 			// re-position if it's off the bottom of the screen
 			if (offset.top + ( totalHeight / 2 ) > screenBottom) {
-				top = 0 - $(this).outerHeight();
+				top = -190;//0 - $(this).outerHeight();
 				//$(this).addClass('above');
 			} 
 			else {
