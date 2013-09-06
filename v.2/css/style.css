@@ -476,7 +476,6 @@ span.time-divider {
 	left: 0;
 	right: 0;
 	height: calc( 85vh - 5px );
-	z-index: 1;
 	background: transparent;
 	display: none;
 }
@@ -517,8 +516,8 @@ span.time-divider {
 	overflow-y: scroll;
 	/*height: calc(85vh - 90px);*/
 	height: 75vh;
-	background: #336799;
-	display: block;
+	background: #336799;                                                                       
+	display: block;                                                                                                                       
 }
 
 .card-wall-large > .span11::-webkit-scrollbar, .card-wall-medium > .span11::-webkit-scrollbar {
@@ -550,6 +549,7 @@ span.time-divider {
 
 .wall-card-medium-wrapper {
 	margin: 0 auto;
+	position: relative;
 }
 	
 .wall-card-medium {
@@ -562,7 +562,7 @@ span.time-divider {
 	position: relative;
 }
 
-.wall-card-medium > img, .wall-card-medium_back {
+.wall-card-medium > img {
     position: absolute;
 	top: 0;
 	left: 0;
@@ -575,14 +575,19 @@ span.time-divider {
 }
 
 .wall-card-medium_back {
-	z-index: 2;
-	opacity: 0;
-	-webkit-transition: all 1s ease-in-out;
-	transition: all 150ms ease-in-out;
+	background: #fff;
+	display: none;
+	width: 325px;
+	height: 393px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	z-index: 10;
 }
 
 .wall-card-medium > img {
-	z-index: 1;
 	-webkit-transition: all .2s ease-in-out;
 }
 
@@ -595,7 +600,7 @@ span.time-divider {
 	line-height: 1.2;
 }
 
-.wall-card-medium_back:hover {
+/*.wall-card-medium_back:hover {
 	width: 325px;
 	height: 393px;
 	position: absolute;
@@ -607,7 +612,7 @@ span.time-divider {
 	opacity: 1;
 	background-size: cover;
 	cursor: pointer;
-}
+}*/
 
 .card-wall-205x293 img {
     width: 18%;

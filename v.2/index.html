@@ -2414,7 +2414,7 @@
     <script src="js/masonry.js"></script>
     <script src="js/bootstrap-scrollspy.js"></script>
     <script src="js/isotope.js"></script>
-   
+    <script src="js/card-hover.js"></script>
     <!--<script src="js/bootstrap-affix.js"></script>
     <script type="text/javascript" src="js/tidyTime.min.js"></script>
 	<script type="text/javascript" src="js/tidy-time.js"></script>
@@ -2517,18 +2517,24 @@
 		  	/*$('#card-wall-medium, #card-wall-large, #card-wall-205x293').height(function(){
 			   return $(window).height() * .85;
 			});*/
-			
-			$('#card-wall-medium-wrapper, #card-wall-205x293-wrapper').hide();
+				
+			jQuery( document ).ready(function() {
+				
+				$('#card-wall-205x293-wrapper').hide();
 			
 				$('.js-view-medium').click(function() {
+					//$('#card-wall-medium-wrapper').toggle("fast");
 					$('#card-wall-medium-wrapper').toggle("fast");
 					$('.card-scroll-cont, .js-footer-view-large').toggle("fast");
-					$('.js-view-medium .icon-white').toggleClass('icon-chevron-down');			
+					$('.js-view-medium .icon-white').toggleClass('icon-chevron-down');	
+					
+	console.log('Card Wall is loaded!');
+
 				})
 				
 				$('.js-close-medium').click(function() {
 					$('#card-wall-medium-wrapper').toggle("fast");
-					$('.card-scroll-cont, .js-footer-view-large').show("fast");
+					$('.card-scroll-cont, .js-footer-view-large').toggle("fast");
 					$('.js-view-medium .icon-white').removeClass('icon-chevron-down');
 				});
 				
@@ -2547,10 +2553,6 @@
 					$('#card-wall-205x293-wrapper').toggle("fast");
 					$('.card-scroll-cont').show("fast");
 				});
-				
-			jQuery( document ).ready(function() {
-				
-				
 				
 				$('.js-view-large').click(function() {
 					//$('#card-wall-large-wrapper').show("fast");
