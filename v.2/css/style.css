@@ -558,12 +558,12 @@ span.time-divider {
 
 .wall-card-medium-index {
 	position: absolute;
-	bottom: 40px;
+	bottom: 39px;
 	left: 10%;
 	margin: 0 10% 0 0;
 	width: 80%;
 	height: 40px;
-	background: rgba( 255, 255, 255, .6);
+	background: rgba( 255, 255, 255, 1);
 	padding: 5px 5px;
 	z-index: 10;
 	overflow: hidden;
@@ -575,6 +575,10 @@ span.time-divider {
 	display: inline-block;
 	margin: 0 3px;
 	border: 1px solid #CCC;
+}
+
+.wall-card-medium-index > div:hover {
+	cursor: pointer;
 }
 
 .wall-card-medium-index > div > img {

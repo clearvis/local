@@ -4,16 +4,16 @@ var CARDBACK = {
 	timer: 500,
 	setDialogs: function () {
 		var screenWidth =  $('.card-wall-medium').width(),
-			screenBottom = $('.card-wall-medium').scrollTop() + $('.card-wall-medium').height();	
+			screenBottom = $('.card-wall-medium').scrollTop()+$('.card-wall-medium').height();	
 		
-		$('.wall-card-medium_back').parent().hover(function(){
+		$('.wall-card-medium_back').parent().hover (function() {
 			// store the dialog being hovered
 			CARDBACK.current = $(this);
 			CARDBACK.timer = setTimeout(function(){
 				// find the dialog, 
 				CARDBACK.current.find(".wall-card-medium_back").fadeIn('fast');
 			}, CARDBACK.delay);
-		}, function(){
+		}, function() {
 			// on mouseout, clear timer and hide dialog
 			clearTimeout(CARDBACK.timer);
 			$(this).find(".wall-card-medium_back").fadeOut('fast');

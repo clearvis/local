@@ -3515,7 +3515,7 @@ $('.card-wall-medium > .span11').scroll(function() {
 
     var scroll = $('.card-wall-medium > .span11').scrollTop();
 	
-	if (scroll >= 300) {       
+	if (scroll >= 600) {       
         $(".wall-card-medium-index > div.active").removeClass("active");
         $(".wall-card-medium-index > div:nth-of-type(2)").addClass("active");
     } //else {
@@ -3524,7 +3524,7 @@ $('.card-wall-medium > .span11').scroll(function() {
 		//}
 	//}
 
-    if (scroll >= 600) {       
+    if (scroll >= 1200) {       
         $(".wall-card-medium-index > div.active").removeClass("active");
         $(".wall-card-medium-index > div:nth-of-type(3)").addClass("active");
     } //else {
@@ -3534,7 +3534,7 @@ $('.card-wall-medium > .span11').scroll(function() {
 		//}
 	//}
 	
-	if (scroll >= 900) {       
+	if (scroll >= 1800) {       
         $(".wall-card-medium-index > div.active").removeClass("active");
         $(".wall-card-medium-index > div:nth-of-type(4)").addClass("active");
     } //else {
@@ -3544,11 +3544,35 @@ $('.card-wall-medium > .span11').scroll(function() {
 		//}
 	//}	
 	
-	if (scroll <= 299) {       
+	if (scroll <= 599) {       
         $(".wall-card-medium-index > div.active").removeClass("active");
         $(".wall-card-medium-index > div:nth-of-type(1)").addClass("active");
     }
 	
+});
+
+$(".wall-card-medium-index > div:nth-of-type(1)").click(function() {
+    $('.card-wall-medium > .span11').animate({
+        scrollTop: $(".card-wall-medium > .span11").offset().top == 0
+    }, 500);
+});
+
+$(".wall-card-medium-index > div:nth-of-type(2)").click(function() {
+    $('.card-wall-medium > .span11').animate({
+        scrollTop: $(".card-wall-medium > .span11").offset().top + 600
+    }, 500);
+});
+
+$(".wall-card-medium-index > div:nth-of-type(3)").click(function() {
+    $('.card-wall-medium > .span11').animate({
+        scrollTop: $(".card-wall-medium > .span11").offset().top + 1200
+    }, 500);
+});
+
+$(".wall-card-medium-index > div:nth-of-type(4)").click(function() {
+    $('.card-wall-medium > .span11').animate({
+        scrollTop: $(".card-wall-medium > .span11").offset().top + 1800
+    }, 500);
 });
 
 	/*$('.js-wall-card-slider').on('change', function () {
