@@ -1,7 +1,7 @@
 var CARDBACK = {
 	current: null,
 	delay: 1000,
-	timer: null,
+	timer: 500,
 	setDialogs: function () {
 		var screenWidth =  $('.card-wall-medium').width(),
 			screenBottom = $('.card-wall-medium').scrollTop() + $('.card-wall-medium').height();	

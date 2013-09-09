@@ -555,6 +555,35 @@ span.time-divider {
 	margin: 0 auto;
 	position: relative;
 }
+
+.wall-card-medium-index {
+	position: absolute;
+	bottom: 40px;
+	left: 10%;
+	margin: 0 10% 0 0;
+	width: 80%;
+	height: 40px;
+	background: rgba( 255, 255, 255, .6);
+	padding: 5px 5px;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.wall-card-medium-index > div {
+	height: 30px;
+	width: 50px;
+	display: inline-block;
+	margin: 0 3px;
+	border: 1px solid #CCC;
+}
+
+.wall-card-medium-index > div > img {
+	opacity: .5;
+}
+
+.wall-card-medium-index > div.active img {
+	opacity: 1;
+}
 	
 .wall-card-medium {
     width: 18%;
