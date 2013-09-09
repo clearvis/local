@@ -480,6 +480,10 @@ span.time-divider {
 	display: none;
 }
 
+#card-wall-medium-wrapper {
+	display: block;
+}
+
 .masonry-container:after {
   content: '';
   display: block;
@@ -577,13 +581,13 @@ span.time-divider {
 .wall-card-medium_back {
 	background: #fff;
 	display: none;
-	width: 325px;
-	height: 393px;
+	width: 375px;
+	height: 450px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
+	-webkit-box-shadow: 0 0 2px 3px rgba(0,0,0,0.3);
+ 	box-shadow: 0 0 2px 3px rgba(0,0,0,0.3);
 	z-index: 10;
 }
 
@@ -801,6 +805,12 @@ span.time-divider {
 	margin-bottom: 5px;
 }
 
+.wall-card-large-image_full, .iframe-container_full {
+	float: left;
+	width: 73%;
+	margin-right: 2%;
+}
+
 .iframe-container {
 	position: relative;
 	margin-bottom: .5em;
@@ -840,6 +850,11 @@ span.time-divider {
 .post-time {
 	text-align: left;
 	margin-bottom: .5em; 
+}
+
+.post-time_full {
+	float: right;
+	width: 25%;
 }
 
 .post-user-bold {

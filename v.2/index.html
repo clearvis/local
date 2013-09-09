@@ -549,14 +549,10 @@
                  		
                  		<div class="wall-card-large wall-card-large_full picture">
                  			
-                 			<div class="post-time clearfix">
+                 			<div class="post-time post-time_full clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
                  				<p><span class="post-user-bold">Jim Sacci</span> posted in Picture<br>11:48 AM</p>
-                 			</div>           			
-                 			
-                   			<div class="wall-card-large-image">
-                 				<img src="http://placekitten.com/1200/400" alt="">
-                 			</div>
+                 				
                  				<p>Sample description text</p>
                  			
                         	<div class="large-card-actions">
@@ -572,6 +568,12 @@
                  				
                          		<form action=""><input class="span12" type="text" placeholder="Comment"></form>
                  			</div>
+                 			</div>           			
+                 			
+                   			<div class="wall-card-large-image wall-card-large-image_full">
+                 				<img src="http://placekitten.com/1200/400" alt="">
+                 			</div>
+                 				
                  		</div>
                  		
                  		<div class="wall-card-large post">
@@ -874,15 +876,11 @@
                  		
                  		<div class="wall-card-large wall-card-large_full post">
                  			
-                 			<div class="post-time clearfix">
+                 			<div class="post-time post-time_full clearfix">
                  				<img src="img/card-user.jpg" alt="" class="user-avatar">
                  				<p><span class="post-user-bold">Jim Sacci</span> posted in Category<br>11:48 AM</p>
-                 			</div>           			
-                 			
-                   			<div class="iframe-container">
-                 			<iframe width="420" height="315" src="http://www.youtube.com/embed/fWXug6b7w7I?rel=0" frameborder="0" allowfullscreen></iframe>
-                 			</div>
-                 			<p>Sample description text</p>
+                 				
+                 				<p>Sample description text</p>
                  			
                         	<div class="large-card-actions">
                               <i class="icon icon-lock"></i>
@@ -906,6 +904,12 @@
                  				                 				
                  			<form action=""><input class="span12" type="text" placeholder="Comment"></form>
                  			</div>
+                 			</div>           			
+                 			
+                   			<div class="iframe-container iframe-container_full">
+                 			<iframe width="420" height="315" src="http://www.youtube.com/embed/fWXug6b7w7I?rel=0" frameborder="0" allowfullscreen></iframe>
+                 			</div>
+                 			
                  		</div>
                  		
                  		<div class="wall-card-large tweet">
@@ -2520,7 +2524,7 @@
 				
 			jQuery( document ).ready(function() {
 				
-				$('#card-wall-205x293-wrapper').hide();
+				$('#card-wall-205x293-wrapper, #card-wall-medium-wrapper').hide();
 			
 				$('.js-view-medium').click(function() {
 					//$('#card-wall-medium-wrapper').toggle("fast");

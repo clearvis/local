@@ -33,24 +33,24 @@ var CARDBACK = {
 			}
 
 			// re-position if it's off the right of the screen
-			if (offset.left + ( width * 2 ) > screenWidth) {
-				left = -163;
+			if (offset.left + ( width ) > screenWidth) {
+				left = -200;
 				//console.log(screenWidth);
 				//$(this).addClass('left');
 			}
 			else {
 				//$(this).removeClass('left');
-				left = 163;
+				left = 110;
 			}
 			
 			// re-position if it's off the bottom of the screen
 			if (offset.top + ( totalHeight / 2 ) > screenBottom) {
-				top = -190;//0 - $(this).outerHeight();
+				top = -390;//0 - $(this).outerHeight();
 				//$(this).addClass('above');
 			} 
 			else {
 				//$(this).removeClass('above');
-				top = 0;
+				top = 86;
 			}
 
 			// finally set the css properties to position onscreen
