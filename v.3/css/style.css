@@ -947,6 +947,39 @@ span.footer-time-divider {
 }
 
 
+/* Keep Alive styles and animation
+*
+*
+*
+*/
+.keep-alive {
+	background: #00F;
+	height: 35px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.keep-alive span {
+	color: #fff;
+}
+
+
+
+.keep-alive ul.inline li {
+	width: 50px;
+	height: 30px;
+	margin: 0 3px 3px;
+	padding: 0;
+	padding-left: 0;
+	padding-right: 0;
+	background: #fff;
+}
+
+.keep-alive-open {
+	display: none;
+	background: #00F;
+}
+
 /* Ticker styles and animation
 *
 *
@@ -967,6 +1000,7 @@ span.footer-time-divider {
 	bottom: 40px;
 	left: 0;
 	width: 100%;
+	z-index: 2;
 }
 
 .ticker {
