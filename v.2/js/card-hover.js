@@ -1,19 +1,19 @@
 var CARDBACK = {
 	current: null,
-	delay: 1000,
-	timer: null,
+	delay: 0,
+	timer: 500,
 	setDialogs: function () {
 		var screenWidth =  $('.card-wall-medium').width(),
-			screenBottom = $('.card-wall-medium').scrollTop() + $('.card-wall-medium').height();	
+			screenBottom = $('.card-wall-medium').scrollTop()+$('.card-wall-medium').height();	
 		
-		$('.wall-card-medium_back').parent().hover(function(){
+		$('.wall-card-medium_back').parent().hover (function() {
 			// store the dialog being hovered
 			CARDBACK.current = $(this);
 			CARDBACK.timer = setTimeout(function(){
 				// find the dialog, 
 				CARDBACK.current.find(".wall-card-medium_back").fadeIn('fast');
 			}, CARDBACK.delay);
-		}, function(){
+		}, function() {
 			// on mouseout, clear timer and hide dialog
 			clearTimeout(CARDBACK.timer);
 			$(this).find(".wall-card-medium_back").fadeOut('fast');
@@ -33,26 +33,30 @@ var CARDBACK = {
 			}
 
 			// re-position if it's off the right of the screen
-			if (offset.left + ( width * 2 ) > screenWidth) {
-				left = -163;
+			if (offset.left + ( width ) > screenWidth) {
+				left = -200;
 				//console.log(screenWidth);
 				//$(this).addClass('left');
 			}
+		    if (offset.left < width ) {
+					left = 0;
+			}
+				 
 			else {
 				//$(this).removeClass('left');
-				left = 163;
-			}
-			
+				left = -55;
+			}			
+					
 			// re-position if it's off the bottom of the screen
 			if (offset.top + ( totalHeight / 2 ) > screenBottom) {
-				top = -190;//0 - $(this).outerHeight();
+				top = -150;//-390;//0 - $(this).outerHeight();
 				//$(this).addClass('above');
 			} 
 			else {
 				//$(this).removeClass('above');
-				top = 0;
+				top = 0; //86
 			}
-
+			
 			// finally set the css properties to position onscreen
 			$(this).css({
 				"top": top,
