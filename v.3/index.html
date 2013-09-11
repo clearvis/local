@@ -3058,7 +3058,7 @@
 
         		</div>
                 
-                <div class="span8">
+                <div class="span4">
                 <p>Filter by</p>
                 	 <form action="">
                         <label class="checkbox inline">
@@ -3071,6 +3071,16 @@
                           <input type="checkbox" id="inlineCheckbox3" value="option3"> Tribes
                         </label>
                		 </form>
+                </div>
+                <div class="span4">
+                  <ul class="inline pull-right">     
+                  <li id="footer-nav-clock">
+                      <div id="footer-HourDiv"></div>
+                      <span class="footer-time-divider">:</span>
+                      <div id="footer-MinutDiv"></div>
+                  </li>
+                  </ul>
+                </div>    
                 </div>
         </div>
         
@@ -3174,12 +3184,19 @@
 			
 			  var outHour = now.getHours();
 			  if (outHour >12){newHour = outHour-12;outHour = newHour;}
-			  if(outHour<10){document.getElementById('HourDiv').innerHTML="0"+outHour;}
-			  else{document.getElementById('HourDiv').innerHTML=outHour;}
+			  if(outHour<10){document.getElementById('HourDiv').innerHTML="0"+outHour,
+			   document.getElementById('footer-HourDiv').innerHTML="0"+outHour;}
+			  else{document.getElementById('HourDiv').innerHTML=outHour,
+			  	document.getElementById('footer-HourDiv').innerHTML=outHour
+			  ;}
 			
 			  var outMin = now.getMinutes();
-			  if(outMin<10){document.getElementById('MinutDiv').innerHTML="0"+outMin;}
-			  else{document.getElementById('MinutDiv').innerHTML=outMin;}
+			  if(outMin<10){document.getElementById('MinutDiv').innerHTML="0"+outMin,
+			   document.getElementById('footer-MinutDiv').innerHTML="0"+outMin
+			  ;}
+			  else{document.getElementById('MinutDiv').innerHTML=outMin,
+			   document.getElementById('footer-MinutDiv').innerHTML=outMin
+			  ;}
 			
 			  /*var outSec = now.getSeconds();
 			  if(outSec<10){document.getElementById('SecDiv').innerHTML="0"+outSec;}

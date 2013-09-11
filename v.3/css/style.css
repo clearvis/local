@@ -226,7 +226,7 @@ a {
 }*/
 
 /* Clock Format */
-#HourDiv, #MinutDiv, #SecDiv {
+#HourDiv, #MinutDiv, #footer-HourDiv, #footer-MinutDiv {
 	float:left;
 	color:#5f6f81;
 	width:40px;
@@ -234,10 +234,18 @@ a {
 	font-size:25px;
 }
 
-span.time-divider {
+#footer-HourDiv, #footer-MinutDiv {
+	color: #fff;
+}
+
+span.time-divider, span.footer-time-divider {
 	float:left;
 	color:#5f6f81;
 	font-size:25px;
+}
+
+span.footer-time-divider {
+	color: #fff;
 }
 
 /* drag .container-fluid to sides of screen
