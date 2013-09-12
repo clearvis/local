@@ -320,6 +320,11 @@ span.footer-time-divider {
 	overflow: hidden;
 }
 
+.on-hand p {
+	margin: 0;
+	padding: 0;
+}
+
 .on-hand-inner {
 	width: 1170px;
 }
@@ -336,7 +341,7 @@ span.footer-time-divider {
 	height: 100px;
 	width: 125px;
 	display: inline-block;
-	float: none;
+	float: left;
 	margin: 0 5px;
 	border: 2px solid #CCC;
 }

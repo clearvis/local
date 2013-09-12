@@ -2714,12 +2714,12 @@
                         	<li><img src="img/medium-card4-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card1-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card2-index.jpg" alt=""></li>
-                        	<li><img src="img/medium-card3-index.jpg" alt=""></li>
+                        	<li><img src="img/medium-card3-index.jpg" alt=""></li>                        	
                         	<li><img src="img/medium-card4-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card1-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card2-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card3-index.jpg" alt=""></li>
-                        	<li><img src="img/medium-card4-index.jpg" alt=""></li>
+                        	<li><img src="img/medium-card4-index.jpg" alt=""></li>                        	
                         </ul>
                         
                         <div class="span4 keep-alive-open">
@@ -2890,7 +2890,7 @@
                         <i class="gn-icon ticker-alert" data-icon="&#xe00b;"></i>
                         <span class="pull-right gn-icon ticker-alert-refresh" data-icon="&#xe00f;">Last 5</span>
                         <div class="ticker">
-                            <p><span><img src="img/medium-card4-index.jpg" alt="">&nbsp;</span>Top Trends For All Your Tribes In 30 Seconds</p>
+                            <p><span id="draggable"><img src="img/medium-card4-index.jpg" alt="">&nbsp;</span>Top Trends For All Your Tribes In 30 Seconds</p>
                             <p><span><img src="img/medium-card4-index.jpg" alt="">&nbsp;</span></span>Hot Events In Your Neighborhood In 30 Seconds</p>
                         </div>
                     </div>
@@ -3280,6 +3280,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!--<script src="js/jquery.js"></script>-->
@@ -3405,7 +3406,7 @@
 			});*/
 				
 			jQuery( document ).ready(function() {
-				
+				//Add Keep Alive text
 				$('.ticker-wrapper').mouseover(function() {
 					$('.keep-alive span').text('Keep Alive');;
 				});
@@ -3448,7 +3449,7 @@
 					$(".keep-alive-open li").mouseover(function() { $(this).find('.keep-alive-card_back')
 					.css('display','block')
 					.css('position', 'absolute')
-					.css('top', '-363px')
+					.css('top', '-378px')
 					.css('left', '25px');								
 					});
 					
@@ -3566,6 +3567,12 @@
 				});
 				
 			});
+						
+						
+			//Add Draggable and Droppable to Keep Alive
+			$(function() {
+				$( ".keep-alive-card_back" ).draggable();
+	  		    });
 						
 			/*docReady( function() {
 			var container = document.querySelector('.masonry-container');
