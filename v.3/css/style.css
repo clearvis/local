@@ -113,6 +113,16 @@ a {
 	color: #999;
 }
 
+/* Mapping Widget */
+.map-widget {
+	width: 260px;
+	height: 225px;
+	position: absolute;
+	bottom: 40px;
+	border: 1px solid #000;
+	z-index: 3;
+}
+
 /* Top Nav Custom Styles */
 .navbar .brand {
 	padding: 5px 10px;
@@ -968,7 +978,7 @@ span.footer-time-divider {
 .keep-alive ul.inline li {
 	width: 50px;
 	height: 30px;
-	margin: 0 3px 3px;
+	margin: 0 3px 3px 0;
 	padding: 0;
 	padding-left: 0;
 	padding-right: 0;
@@ -978,6 +988,7 @@ span.footer-time-divider {
 .keep-alive-open {
 	display: none;
 	background: #00F;
+	padding-left: 5px;
 }
 
 /* Ticker styles and animation
@@ -1631,7 +1642,10 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover, #footer button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { float: left; width: 115px; padding-left: 0; height: 150px; font-size: 60px; position: absolute; top: 61px; z-index: 9; background: url(../img/card-back-nav.png) no-repeat; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { width: 115px; height: 150px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
+
+.card-scroll-cont .backward { float: left; left: 260px; background: url(../img/card-back-nav.png) no-repeat; }
+
 .card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav.png) no-repeat; padding-right: 0; right: 0; }
 
 .card-scroll-cont .forward-open, .card-scroll-cont .backward-open {

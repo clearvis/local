@@ -43,6 +43,8 @@
   <!-- Wrapper to Footer -->
     <div class="wrapper">
     
+    <div class="map-widget"><img src="img/map-widget.jpg" alt=""></div>
+    
     <!--<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="row-fluid">
@@ -3265,18 +3267,20 @@
 				.css('display','block')
 				.css('position', 'absolute')
 				.css('bottom', 0)
-				.css('left', 0)
+				.css('left', '260px')
 				.css('margin-left', 0)
-				.css("height", 400); 
+				.css("width", '180px')
+				.css('height', 'auto'); 				
 				});
 				
 				$(".keep-alive-open").mouseover(function() { $(this)
 				.css('display','block')
 				.css('position', 'absolute')
 				.css('bottom', 0)
-				.css('left', 0)
+				.css('left', '260px')
 				.css('margin-left', 0)
-				.css("height", 400); 
+				.css("width", '180px')
+				.css('height', 'auto'); 				
 				});
 				
 				$(".keep-alive-open").mouseout(function() { $(this)
@@ -3286,7 +3290,7 @@
 				.css("height", 0); 
 				});
 				
-				$(".keep-alive").mouseout(function() { $(this).css('overflow','hidden').css("height", 35); });
+				$(".keep-alive").mouseout(function() { $('.keep-alive-open').css('display','none'); });
 				
 				$('#card-wall-205x293-wrapper, #card-wall-medium-wrapper').hide();
 			
