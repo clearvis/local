@@ -3445,13 +3445,17 @@
 				
 				$(".keep-alive").mouseout(function() { $('.keep-alive-open').css('display','none'); });
 				
-				//open Keep Alive card back
-					$(".keep-alive-open li").mouseover(function() { $(this).find('.keep-alive-card_back')
+				//open Keep Alive card back	
+									
+					$(".keep-alive-open li").mouseover(function() { 					
+					
+					$(this).find('.keep-alive-card_back')
 					.css('display','block')
 					.css('position', 'absolute')
 					.css('top', '-378px')
 					.css('left', '25px');								
-					});
+					});	
+					
 					
 				//close Keep Alive card back
 					$(".keep-alive-open li").mouseout(function() { $(this).find('.keep-alive-card_back')
@@ -3734,7 +3738,7 @@ $(this).css(‘color’, ‘red’);
     
     
 
-<script>
+<!--<script>
 $(document).ready(function(){
   $('.card-wall-index-list li.active').click(function(){
     alert($('.card-wall-large > .span11').scrollTop()+" px");
@@ -3745,7 +3749,7 @@ $(document).ready(function(){
 }
   
 });
-</script>
+</script>-->
 <script>
 $('.card-wall-large > .span11').scroll(function() {   
 
