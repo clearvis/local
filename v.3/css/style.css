@@ -1213,7 +1213,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
     line-height: 35px;  
     text-align: center;  
     color: #000;  
-	text-shadow: 1px 1px 0px #ccc;    
+	text-shadow: 1px 1px 0px #ccc;   
+	padding-left: 60px;
 }
 
 .ticker p {  
