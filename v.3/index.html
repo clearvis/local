@@ -2706,8 +2706,12 @@
                     
                     <div class="span4 keep-alive">
                     
-                    	<span class="pull-right">Keep Alive</span>
+                    	<span class="pull-right"></span>
                         <ul class="inline">
+                        	<li><img src="img/medium-card1-index.jpg" alt=""></li>
+                        	<li><img src="img/medium-card2-index.jpg" alt=""></li>
+                        	<li><img src="img/medium-card3-index.jpg" alt=""></li>
+                        	<li><img src="img/medium-card4-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card1-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card2-index.jpg" alt=""></li>
                         	<li><img src="img/medium-card3-index.jpg" alt=""></li>
@@ -2720,7 +2724,12 @@
                         
                         <div class="span4 keep-alive-open">
                         	<ul class="inline">
-                              <li><img src="img/medium-card1-index.jpg" alt=""></li>
+                              <li>
+                              	<img src="img/medium-card1-index.jpg" alt="">
+                              	<div class="keep-alive-card_back">
+                              		
+                              	</div>
+                              </li>
                               <li><img src="img/medium-card2-index.jpg" alt=""></li>
                               <li><img src="img/medium-card3-index.jpg" alt=""></li>
                               <li><img src="img/medium-card4-index.jpg" alt=""></li>
@@ -3261,6 +3270,14 @@
 			});*/
 				
 			jQuery( document ).ready(function() {
+				
+				$('.ticker-wrapper').mouseover(function() {
+					$('.keep-alive span').text('Keep Alive');;
+				});
+				
+				$('.ticker-wrapper').mouseout(function() {
+					$('.keep-alive span').text('');;
+				});
 				
 				//Open Keep Alive
 				$(".keep-alive").mouseover(function() { $('.keep-alive-open')
