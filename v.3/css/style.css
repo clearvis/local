@@ -973,7 +973,15 @@ span.footer-time-divider {
 	color: #fff;
 }
 
+.keep-alive-open img, .keep-alive-card_back {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
+.keep-alive ul {
+	position: relative;
+}
 
 .keep-alive ul.inline li {
 	width: 50px;
@@ -983,13 +991,57 @@ span.footer-time-divider {
 	padding-left: 0;
 	padding-right: 0;
 	background: #fff;
+	position: relative;
+}
+
+.keep-alive-open img {
+	z-index: 1;
 }
 
 .keep-alive-open {
 	display: none;
 	background: #00F;
 	padding-left: 5px;
+	padding-top: 5px;
 }
+
+.keep-alive-card_back {
+	display: none;
+	background: #fff;
+	width: 325px;
+	height: 393px;
+	border-radius: 0 .25em .25em 0;
+	z-index: 2;
+}
+
+.keep-alive-card_back > img.profile {
+	float: left;
+	margin: 5px 0 0 5px;
+	border: 2px #ccc solid;
+}
+
+.keep-alive-card_back .card-back-heading {
+	font-size: 20px;
+}
+
+.keep-alive-card_back .card-back-tweet {
+	font-size: 12px;
+	line-height: 1.25;
+}
+
+.keep-alive-card_back .card-back-tweet-photo {
+	position: relative;
+	margin-top: 25px;
+}
+
+/*.keep-alive-card_back:hover {
+	width: 325px;
+	height: 393px;
+	position: absolute;
+	top: -100px;
+	left: 0;
+	opacity: 1;
+}*/
 
 /* Ticker styles and animation
 *
