@@ -1,7 +1,7 @@
 var CARDBACK = {
 	current: null,
-	delay: 0,
-	timer: 500,
+	delay: 500,
+	timer: 100,
 	setDialogs: function () {
 		var screenWidth =  $('.card-wall-medium').width(),
 			screenBottom = $('.card-wall-medium').scrollTop()+$('.card-wall-medium').height();	
@@ -69,8 +69,8 @@ var CARDBACK = {
 //Keep Alive Card Back Hover
 var KACARDBACK = {
 	current: null,
-	delay: 0,
-	timer: 500,
+	delay: 500,
+	timer: 0,
 	setDialogs: function () {
 		//var screenWidth =  $('.card-wall-medium').width(),
 			//screenBottom = $('.card-wall-medium').scrollTop()+$('.card-wall-medium').height();	
