@@ -144,10 +144,12 @@ var KACARDBACK = {
 	
 $(window).ready(function() {
 	CARDBACK.setDialogs();
+	KACARDBACK.setDialogs();
 	//console.log('Window is ready');
 });
 
 $(window).resize(function(){
 	CARDBACK.setDialogs();
+	KACARDBACK.setDialogs();
 	//console.log('Window is resized');
 });
