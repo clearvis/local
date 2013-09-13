@@ -614,9 +614,9 @@ span.footer-time-divider {
 }
 	
 .wall-card-medium {
-    width: 18%;
-  	*width: 18%;
-	height: 172px;
+    width: 200px;
+	height: 225px;
+	background: transparent url(../img/tammy-cards.jpg) -25px -35px no-repeat;
 	margin: 1em 0 0 1.2%;
 	float: left;
 	display: inline-block;
@@ -636,10 +636,10 @@ span.footer-time-divider {
 }
 
 .wall-card-medium_back {
-	background: #fff;
+	background: transparent url(../img/tammy-cards.jpg) -260px -35px no-repeat;
 	display: none;
-	width: 375px;
-	height: 450px;
+	width: 200px;
+	height: 409px;
 	position: absolute;
 	top: 0;
 	left: 0;
