@@ -80,7 +80,7 @@ var KACARDBACK = {
 			KACARDBACK.current = $(this);
 			KACARDBACK.timer = setTimeout(function(){
 				// find the dialog, 
-				KACARDBACK.current.find(".keep-alive-card_back").css('top', '-378px')
+				KACARDBACK.current.find(".keep-alive-card_back").css('top', '-394px')
                     .css('left', '25px').fadeIn('fast');
 			}, KACARDBACK.delay);
 		}, function() {

@@ -1012,10 +1012,11 @@ span.footer-time-divider {
 
 .keep-alive-card_back {
 	display: none;
-	background: #fff;
-	width: 325px;
-	height: 393px;
+	background: url(../img/tammy-cards.jpg) -255px -35px no-repeat;
+	width: 202px;
+	height: 409px;
 	border-radius: 0 .25em .25em 0;
+	box-shadow: 0 0 4px 0px #000;
 	z-index: 2;
 }
 
