@@ -506,7 +506,7 @@ span.footer-time-divider {
 
 #card-wall-medium-wrapper {
 	display: block;
-    -webkit-transform:translateX(1000px);  
+    -webkit-transform:translateX(100%);  
 	transform:translateX(100%);
 }
 

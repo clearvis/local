@@ -4747,18 +4747,22 @@
                     });
 					*/
                 
-                $('#card-wall-medium-wrapper').hide();
+                //$('#card-wall-medium-wrapper').hide();
             
                 $('.js-view-medium').click(function() {
                     //$('#card-wall-medium-wrapper').toggle("fast");
-                    $('#card-wall-medium-wrapper').show("fast");
+                    //$('#card-wall-medium-wrapper').show("fast");
+					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(0)");
+					$('#card-wall-medium-wrapper').css("transform", "translateX(0)");
                     $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').hide("fast");
                     $('.js-view-medium .icon-white').toggleClass('icon-chevron-down');  
                 });    
     //console.log('Card Wall is loaded!');
                 
                 $('.js-close-medium').click(function() {
-                    $('#card-wall-medium-wrapper').hide("fast");
+                    //$('#card-wall-medium-wrapper').hide("fast");
+					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(100%)");
+					$('#card-wall-medium-wrapper').css("transform", "translateX(100%)");
                     $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').show("fast");
                     $('.js-view-medium .icon-white').removeClass('icon-chevron-down');
                 });
