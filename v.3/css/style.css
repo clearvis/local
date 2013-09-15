@@ -115,8 +115,8 @@ a {
 
 /* Mapping Widget */
 .map-widget {
-	width: 260px;
-	height: 225px;
+	width: 320px;
+	height: 285px;
 	position: absolute;
 	bottom: 40px;
 	border: 1px solid #000;
@@ -506,6 +506,8 @@ span.footer-time-divider {
 
 #card-wall-medium-wrapper {
 	display: block;
+    -webkit-transform:translateX(1000px);  
+	transform:translateX(100%);
 }
 
 .masonry-container:after {
@@ -1701,17 +1703,17 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover, #footer button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { width: 115px; height: 150px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { width: 115px; height: 247px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
 
-.card-scroll-cont .backward { float: left; left: 260px; background: url(../img/card-back-nav.png) no-repeat; }
+.card-scroll-cont .backward { float: left; left: 320px; background: url(../img/card-back-nav-115x247.png) no-repeat; }
 
-.card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav.png) no-repeat; padding-right: 0; right: 0; }
+.card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav-115x247.png) no-repeat; padding-right: 0; right: 0; }
 
 .card-scroll-cont .forward-open, .card-scroll-cont .backward-open {
 	top: 26px;
 }
 
-.card-scroll-cont .frame { padding-top: 20px; margin: 0 auto; /*width: 940px;*/ width:100%; height: 245px; line-height: 150px; overflow: hidden; text-shadow: none; }
+.card-scroll-cont .frame { padding-top: 20px; margin: 0 auto; /*width: 940px;*/ width:100%; height: 247px; line-height: 150px; overflow: hidden; text-shadow: none; }
 .card-scroll-cont .frame ul { list-style: none; margin: 2px 0 0 0; padding: 0; height: 100%; font-size: 50px; }
 .card-scroll-cont .frame ul li { float: left; position: relative; width: 200px; height: 100%; margin: 0 1px 0 0; padding: 0; color: #3a3c47; text-align: left; line-height: 100%; cursor: pointer; /*-webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.29); border-radius: 3px;*/ }
 .card-scroll-cont .frame ul li.active { color: #fff; background: transparent; }
@@ -1741,7 +1743,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 
 /* 3D shenanigans */
 .csstransforms3d .frame {
-	height: 245px;
+	height: 247px;
 	line-height: 150px;
 	padding-top: 20px;
 	/*-webkit-perspective: 700px;
