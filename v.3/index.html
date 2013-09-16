@@ -4538,7 +4538,8 @@
             </div>
 
             <div class="span11 card-filter">
-                <div class="span4">
+                
+                 <!--<div class="span4">
                     <ul class="inline">
                         <li>120 Items</li>
 
@@ -4550,6 +4551,47 @@
                         "js-footer-view-large"><button><span class=
                         "js-footer-view-large">Large Wall&nbsp;<em class=
                         "icon-white icon-chevron-up"></em></span></button></span></li>
+                    </ul>
+                </div>-->
+                
+               <div class="span4">
+                    <ul class="inline">
+                        <li>120 Items</li>
+
+                        <li class="footer-wall-controls">
+                        	<div>
+								<div><button><span class=
+													"js-footer-wall-controls">Views&nbsp;<em class=
+												"icon-white icon-chevron-up"></em></span></button>
+								</div>
+								<div class="footer-wall-controls-container">
+									<div class="footer-view-medium">
+										<span class="js-view-medium">
+											<button>
+												<span class=
+												"js-view-medium">Medium Wall&nbsp;<em class=
+												"icon-white icon-chevron-up"></em></span>
+											</button>
+										</span>
+									</div>
+								
+									<div class="footer-view-large">
+										<span class="js-footer-view-large">
+											<button>
+												<span class=
+												"js-footer-view-large">Large Wall&nbsp;<em class=
+												"icon-white icon-chevron-up"></em></span>
+											</button>
+										</span>
+									</div>
+                        		</div>
+                        </div>
+                        </li>
+
+                        <!--<li><span class=
+                        "js-footer-view-large"><button><span class=
+                        "js-footer-view-large">Large Wall&nbsp;<em class=
+                        "icon-white icon-chevron-up"></em></span></button></span></li>-->
                     </ul>
                 </div>
 
@@ -4632,6 +4674,7 @@
                      // top: "-30px"
                     //}, 1500 );
                     $('.ticker-toggle').toggleClass( "ticker-toggle-open", 1000, "easeOutSine");
+                    $('.wall-card-medium-index').toggleClass( "wall-card-medium-index_open", 1000, "easeOutSine");
                     $('.card-scroll-cont .forward').toggleClass( "forward-open", 1000, "easeOutSine");
                     $('.card-scroll-cont .backward').toggleClass( "backward-open", 1000, "easeOutSine");
                     //$('.card-scroll-cont .forward').css( "top", "40px" );
@@ -4692,7 +4735,7 @@
             jQuery( document ).ready(function() {
                 //Add Keep Alive text
                 $('.ticker-wrapper').mouseover(function() {
-                    $('.keep-alive span').text('Keep Alive');;
+                    $('.keep-alive span').text('Keep Alive');
                 });
                 
                 $('.ticker-wrapper').mouseout(function() {
@@ -4729,6 +4772,29 @@
                 
                 $(".keep-alive").mouseout(function() { $('.keep-alive-open').css('display','none'); });
                 
+                 //Footer wall controls
+                $(".js-footer-wall-controls").mouseover(function() { $('.footer-wall-controls-container')
+                .css('display','block')
+                .css('position', 'absolute')
+                .css('bottom', '0')
+                .css('left', '0')
+                .css('margin-left', '0')
+                .css('height', '120');                 
+                });
+                
+                $(".footer-wall-controls-container").mouseover(function() { $('.footer-wall-controls-container')
+                .css('display','block')
+                .css('position', 'absolute')
+                .css('bottom', '0')
+                .css('left', '0')
+                .css('margin-left', '0')
+                .css('height', '120px');                 
+                });
+                
+                 $(".footer-wall-controls-container").mouseout(function() { $('.footer-wall-controls-container')
+                .css('display','none');                              
+                });
+                
                 /*//open Keep Alive card back 
                                     
                     $(".keep-alive-open li").mouseover(function() {                     
@@ -4755,7 +4821,9 @@
 					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(0)");
 					$('#card-wall-medium-wrapper').css("transform", "translateX(0)");
                     $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').hide("fast");
-                    $('.js-view-medium .icon-white').toggleClass('icon-chevron-down');  
+                    $('.js-view-medium .icon-white').toggleClass('icon-chevron-down'); 
+                    $('.js-view-medium .icon-white').toggleClass('icon-chevron-down'); 
+                    $('.js-footer-wall-controls').text('Close');
                 });    
     //console.log('Card Wall is loaded!');
                 
@@ -4765,13 +4833,15 @@
 					$('#card-wall-medium-wrapper').css("transform", "translateX(100%)");
                     $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').show("fast");
                     $('.js-view-medium .icon-white').removeClass('icon-chevron-down');
+                    $('.js-footer-wall-controls').text('View');
                 });
                 
                 $('.js-footer-view-large').click(function() {
                     //$('#card-wall-large-wrapper').toggle("fast");
                     $('#card-wall-large-wrapper').css("display", "block");
                     $('.card-scroll-cont, .js-view-medium, .js-footer-view-large').hide("fast");
-                    $('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');    
+                    $('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');  
+                    $('.js-footer-wall-controls').text('Close');  
                     
                     $('.masonry-container').isotope({
                       // options
@@ -4844,6 +4914,7 @@
                     $('#card-wall-large-wrapper').hide("fast");
                     $('.card-scroll-cont, .js-view-medium, .js-footer-view-large').show("fast");
                     $('.js-footer-view-large .icon-white').removeClass('icon-chevron-down');
+                    $('.js-footer-wall-controls').text('View');
                 });
                 
             });
