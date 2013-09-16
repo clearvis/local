@@ -2385,7 +2385,7 @@
                 </div><!-- .container-fluid -->
                 <!-- Medium All Card Container -->
 
-                <div class="container-fluid clearfix" id=
+                <div class="container clearfix" id=
                 "card-wall-medium-wrapper">
                     <div class="container-fluid">
                         <div class="wall-card-medium-index">
@@ -3372,8 +3372,7 @@
                                         "img/card-back-tweet-photo.jpg">
 
                                         <form class="card-back-form">
-                                            <input placeholder="Comment" type=
-                                            "text"> <button class=
+                                            <input placeholder="Comment" type="text"> <button class=
                                             "btn btn-primary btn-block" type=
                                             "submit">Reply</button>
                                         </form>-->
@@ -4776,18 +4775,18 @@
                 $(".js-footer-wall-controls").mouseover(function() { $('.footer-wall-controls-container')
                 .css('display','block')
                 .css('position', 'absolute')
-                .css('bottom', '0')
-                .css('left', '0')
-                .css('margin-left', '0')
-                .css('height', '120');                 
+                .css('bottom', 0)
+                .css('left', 0)
+                .css('margin-left', 0)
+                .css('height', '120px');                 
                 });
                 
                 $(".footer-wall-controls-container").mouseover(function() { $('.footer-wall-controls-container')
                 .css('display','block')
                 .css('position', 'absolute')
-                .css('bottom', '0')
-                .css('left', '0')
-                .css('margin-left', '0')
+                .css('bottom', 0)
+                .css('left', 0)
+                .css('margin-left', 0)
                 .css('height', '120px');                 
                 });
                 
@@ -4829,8 +4828,8 @@
                 
                 $('.js-close-medium').click(function() {
                     //$('#card-wall-medium-wrapper').hide("fast");
-					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(100%)");
-					$('#card-wall-medium-wrapper').css("transform", "translateX(100%)");
+					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(200%)");
+					$('#card-wall-medium-wrapper').css("transform", "translateX(200%)");
                     $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').show("fast");
                     $('.js-view-medium .icon-white').removeClass('icon-chevron-down');
                     $('.js-footer-wall-controls').text('View');

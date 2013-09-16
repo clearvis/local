@@ -526,8 +526,8 @@ span.footer-time-divider {
 
 #card-wall-medium-wrapper {
 	display: block;
-    -webkit-transform:translateX(100%);  
-	transform:translateX(100%);
+    -webkit-transform:translateX(200%);  
+	transform:translateX(200%);
 }
 
 .masonry-container:after {
