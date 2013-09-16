@@ -1703,7 +1703,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover, #footer button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { width: 115px; height: 247px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { width: 115px; height: 227px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
 
 .card-scroll-cont .backward { float: left; left: 320px; background: url(../img/card-back-nav-115x247.png) no-repeat; }
 
