@@ -316,10 +316,9 @@
 
                         <div class="row-fluid card-filter">
                             <div class="row-fluid">
-                                <div class="span11">
-                                    <div class="span1 hidden-phone"></div>
+                                <div class="span12">
 
-                                    <div class="card-filter-inner span11">
+                                    <div class="card-filter-inner">
                                         <div class="span2 filter-bar">
                                             <p>120 Items <span class=
                                             "js-close-large"><button><span class="js-close-large">
@@ -395,10 +394,10 @@
                                         </div>
 
                                         <div class="span2 filter-bar">
-                                            <p><span class=
+                                            <span class=
                                             "js-close-large pull-right"><button>
                                             <span class=
-                                            "js-close-large pull-right">Close&nbsp;<em class="icon-white icon-chevron-down icon-chevron-up"></em></span></button></span></p>
+                                            "js-close-large pull-right">Close&nbsp;<em class="icon-white icon-chevron-down icon-chevron-up"></em></span></button></span>
                                         </div>
                                     </div>
                                 </div>
@@ -2369,10 +2368,9 @@
 
                         <div class="row-fluid card-filter">
                             <div class="row-fluid">
-                                <div class="span11">
-                                    <div class="span1 hidden-phone"></div>
+                                <div class="span12">
 
-                                    <div class="card-filter-inner span11">
+                                    <div class="card-filter-inner">
                                         <div class="span2 filter-bar">
                                             <p>120 Items <span class=
                                             "js-close-medium"><button><span class="js-close-medium">
@@ -4713,6 +4711,7 @@
                     $('.card-scroll-cont').hide("fast");
 					$('.span3.wall-view-btn').css('display','none');
 					$('.span3.footer-close-btn').css('display','block');
+					$('.map-widget').css('z-index','-1');
 					
                     //$('.js-view-medium .icon-white').toggleClass('icon-chevron-down'); 
                     //$('.js-footer-wall-controls .icon-white').toggleClass('icon-chevron-down'); 					
@@ -4726,7 +4725,8 @@
 					$('#card-wall-large-wrapper').hide("fast");
                     $('.card-scroll-cont').show("fast");	
 					$('.span3.wall-view-btn').css('display','block');
-					$('.span3.footer-close-btn').css('display','none');				
+					$('.span3.footer-close-btn').css('display','none');	
+					$('.map-widget').css('z-index','3');			
                 });
                 
                 $('.js-footer-view-large').click(function() {
@@ -4735,6 +4735,7 @@
                     $('.card-scroll-cont').hide("fast");
 					$('.span3.wall-view-btn').css('display','none');
 					$('.span3.footer-close-btn').css('display','block');
+					$('.map-widget').css('z-index','-1');
                     //$('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');  
                     //$('.js-footer-wall-controls').text('Close');  
                     
@@ -4810,6 +4811,7 @@
                     $('.card-scroll-cont').show("fast");
 					$('.span3.wall-view-btn').css('display','block');
 					$('.span3.footer-close-btn').css('display','none');
+					$('.map-widget').css('z-index','3');
                     //$('.js-footer-view-large .icon-white').removeClass('icon-chevron-down');
                     //$('.js-footer-wall-controls').text('View');
                 });

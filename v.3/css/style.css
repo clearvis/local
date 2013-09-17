@@ -600,7 +600,7 @@ span.footer-time-divider {
 .card-wall-medium > .span11, .card-wall-large.span11, .card-wall-205x293 > .span11 {
 	overflow-y: scroll;
 	/*height: calc(85vh - 90px);*/
-	height: 60vh;
+	height: 68vh;
 	/*height: calc(85vh - 90px);*/
 	/*background: #336799;*/                                                                       
 	display: block;                                                                                                                       
