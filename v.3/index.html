@@ -4723,6 +4723,7 @@
                     //$('#card-wall-medium-wrapper').hide("fast");
 					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(200%)");
 					$('#card-wall-medium-wrapper').css("transform", "translateX(200%)");
+					$('#card-wall-large-wrapper').hide("fast");
                     $('.card-scroll-cont').show("fast");	
 					$('.span3.wall-view-btn').css('display','block');
 					$('.span3.footer-close-btn').css('display','none');				
@@ -4731,9 +4732,11 @@
                 $('.js-footer-view-large').click(function() {
                     //$('#card-wall-large-wrapper').toggle("fast");
                     $('#card-wall-large-wrapper').css("display", "block");
-                    $('.card-scroll-cont, .js-view-medium, .js-footer-view-large').hide("fast");
-                    $('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');  
-                    $('.js-footer-wall-controls').text('Close');  
+                    $('.card-scroll-cont').hide("fast");
+					$('.span3.wall-view-btn').css('display','none');
+					$('.span3.footer-close-btn').css('display','block');
+                    //$('.js-footer-view-large .icon-white').toggleClass('icon-chevron-down');  
+                    //$('.js-footer-wall-controls').text('Close');  
                     
                     $('.masonry-container').isotope({
                       // options
@@ -4804,9 +4807,11 @@
                 
                 $('.js-close-large').click(function() {
                     $('#card-wall-large-wrapper').hide("fast");
-                    $('.card-scroll-cont, .js-view-medium, .js-footer-view-large').show("fast");
-                    $('.js-footer-view-large .icon-white').removeClass('icon-chevron-down');
-                    $('.js-footer-wall-controls').text('View');
+                    $('.card-scroll-cont').show("fast");
+					$('.span3.wall-view-btn').css('display','block');
+					$('.span3.footer-close-btn').css('display','none');
+                    //$('.js-footer-view-large .icon-white').removeClass('icon-chevron-down');
+                    //$('.js-footer-wall-controls').text('View');
                 });
                 
             });
