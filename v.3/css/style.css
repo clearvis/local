@@ -118,9 +118,15 @@ a {
 	width: 320px;
 	height: 248px;
 	position: absolute;
-	bottom: 80px;
+	bottom: 40px;
 	border: 1px solid #000;
+	overflow: hidden;
 	z-index: 3;
+}
+
+.map-widget img {
+	width:100%;
+	height: auto;
 }
 
 /* Top Nav Custom Styles */
@@ -282,9 +288,13 @@ span.footer-time-divider {
       }
 
       /* Set the fixed height of the footer here */
-      #push,
+      /*#push,*/
       #footer {
         height: 40px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
       }
       #footer {
         background-color: #336799;
@@ -521,8 +531,9 @@ span.footer-time-divider {
 	bottom: 40px;
 	left: 0;
 	right: 0;
-	height: calc( 85vh - 10px );
-	height: -webkit-calc( 85vh - 10px );
+	height: 80vh;
+	/*height: calc( 85vh - 20px );
+	height: -webkit-calc( 85vh - 20px );*/
 	background: transparent;
 	display: none;
 }
@@ -1114,7 +1125,7 @@ span.footer-time-divider {
 .ticker {
 	height: 35px;
 	line-height: 35px;
-	width: 85%;
+	/*width: 85%;*/
     overflow: hidden;  
     position: relative;  
    /* border: 1px solid #000;  
@@ -1740,11 +1751,11 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-scroll-cont button:hover, .card-scroll-cont button:hover, #footer button:hover { opacity: 1; }
 .card-scroll-cont button:disabled, .card-scroll-cont button:disabled { opacity: .2; }
 
-.card-scroll-cont .forward, .card-scroll-cont .backward { width: 115px; height: 227px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
+.card-scroll-cont .forward, .card-scroll-cont .backward { width: 54px; height: 227px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
 
-.card-scroll-cont .backward { float: left; left: 320px; background: url(../img/card-back-nav-115x247.png) no-repeat; }
+.card-scroll-cont .backward { float: left; left: 320px; background: url(../img/card-back-nav-54x247.png) no-repeat; }
 
-.card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav-115x247.png) no-repeat; padding-right: 0; right: 0; }
+.card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav-54x247.png) no-repeat; padding-right: 0; right: 0; }
 
 .card-scroll-cont .forward-open, .card-scroll-cont .backward-open {
 	top: 26px;

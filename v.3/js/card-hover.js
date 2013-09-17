@@ -1,6 +1,6 @@
 var CARDBACK = {
 	current: null,
-	delay: 50,
+	delay: 1000,
 	timer: null,
 	setDialogs: function () {
 		var screenWidth =  $('.card-wall-medium').width(),
