@@ -531,6 +531,16 @@ span.footer-time-divider {
 	display: block;
     -webkit-transform:translateX(200%);  
 	transform:translateX(200%);
+	background: #6db3f2; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #6db3f2 0%, #54a3ee 31%, #3690f0 60%, #1e69de 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#6db3f2), color-stop(31%,#54a3ee), color-stop(60%,#3690f0), color-stop(100%,#1e69de)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius: .5em .5em 0 0;
+
 }
 
 .masonry-container:after {
@@ -540,7 +550,7 @@ span.footer-time-divider {
 }
 
 .card-filter-inner {
-	background: #336799;
+	/*background: #336799;*/
 	border-bottom: 2px solid #fff;
 	border-radius: .5em .5em 0 0;
 	padding-left: 30px;
@@ -569,7 +579,7 @@ span.footer-time-divider {
 	overflow-y: scroll;
 	/*height: calc(85vh - 90px);*/
 	height: 75vh;
-	background: #336799;                                                                       
+	/*background: #336799;*/                                                                       
 	display: block;                                                                                                                       
 }
 
@@ -718,7 +728,7 @@ span.footer-time-divider {
 .side-on-hand, .card-wall-index, .medium-wall-index {
 	position: relative;
 	padding: 3px;
-	background: rgba( 255, 255, 255, 1);
+	/*background: rgba( 255, 255, 255, .2);*/
 	height: 250px;
 	overflow: hidden;
 	transition: height 2s;
