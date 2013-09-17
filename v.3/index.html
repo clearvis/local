@@ -4521,10 +4521,11 @@
             </div>-->
             
             </div>
-        </div>
-    </div><!-- /main-content -->
+        </div><!-- /main-content -->
+        <div id="push"></div>
+    </div><!-- /wrapper -->
 
-    <div id="push"></div><!-- /wrapper -->
+    
 
     <div id="footer">
         <div class="row-fluid">
@@ -4553,7 +4554,7 @@
                     </ul>
                 </div>-->
                 
-               <div class="span4">
+               <div class="span3 wall-view-btn">
                     <ul class="inline">
                         <li>120 Items</li>
 
@@ -4592,6 +4593,14 @@
                         "js-footer-view-large">Large Wall&nbsp;<em class=
                         "icon-white icon-chevron-up"></em></span></button></span></li>-->
                     </ul>
+                </div>
+                
+                <div class="span3 footer-close-btn">
+                	 <ul class="inline">
+                        <li>120 Items</li>
+                		<li><span class="js-close-medium"><button><span class="js-close-medium">
+                        Close&nbsp;<em class="icon-white icon-chevron-down"></em></span></button></span></p></li>
+                     </ul>
                 </div>
 
                 <div class="span4">
@@ -4772,13 +4781,13 @@
                 $(".keep-alive").mouseout(function() { $('.keep-alive-open').css('display','none'); });
                 
                  //Footer wall controls
-                $(".js-footer-wall-controls").mouseover(function() { $('.footer-wall-controls-container')
+                $(".footer-wall-controls").mouseover(function() { $('.footer-wall-controls-container')
                 .css('display','block')
                 .css('position', 'absolute')
                 .css('bottom', 0)
                 .css('left', 0)
                 .css('margin-left', 0)
-                .css('height', '120');                 
+                .css('height', '120px');                 
                 });
                 
                 $(".footer-wall-controls-container").mouseover(function() { $('.footer-wall-controls-container')
@@ -4790,7 +4799,7 @@
                 .css('height', '120px');                 
                 });
                 
-                 $(".footer-wall-controls-container").mouseout(function() { $('.footer-wall-controls-container')
+                 $(".footer-wall-controls-container, .footer-wall-controls").mouseout(function() { $('.footer-wall-controls-container')
                 .css('display','none');                              
                 });
                 
@@ -4813,16 +4822,17 @@
 					*/
                 
                 //$('#card-wall-medium-wrapper').hide();
-            
                 $('.js-view-medium').click(function() {
                     //$('#card-wall-medium-wrapper').toggle("fast");
                     //$('#card-wall-medium-wrapper').show("fast");
 					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(0)");
 					$('#card-wall-medium-wrapper').css("transform", "translateX(0)");
-                    $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').hide("fast");
-                    $('.js-view-medium .icon-white').toggleClass('icon-chevron-down'); 
-                    $('.js-view-medium .icon-white').toggleClass('icon-chevron-down'); 
-                    $('.js-footer-wall-controls').text('Close');
+                    $('.card-scroll-cont').hide("fast");
+					$('.span3.wall-view-btn').css('display','none');
+					$('.span3.footer-close-btn').css('display','block');
+					
+                    //$('.js-view-medium .icon-white').toggleClass('icon-chevron-down'); 
+                    //$('.js-footer-wall-controls .icon-white').toggleClass('icon-chevron-down'); 					
                 });    
     //console.log('Card Wall is loaded!');
                 
@@ -4830,9 +4840,9 @@
                     //$('#card-wall-medium-wrapper').hide("fast");
 					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(200%)");
 					$('#card-wall-medium-wrapper').css("transform", "translateX(200%)");
-                    $('.card-scroll-cont, .js-footer-view-large, .js-view-medium').show("fast");
-                    $('.js-view-medium .icon-white').removeClass('icon-chevron-down');
-                    $('.js-footer-wall-controls').text('View');
+                    $('.card-scroll-cont').show("fast");	
+					$('.span3.wall-view-btn').css('display','block');
+					$('.span3.footer-close-btn').css('display','none');				
                 });
                 
                 $('.js-footer-view-large').click(function() {
@@ -4949,6 +4959,7 @@
     });
     </script> 
     <script>
+	
 $('.card-wall-large > .span11').scroll(function() {   
 
     var scroll = $('.card-wall-large > .span11').scrollTop();

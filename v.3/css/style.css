@@ -118,7 +118,7 @@ a {
 	width: 320px;
 	height: 248px;
 	position: absolute;
-	bottom: 40px;
+	bottom: 80px;
 	border: 1px solid #000;
 	z-index: 3;
 }
@@ -278,7 +278,7 @@ span.footer-time-divider {
         height: auto !important;
         height: 100%;
         /* Negative indent footer by it's height */
-        margin: 0 auto -80px;
+        margin: 0 auto -40px;
       }
 
       /* Set the fixed height of the footer here */
@@ -310,7 +310,6 @@ span.footer-time-divider {
 .footer-wall-controls {
 	position: relative;
 	width: inherit;
-	margin-left: 200px;
 	display: block;
 	z-index: 10;
 }
@@ -324,6 +323,10 @@ span.footer-time-divider {
 .footer-wall-controls > div {
 	display: block;
 	width: 100px;
+}
+
+.span3.footer-close-btn {
+	display: none;
 }
 	  
 /* .on-hand div
