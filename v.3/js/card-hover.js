@@ -69,7 +69,7 @@ var CARDBACK = {
 //Keep Alive Card Back Hover
 var KACARDBACK = {
 	current: null,
-	delay: 50,
+	delay: 0,
 	timer: null,
 	setDialogs: function () {
 		//var screenWidth =  $('.card-wall-medium').width(),
@@ -85,7 +85,7 @@ var KACARDBACK = {
 			}, KACARDBACK.delay);
 		}, function() {
 			// on mouseout, clear timer and hide dialog
-			clearTimeout(CARDBACK.timer);
+			clearTimeout(KACARDBACK.timer);
 			$(this).find(".keep-alive-card_back").fadeOut('fast');
 		})//.attr("title", ""); // clear the title to stop browser tooltips
 		

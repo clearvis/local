@@ -395,9 +395,9 @@
 
                                         <div class="span2 filter-bar">
                                             <span class=
-                                            "js-close-large pull-right"><button>
+                                            "js-close-large pull-right"><p><button>
                                             <span class=
-                                            "js-close-large pull-right">Close&nbsp;<em class="icon-white icon-chevron-down icon-chevron-up"></em></span></button></span>
+                                            "js-close-large pull-right">Close&nbsp;<em class="icon-white icon-chevron-down icon-chevron-up"></em></span></button></p></span>
                                         </div>
                                     </div>
                                 </div>
@@ -2270,7 +2270,7 @@
                 <div class="container clearfix" id=
                 "card-wall-medium-wrapper">
                     <div class="container-fluid">
-                        <div class="wall-card-medium-index">
+                        <!--<div class="wall-card-medium-index">
                             <div class="active"><img alt="" src=
                             "img/medium-card1-index.jpg"></div>
 
@@ -2342,7 +2342,9 @@
 
                             <div><img alt="" src=
                             "img/medium-card4-index.jpg"></div>
-                        </div><!--<div class="container card-filter">
+                        </div>-->
+                        
+                        <!--<div class="container card-filter">
             <div class="row-fluid">
                 <div class="span2">
                     <p>120 Items <span><a class="js-close-medium" href="#">Close</a></span></p>
@@ -4708,7 +4710,20 @@
                     //$('#card-wall-medium-wrapper').show("fast");
 					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(0)");
 					$('#card-wall-medium-wrapper').css("transform", "translateX(0)");
-                    $('.card-scroll-cont').hide("fast");
+					/*$( ".card-scroll-cont, .card-scroll-cont .frame, .card-scroll-cont .frame ul li, .card-front, .card-back, .card-open" ).animate({
+    height: "100px",
+	'background-color' : "transparent",
+	bottom : "100px"
+  }, 1500 );*/
+                    //$('.card-scroll-cont').hide("fast");
+					var styles = {
+					  '-webkit-transform' : "scale(.25)",
+					  'transform' : "scale(.25)",
+					  'background-color' : "transparent",
+					  'bottom' : "-15px"
+					};
+					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').hide();
 					$('.span3.wall-view-btn').css('display','none');
 					$('.span3.footer-close-btn').css('display','block');
 					$('.map-widget').css('z-index','-1');
@@ -4723,7 +4738,15 @@
 					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(200%)");
 					$('#card-wall-medium-wrapper').css("transform", "translateX(200%)");
 					$('#card-wall-large-wrapper').hide("fast");
-                    $('.card-scroll-cont').show("fast");	
+                    //$('.card-scroll-cont').show("fast");
+					var styles = {
+					  '-webkit-transform' : "scale(1)",
+					  'transform' : "scale(1)",
+					  'background-color' : "#336799",
+					  bottom : "40px"
+					};
+					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').show();	
 					$('.span3.wall-view-btn').css('display','block');
 					$('.span3.footer-close-btn').css('display','none');	
 					$('.map-widget').css('z-index','3');			
@@ -4732,7 +4755,15 @@
                 $('.js-footer-view-large').click(function() {
                     //$('#card-wall-large-wrapper').toggle("fast");
                     $('#card-wall-large-wrapper').css("display", "block");
-                    $('.card-scroll-cont').hide("fast");
+                    //$('.card-scroll-cont').hide("fast");
+					var styles = {
+					  '-webkit-transform' : "scale(.25)",
+					  'transform' : "scale(.25)",
+					  'background-color' : "transparent",
+					  'bottom' : "-15px"
+					};
+					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').hide();
 					$('.span3.wall-view-btn').css('display','none');
 					$('.span3.footer-close-btn').css('display','block');
 					$('.map-widget').css('z-index','-1');
@@ -4808,7 +4839,15 @@
                 
                 $('.js-close-large').click(function() {
                     $('#card-wall-large-wrapper').hide("fast");
-                    $('.card-scroll-cont').show("fast");
+                    //$('.card-scroll-cont').show("fast");
+					var styles = {
+					  '-webkit-transform' : "scale(1)",
+					  'transform' : "scale(1)",
+					  'background-color' : "#336799",
+					  bottom : "40px"
+					};
+					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').show();
 					$('.span3.wall-view-btn').css('display','block');
 					$('.span3.footer-close-btn').css('display','none');
 					$('.map-widget').css('z-index','3');
