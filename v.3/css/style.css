@@ -264,6 +264,12 @@ span.footer-time-divider {
 	color: #fff;
 }
 
+.input-prepend .add-on {
+	padding: 3px 5px;
+	line-height: 14px;
+	font-weight: bold;
+}
+
 /* drag .container-fluid to sides of screen
 *
 *
