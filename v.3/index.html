@@ -3863,6 +3863,68 @@
                                         </div>
                                         <img alt="" src="img/keep-alive_thumb.jpg">
                                     </li>
+                                    
+                                     <li>
+                                        <div class="keep-alive-card_back">
+                                            <!--<img alt="user" class="profile"
+                                            height="68" src=
+                                            "img/card-back-user.jpg" width=
+                                            "68">
+
+                                            <h1 class="card-back-heading">
+                                            Twitter User Said:</h1>
+
+                                            <p class="card-back-tweet">Lorem
+                                            ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Ipsum nobis modi
+                                            nesciunt est aspernatur! Amet,
+                                            aspernatur, dignissimos. Dolorem,
+                                            necessitatibus excepturi quia
+                                            delectus possimus quod
+                                            nihil.</p><img alt="" class=
+                                            "card-back-tweet-photo" src=
+                                            "img/card-back-tweet-photo.jpg">
+
+                                            <form class="card-back-form">
+                                                <input placeholder="Comment"
+                                                type="text"> <button class=
+                                                "btn btn-primary btn-block"
+                                                type="submit">Reply</button>
+                                            </form>-->
+                                        </div>
+                                        <img alt="" src="img/keep-alive_thumb.jpg">
+                                    </li>
+                                    
+                                     <li>
+                                        <div class="keep-alive-card_back">
+                                            <!--<img alt="user" class="profile"
+                                            height="68" src=
+                                            "img/card-back-user.jpg" width=
+                                            "68">
+
+                                            <h1 class="card-back-heading">
+                                            Twitter User Said:</h1>
+
+                                            <p class="card-back-tweet">Lorem
+                                            ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Ipsum nobis modi
+                                            nesciunt est aspernatur! Amet,
+                                            aspernatur, dignissimos. Dolorem,
+                                            necessitatibus excepturi quia
+                                            delectus possimus quod
+                                            nihil.</p><img alt="" class=
+                                            "card-back-tweet-photo" src=
+                                            "img/card-back-tweet-photo.jpg">
+
+                                            <form class="card-back-form">
+                                                <input placeholder="Comment"
+                                                type="text"> <button class=
+                                                "btn btn-primary btn-block"
+                                                type="submit">Reply</button>
+                                            </form>-->
+                                        </div>
+                                        <img alt="" src="img/keep-alive_thumb.jpg">
+                                    </li>
 
                                     <li>
                                         <div class="keep-alive-card_back">
@@ -4725,12 +4787,15 @@
 					});
                     //$('.card-scroll-cont').hide("fast");
 					var styles = {
-					  '-webkit-transform' : "scale(.25)",
-					  'transform' : "scale(.25)",
+					  //'-webkit-transform' : "scale(.25)",
+					  //'transform' : "scale(.25)",
 					  'background-color' : "transparent",
-					  'bottom' : "-15px"
+					  //'bottom' : "-15px"
 					};
 					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont').animate({
+						transform: 'translate(0,61px) scale(.20)'
+					});
 					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').hide();
 					$('.span3.wall-view-btn').css('display','none');
 					$('.span3.footer-close-btn').css('display','block');
@@ -4752,14 +4817,19 @@
 					$('#card-wall-large-wrapper').animate({
 					  transform: 'translateX(5500px)'
 					});
-                    //$('.card-scroll-cont').show("fast");
+					
+					//bring back card scroll cont
+					//$('.card-scroll-cont').show("fast");
 					var styles = {
-					  '-webkit-transform' : "scale(1)",
-					  'transform' : "scale(1)",
+					  //'-webkit-transform' : "scale(1)",
+					  //'transform' : "scale(1)",
 					  'background-color' : "#336799",
-					  bottom : "40px"
+					   bottom : "40px"
 					};
 					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont').animate({
+						transform: 'translate scale(1)'
+					});
 					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').show();	
 					$('.span3.wall-view-btn').css('display','block');
 					$('.span3.footer-close-btn').css('display','none');	
@@ -4774,12 +4844,15 @@
 					});
                     //$('.card-scroll-cont').hide("fast");
 					var styles = {
-					  '-webkit-transform' : "scale(.25)",
-					  'transform' : "scale(.25)",
+					  //'-webkit-transform' : "scale(.25)",
+					  //'transform' : "scale(.25)",
 					  'background-color' : "transparent",
-					  'bottom' : "-15px"
+					  //bottom : "34px"
 					};
 					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont').animate({
+						transform: 'translate(0,61px) scale(.20)'
+					});
 					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').hide();
 					$('.span3.wall-view-btn').css('display','none');
 					$('.span3.footer-close-btn').css('display','block');
@@ -4860,13 +4933,18 @@
 					$('#card-wall-large-wrapper').animate({
 					  transform: 'translateX(5500px)'
 					});
+					
+					//Bring back card scroll container
 					var styles = {
-					  '-webkit-transform' : "scale(1)",
-					  'transform' : "scale(1)",
+					  //'-webkit-transform' : "scale(1)",
+					  //'transform' : "scale(1)",
 					  'background-color' : "#336799",
 					  bottom : "40px"
 					};
 					$('.card-scroll-cont').css( styles );
+					$('.card-scroll-cont').animate({
+						transform: 'scale(1)'
+					});
 					$('.card-scroll-cont .ticker-wrapper, .card-scroll-cont .forward, .card-scroll-cont .backward').show();
 					$('.span3.wall-view-btn').css('display','block');
 					$('.span3.footer-close-btn').css('display','none');
