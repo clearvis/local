@@ -4534,6 +4534,7 @@
 	<script src="js/bootstrap-scrollspy.js"></script> 
 	<script src="js/isotope.js"></script> 
 	<script src="js/card-hover.js"></script> 
+    <script src="js/transform2d.js"></script>
     <!--<script src="js/bootstrap-affix.js"></script>
     <script type="text/javascript" src="js/tidyTime.min.js"></script>
     <script type="text/javascript" src="js/tidy-time.js"></script>
@@ -4712,13 +4713,16 @@
                 $('.js-view-medium').click(function() {
                     //$('#card-wall-medium-wrapper').toggle("fast");
                     //$('#card-wall-medium-wrapper').show("fast");
-					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(0)");
-					$('#card-wall-medium-wrapper').css("transform", "translateX(0)");
+					//$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(0)");
+					//$('#card-wall-medium-wrapper').css("transform", "translateX(0)");
 					/*$( ".card-scroll-cont, .card-scroll-cont .frame, .card-scroll-cont .frame ul li, .card-front, .card-back, .card-open" ).animate({
     height: "100px",
 	'background-color' : "transparent",
 	bottom : "100px"
   }, 1500 );*/
+    				$('#card-wall-medium-wrapper').animate({
+					  transform: 'translateX(0)'
+					});
                     //$('.card-scroll-cont').hide("fast");
 					var styles = {
 					  '-webkit-transform' : "scale(.25)",
@@ -4739,9 +4743,15 @@
                 
                 $('.js-close-medium').click(function() {
                     //$('#card-wall-medium-wrapper').hide("fast");
-					$('#card-wall-medium-wrapper').css("-webkit-transform", "translateX(200%)");
-					$('#card-wall-medium-wrapper').css("transform", "translateX(200%)");
-					$('#card-wall-large-wrapper').hide("fast");
+					//$('#card-wall-medium-wrapper').animate({'-webkit-transform' : "translateX(200%)"}, 150000 );
+					$('#card-wall-medium-wrapper').animate({
+					  transform: 'translateX(5500px)'
+					});
+					//$('#card-wall-medium-wrapper').css("transform", "translateX(200%)");
+					//$('#card-wall-large-wrapper').hide("fast");
+					$('#card-wall-large-wrapper').animate({
+					  transform: 'translateX(5500px)'
+					});
                     //$('.card-scroll-cont').show("fast");
 					var styles = {
 					  '-webkit-transform' : "scale(1)",
@@ -4758,7 +4768,10 @@
                 
                 $('.js-footer-view-large').click(function() {
                     //$('#card-wall-large-wrapper').toggle("fast");
-                    $('#card-wall-large-wrapper').css("display", "block");
+                    //$('#card-wall-large-wrapper').css("display", "block");
+					$('#card-wall-large-wrapper').animate({
+					  transform: 'translateX(0)'
+					});
                     //$('.card-scroll-cont').hide("fast");
 					var styles = {
 					  '-webkit-transform' : "scale(.25)",
@@ -4842,8 +4855,11 @@
                 });
                 
                 $('.js-close-large').click(function() {
-                    $('#card-wall-large-wrapper').hide("fast");
+                    //$('#card-wall-large-wrapper').hide("fast");
                     //$('.card-scroll-cont').show("fast");
+					$('#card-wall-large-wrapper').animate({
+					  transform: 'translateX(5500px)'
+					});
 					var styles = {
 					  '-webkit-transform' : "scale(1)",
 					  'transform' : "scale(1)",

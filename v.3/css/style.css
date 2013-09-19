@@ -545,6 +545,9 @@ span.footer-time-divider {
 }
 
 #card-wall-large-wrapper {
+	display: block;
+    -webkit-transform:translateX(200%);  
+	transform:translateX(200%);
 	background: #6db3f2; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #6db3f2 0%, #54a3ee 31%, #3690f0 60%, #1e69de 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#6db3f2), color-stop(31%,#54a3ee), color-stop(60%,#3690f0), color-stop(100%,#1e69de)); /* Chrome,Safari4+ */
