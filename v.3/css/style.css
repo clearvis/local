@@ -1076,6 +1076,23 @@ span.footer-time-divider {
 	position: relative;
 }
 
+.keep-alive-indicator {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	text-align: center;
+	width: 18px;
+	height: 18px;
+	background: #66CCFF;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	z-index: 2;
+}
+
 .keep-alive-open img {
 	z-index: 1;
 }
@@ -1085,6 +1102,7 @@ span.footer-time-divider {
 	background: #00F;
 	padding-left: 5px;
 	padding-top: 5px;
+	z-index: 5;
 }
 
 .keep-alive-card_back {
