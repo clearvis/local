@@ -562,6 +562,7 @@ span.footer-time-divider {
 	background: -ms-radial-gradient(center, ellipse cover,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border: 2px solid #03375F;
 	border-radius: .5em .5em 0 0;
 }
 
@@ -577,6 +578,7 @@ span.footer-time-divider {
 	background: -ms-radial-gradient(center, ellipse cover,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #6db3f2 0%,#54a3ee 31%,#3690f0 60%,#1e69de 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border: 2px solid #03375F;
 	border-radius: .5em .5em 0 0;
 }
 
@@ -588,7 +590,6 @@ span.footer-time-divider {
 
 .card-filter-inner {
 	/*background: #336799;*/
-	border-bottom: 2px solid #fff;
 	border-radius: .5em .5em 0 0;
 	padding-left: 30px;
 }
