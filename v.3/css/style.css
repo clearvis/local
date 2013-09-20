@@ -124,6 +124,12 @@ a {
 	z-index: 3;
 }
 
+@media (max-width: 1280px) {
+  .map-widget {
+    display: none;
+  }
+}
+
 .map-widget img {
 	width:100%;
 	height: auto;
@@ -606,7 +612,7 @@ span.footer-time-divider {
 	padding: 20px 0 0 30px;
 }
 
-.card-wall-medium > .span11, .card-wall-large.span11, .card-wall-205x293 > .span11 {
+.card-wall-medium > .span11, .card-wall-large > .span11, .card-wall-205x293 > .span11 {
 	overflow-y: scroll;
 	/*height: calc(85vh - 90px);*/
 	height: 68vh;
@@ -1775,6 +1781,12 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-scroll-cont .forward, .card-scroll-cont .backward { width: 54px; height: 227px; font-size: 60px; position: absolute; top: 61px; z-index: 9; opacity: .9;}
 
 .card-scroll-cont .backward { float: left; left: 320px; background: url(../img/card-back-nav-54x247.png) no-repeat; }
+
+@media (max-width: 1280px) {
+  .card-scroll-cont .backward {
+    left: 0;
+  }
+}
 
 .card-scroll-cont .forward { float: right; background: url(../img/card-forward-nav-54x247.png) no-repeat; padding-right: 0; right: 0; }
 
