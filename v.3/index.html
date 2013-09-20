@@ -4553,7 +4553,7 @@
                 	 <ul class="inline">
                         <li>120 Items</li>
                 		<li><span class="js-close-medium"><button><span class="js-close-medium">
-                        Close&nbsp;<em class="icon-white icon-chevron-down"></em></span></button></span></p></li>
+                        Close&nbsp;<em class="icon-white icon-chevron-down"></em></span></button></span></li>
                      </ul>
                 </div>
 
@@ -4700,6 +4700,46 @@
             });*/
                 
             jQuery( document ).ready(function() {
+                
+                //Mouse over and click events for Card Scroll Cards
+                $('.card-back').on({
+					mouseenter: function () {
+						$(this)
+							.stop()
+							.animate({
+								top: '-355px',
+								width: '350px',
+								height: '580px',
+								position: 'absolute',
+								left: '-60px',
+								'-webkit-box-shadow': 'none',
+								'box-shadow': 'none',
+								'z-index': '10',
+								opacity: '1'							
+							}, 'slow');
+					},
+					mouseleave: function () {
+						if (!$(this).hasClass('clicked')) {
+						$(this)
+							.stop()
+							.animate({
+								top: '0',
+								width: '230px',
+								height: '225px',
+								left: '0',					
+								'z-index': '3',
+								opacity: '0'	
+							}, 'fast');
+						} else {
+							$(this).removeClass('clicked');
+						}
+					},
+					click: function () {
+						$(this).off('mouseleave');
+						$(this).addClass( "clicked" );
+					}
+				});              
+     
                 //Add Keep Alive text
                 $('.ticker-wrapper').mouseover(function() {
                     $('.keep-alive span').text('Keep Alive');
@@ -4967,7 +5007,7 @@
                         
             //Add Draggable and Droppable to Keep Alive
             $(function() {
-                $( ".keep-alive-card_back" ).draggable();
+                $( ".keep-alive-card_back, .card-back" ).draggable();
                 });
                         
             /*docReady( function() {

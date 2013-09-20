@@ -1519,7 +1519,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	-webkit-transition: all .2s ease-in-out;
 }
 
-.card-back:hover {
+/*.card-back:hover {
 	width: 350px;
 	height: 580px;
 	position: absolute;
@@ -1529,7 +1529,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	box-shadow: none;
 	z-index: 10;
 	opacity: 1;
-}
+}*/
 
 .card-back-heading {
 	margin-left: 80px;
