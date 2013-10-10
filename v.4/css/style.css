@@ -1489,6 +1489,15 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 }
 
 /* card styles */	
+/* adds quotes around user input */	
+.add-quotes:before {
+		content: open-quote;
+	}
+	
+	.add-quotes:after {
+		content: close-quote;
+	}
+	
 .card, .card-actions, .card-front, .card-back, .card-open {
 	position: absolute;
 	margin: 0;
@@ -1520,7 +1529,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 	
 	.card-front-header-p {
-		font-size: .65em;
+		font-size: .75em;
 		line-height: 1;
 		margin-bottom: .25em;
 	}
@@ -1545,10 +1554,13 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 		
 
-.card-front_facebook {
-	/*background: url(../img/cards/card-front-facebook.jpg) no-repeat;*/
+	.card-front_facebook, .card-front_event, .card-front_message {
 		background: #fff;
 		border: 2px solid #ccc;
+		background-position: right 5px top 0;
+	}		
+	
+.card-front_facebook {
 		background: #fff url(../img/cards/facebook-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
@@ -1559,12 +1571,19 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}*/
 
 .card-front_event {
-	background: url(../img/cards/card-front-event.jpg) no-repeat;
+		background: #fff url(../img/cards/event-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
 }
 
 .card-front_message {
-	background: url(../img/cards/card-front-message.jpg) no-repeat;
+		background: #fff url(../img/cards/message-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
 }
+	.card-front-message-content {
+		padding: 0 1em;
+		font-size: 1em;
+		font-weight: bold;
+	}
 
 .card-front_poi {
 	background: url(../img/cards/card-front-poi.jpg) no-repeat;
