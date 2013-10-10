@@ -1511,16 +1511,32 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	box-sizing: border-box;
 }
 	
-	.card-front-header {
+	.card-front-header,
+	.card-back-header
+	{
 		height: 40px;
 		padding: .5em .25em .25em;
+		position: relative;
+	}
+	
+	.card-back-header {
+		height: 50px;
+	}
+	
+	.header-post-time {
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+		font-size: 12px;
+		font-style: italic;
+		color: #999;
 	}
 	
 	.card-front-header.card-front-header_tweet--blue {
 		height: 150px;
 	}
 	
-	.card-front-header-profile {
+	.card-front-header-profile, .card-back-header-profile {
 		float: left;
 		margin-right: .5em;
 	}
@@ -1529,7 +1545,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-front-header-p, 
 	.card-front-header.card-front-header_tweet--blue p, 
 	.card-front-header.card-front-header_tweet--white p, 
-	.card-front-header.card-front-header_tweet--clouds p {
+	.card-front-header.card-front-header_tweet--clouds p, 
+	.card-back-header-h1
+	{
 		font-size: .75em;
 		font-weight: bold;
 		line-height: 1;
@@ -1585,14 +1603,17 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 	
 	.card-front_facebook, .card-front_instagram, .card-front_event, .card-front_message, .card-front_poi, .card-front_tweet--blue, .card-front_tweet--white,
-	.card-front_tweet--comment, .card-front_tweet--clouds 
+	.card-front_tweet--comment, .card-front_tweet--clouds,
+	.card-back_facebook
 	{
 		background: #fff;
 		border: 2px solid #ccc;
 		background-position: right 5px top 0;
 	}		
 	
-.card-front_facebook, .card-front_instagram {
+.card-front_facebook, .card-front_instagram,
+.card-back_facebook
+	{
 		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
@@ -1647,10 +1668,66 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	-webkit-transition: all 1s ease-in-out;
 	transition: all 150ms ease-in-out;
 }
+	
+	.card-back-main {
+		width: 336px;
+		height: 464px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.card-back-facebook-comment {
+		padding: 10px 5px 10px 40px;
+	}
+	
+	.card-back-facebook-comment p {
+		font-size: .75em;
+		line-height: 1.25;
+	}
+	
+	.friends-tribes-container {
+		border-top: 1px solid #ccc;
+		padding: 0 5px;
+	}
+	
+	.friends-tribes-container h3 {
+		text-align: center;
+		font-size: .65em;
+		line-height: 1;
+		color: #ccc;
+		background: #fff;
+		margin-top: -.5em;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: .75em;
+		width: 150px;
+	}
+	
+	.friends-tribes-thumb-container {
+		width: 90%;
+		float: left;
+	}
+	
+	.comment-indicator {
+		width: 10%;
+		float: right;
+	}
+	
+	.friends-tribes-thumb {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin-right: 1px;
+		margin-top: 2px;
+	}
+	
+	.friends-tribes-thumb:last-child {
+		margin-right: 0;
+	}
 
-.card-back_facebook {
+/*.card-back_facebook {
 	background: url(../img/cards/card-back-facebook.jpg) no-repeat;
-}
+}*/
 
 .card-back_facebook--combined {
 	background: url(../img/cards/card-back-facebook-combined.jpg) no-repeat;
@@ -1780,8 +1857,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
 
-.card p, .card-back p {
-	font: 23%/1 Georgia, Times New Roman, serif;
+.card p {
+	font: 80%/1 Georgia, Times New Roman, serif;
 	color: #000;
 }
 
@@ -1819,7 +1896,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	opacity: 1 !important;
 }
 
-.card p:before, .card-back p:before, .wall-card-medium_back p:before {  
+.wall-card-medium_back p:before {  
     content: open-quote; 
 	font-size: 50px;
 	float: left;
