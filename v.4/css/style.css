@@ -1584,7 +1584,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		font-weight: bold;
 	}
 	
-	.card-front_facebook, .card-front_event, .card-front_message, .card-front_poi, .card-front_tweet--blue, .card-front_tweet--white,
+	.card-front_facebook, .card-front_instagram, .card-front_event, .card-front_message, .card-front_poi, .card-front_tweet--blue, .card-front_tweet--white,
 	.card-front_tweet--comment, .card-front_tweet--clouds 
 	{
 		background: #fff;
@@ -1592,7 +1592,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		background-position: right 5px top 0;
 	}		
 	
-.card-front_facebook {
+.card-front_facebook, .card-front_instagram {
 		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
