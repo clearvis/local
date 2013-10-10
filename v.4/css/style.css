@@ -1516,16 +1516,39 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		padding: .5em .25em .25em;
 	}
 	
+	.card-front-header.card-front-header_tweet--blue {
+		height: 150px;
+	}
+	
 	.card-front-header-profile {
 		float: left;
 		margin-right: .5em;
 	}
 	
-	.card-front-header-h1 {
+	.card-front-header-h1, 
+	.card-front-header-p, 
+	.card-front-header.card-front-header_tweet--blue p, 
+	.card-front-header.card-front-header_tweet--white p, 
+	.card-front-header.card-front-header_tweet--clouds p {
 		font-size: .75em;
 		font-weight: bold;
 		line-height: 1;
 		margin: 0 25px .25em 0;
+	}
+	
+	.card-front-header.card-front-header_tweet--blue p,
+	.card-front-header.card-front-header_tweet--white p, 
+	.card-front-header.card-front-header_tweet--clouds p
+	{
+		margin-left: 30px;
+	}
+	
+	.card-front-header.card-front-header_tweet--blue a:link,
+	.card-front-header.card-front-header_tweet--white a:link,
+	.card-front-header.card-front-header_tweet--comments a:link,
+	.card-front-header.card-front-header_tweet--clouds a:link
+	{
+		color: #0A95E4;
 	}
 	
 	.card-front-header-p {
@@ -1535,8 +1558,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 	
 	.card-front-main {
-		width: 226px;
-		height: 106px;
+		width: 230px;
+		height: 110px;
 		overflow: hidden;
 		position: relative;
 	}
@@ -1553,15 +1576,24 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		padding: .5em;
 	}
 		
-
-	.card-front_facebook, .card-front_event, .card-front_message {
+.card-front-main_twitter--comment p {
+		height: inherit;
+		padding-left: 30px;
+		background: #99e1fd;
+		color: #000;
+		font-weight: bold;
+	}
+	
+	.card-front_facebook, .card-front_event, .card-front_message, .card-front_poi, .card-front_tweet--blue, .card-front_tweet--white,
+	.card-front_tweet--comment, .card-front_tweet--clouds 
+	{
 		background: #fff;
 		border: 2px solid #ccc;
 		background-position: right 5px top 0;
 	}		
 	
 .card-front_facebook {
-		background: #fff url(../img/cards/facebook-ribbon.jpg) no-repeat;
+		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
 	
@@ -1586,23 +1618,27 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 
 .card-front_poi {
-	background: url(../img/cards/card-front-poi.jpg) no-repeat;
+		background: #fff url(../img/cards/poi-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
 }
 
 .card-front_tweet--blue {
-	background: url(../img/cards/card-front-tweet-blue.jpg) no-repeat;
+	background: #99e1fd url(../img/cards/blue-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
 }
 
 .card-front_tweet--white {
-	background: url(../img/cards/card-front-tweet-white.jpg) no-repeat;
+	background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
 }
 
 .card-front_tweet--comment {
-	background: url(../img/cards/card-front-tweet-comment.jpg) no-repeat;
+	background: #fff url(../img/cards/blue-ribbon.jpg) 5px 0 no-repeat;
 }
 
 .card-front_tweet--clouds {
-	background: url(../img/cards/card-front-tweet-clouds.jpg) no-repeat;
+	background: url(../img/cards/blue-ribbon.jpg) 5px 0 no-repeat, url(../img/cards/twitter-clouds.jpg) no-repeat;
+		
 }
 
 /*.card-back_facebook, .card-back_facebook--combined, .card-back_event, .card-back_message*/ .card-back {
