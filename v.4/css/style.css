@@ -1677,6 +1677,11 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		position: relative;
 	}
 	
+	.card-back-logo {
+		float: left;
+		padding-top: 10px;
+	}
+	
 	.card-back-facebook-comment {
 		padding: 10px 5px 0 40px;
 	}
