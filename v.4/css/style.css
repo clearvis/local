@@ -1654,12 +1654,13 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 }
 
 .card-front_tweet--comment {
-	background: #fff url(../img/cards/blue-ribbon.jpg) 5px 0 no-repeat;
+	background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
+	background-position: right 5px top 0;
 }
 
 .card-front_tweet--clouds {
 	background: url(../img/cards/blue-ribbon.jpg) 5px 0 no-repeat, url(../img/cards/twitter-clouds.jpg) no-repeat;
-		
+	background-position: right 5px top 0, top center;		
 }
 
 /*.card-back_facebook, .card-back_facebook--combined, .card-back_event, .card-back_message*/ .card-back {
