@@ -1679,7 +1679,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	
 	.card-back-logo {
 		float: left;
-		padding-top: 10px;
+		padding: 10px 0 0 5px;
 	}
 	
 	.card-back-facebook-comment {
@@ -1691,8 +1691,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		line-height: 1.25;
 	}
 	
-	.friends-tribes-container {
-		padding: 0 5px;
+	.friends-tribes-container, .card-back-hashtags {
+		padding: 0 5px !important;
+		margin-bottom: .5em !important;
 	}
 	
 	.card-back-divider {
@@ -1729,6 +1730,50 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	
 	.friends-tribes-thumb:last-child {
 		margin-right: 0;
+	}
+	
+	.card-back-hashtags {
+		list-style: none;
+		height: 40px !important;
+		min-width: 0 !important;
+	}
+	
+	.card-back-hashtags li { 
+		width: auto !important;
+		margin-left: 10px !important;
+		height: 1em !important;
+	}
+	
+	.card-back-hashtags li:after { 
+		content: ",";
+	}
+	
+	.card-back-hashtags li:last-child:after { 
+		content: "";
+	}
+	
+	.card-back-hashtags li:first-child { 
+		margin-left: 0 !important;
+	}
+	
+	.card-back-comment-form {
+		background:  #ccc;
+		height: 40px;
+		padding: 8px 5px;
+	}
+	
+	.card-back-comment-form .btn-primary {
+		background: blue !important;
+		float: right;
+	}
+	
+	.card-back-comment-form input {
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: middle;
+		background: #fff url(../img/cards/camera-icon.jpg) no-repeat center right;
+		height: 29px;
+		width: 70%;
 	}
 
 /*.card-back_facebook {
