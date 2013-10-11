@@ -1678,7 +1678,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 	
 	.card-back-facebook-comment {
-		padding: 10px 5px 10px 40px;
+		padding: 10px 5px 0 40px;
 	}
 	
 	.card-back-facebook-comment p {
@@ -1687,21 +1687,21 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 	
 	.friends-tribes-container {
-		border-top: 1px solid #ccc;
 		padding: 0 5px;
 	}
 	
-	.friends-tribes-container h3 {
+	.card-back-divider {
+		background: linear-gradient(#fff 0%, #fff 45%, #999 46%, #999 54%, #fff 54%, #fff 100%);
 		text-align: center;
 		font-size: .65em;
-		line-height: 1;
-		color: #ccc;
+		line-height: 1.25;
+		color: #999;
+		margin: 0 auto .75em;
+	}
+	
+	.card-back-divider span {
 		background: #fff;
-		margin-top: -.5em;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: .75em;
-		width: 150px;
+		padding: 0 20px;
 	}
 	
 	.friends-tribes-thumb-container {
