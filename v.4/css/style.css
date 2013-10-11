@@ -1569,7 +1569,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-front-header.card-front-header_tweet--blue a:link,
 	.card-front-header.card-front-header_tweet--white a:link,
 	.card-front-header.card-front-header_tweet--comments a:link,
-	.card-front-header.card-front-header_tweet--clouds a:link
+	.card-front-header.card-front-header_tweet--clouds a:link,
+	.message-actions a:link
 	{
 		color: #0A95E4;
 	}
@@ -1637,7 +1638,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		background-position: right 5px top 0;
 }
 
-.card-front_message {
+.card-front_message,
+.card-back_message
+ {
 		background: #fff url(../img/cards/message-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
@@ -1679,7 +1682,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	transition: all 150ms ease-in-out;
 }
 	
-	.card-back-main {
+	.card-back-main
+	{
 		width: 336px;
 		height: 439px;
 		overflow: hidden;
@@ -1695,14 +1699,29 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		padding: 10px 5px 0 40px;
 	}
 	
+	.card-back-prev-messages {
+		padding: 5px;
+		height: 398px;
+	}
+	
 	.card-back-facebook-comment p, 
 	.card-back-event-description p, 
 	.card-back-event-description address,
-	.card-back-instagram-comment p 
+	.card-back-instagram-comment p, 
+	.card-back-prev-messages p,
+	.card-back-prev-messages h2
 	{
-		font-size: .65em;
+		font-size: 12px;
 		line-height: 1.25;
 		margin-bottom: .25em;
+	}
+	
+	card-back-prev-messages h2 {
+		font-weight: bold;
+	}
+	
+	.card-back-prev-messages p {
+		margin-bottom: .5em;
 	}
 	
 	.friends-tribes-container, .card-back-hashtags {
@@ -1772,6 +1791,17 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		margin-left: 0 !important;
 	}
 	
+	.message-actions {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+	
+	.message-actions span {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	
 	.card-back-comment-form {
 		background:  #ccc;
 		height: 40px;
@@ -1839,9 +1869,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	background: url(../img/cards/card-back-event-loocal.jpg) no-repeat;
 }
 
-.card-back_message {
+/*.card-back_message {
 	background: url(../img/cards/card-back-message.jpg) no-repeat;
-}
+}*/
 
 .card-back_poi {
 	background: url(../img/cards/card-back-poi.jpg) no-repeat;
@@ -2021,7 +2051,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	background: url(../img/mickey.jpg) no-repeat, url(../img/twitter-card.png) 0 10px repeat;
 }
 
-.card h3, .card h2, .card-back h2 {
+.card h3, .card h2 {
 	margin: 0;
 	padding: 10px 0 25px 55px;
 	color: #000;
