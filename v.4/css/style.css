@@ -1610,7 +1610,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-front_facebook, .card-front_instagram, .card-front_event, .card-front_message, .card-front_poi, .card-front_tweet--blue, .card-front_tweet--white,
 	.card-front_tweet--comment, .card-front_tweet--clouds,
 	.card-back_facebook,
-	.card-back_event
+	.card-back_event,
+	.card-back_instagram
 	{
 		background: #fff;
 		border: 2px solid #ccc;
@@ -1619,7 +1620,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	
 .card-front_facebook, .card-front_instagram,
 .card-back_facebook,
-.card-back_event
+.card-back_event,
+.card-back_instagram
 	{
 		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
@@ -1689,11 +1691,15 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		padding: 10px 0 0 5px;
 	}
 	
-	.card-back-facebook-comment, .card-back-event-description {
+	.card-back-facebook-comment, .card-back-event-description, .card-back-instagram-comment {
 		padding: 10px 5px 0 40px;
 	}
 	
-	.card-back-facebook-comment p, .card-back-event-description p, .card-back-event-description address {
+	.card-back-facebook-comment p, 
+	.card-back-event-description p, 
+	.card-back-event-description address,
+	.card-back-instagram-comment p 
+	{
 		font-size: .65em;
 		line-height: 1.25;
 		margin-bottom: .25em;
