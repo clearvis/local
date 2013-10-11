@@ -1612,7 +1612,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-front_tweet--comment, .card-front_tweet--clouds,
 	.card-back_facebook,
 	.card-back_event,
-	.card-back_instagram
+	.card-back_instagram,
+	.card-back_message
 	{
 		background: #fff;
 		border: 2px solid #ccc;
@@ -1650,7 +1651,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		font-weight: bold;
 	}
 
-.card-front_poi {
+.card-front_poi,
+.card-back_poi
+{
 		background: #fff url(../img/cards/poi-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
@@ -1704,12 +1707,17 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		height: 398px;
 	}
 	
+	.card-back-poi-comment {
+		padding: 5px;
+	}
+	
 	.card-back-facebook-comment p, 
 	.card-back-event-description p, 
 	.card-back-event-description address,
 	.card-back-instagram-comment p, 
 	.card-back-prev-messages p,
-	.card-back-prev-messages h2
+	.card-back-prev-messages h2,
+	.card-back-poi-comment p
 	{
 		font-size: 12px;
 		line-height: 1.25;
@@ -1873,9 +1881,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	background: url(../img/cards/card-back-message.jpg) no-repeat;
 }*/
 
-.card-back_poi {
+/*.card-back_poi {
 	background: url(../img/cards/card-back-poi.jpg) no-repeat;
-}
+}*/
 
 .card-back_tweet {
 	background: url(../img/cards/card-back-tweet.jpg) no-repeat;
