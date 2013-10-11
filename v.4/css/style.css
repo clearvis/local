@@ -1760,6 +1760,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		background:  #ccc;
 		height: 40px;
 		padding: 8px 5px;
+		margin-bottom: 0;
 	}
 	
 	.card-back-comment-form .btn-primary {
@@ -1774,6 +1775,32 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		background: #fff url(../img/cards/camera-icon.jpg) no-repeat center right;
 		height: 29px;
 		width: 70%;
+	}
+	
+	.actions-container {
+		background: #000;
+		height: 25px;
+	}
+	
+	.actions {
+		display: inline-block;
+		margin-left: 25px;
+		font-size: .75em;
+		font-weight: bold;
+		color: #fff;
+	}
+	
+	.actions:first-child {
+		margin: 2px 0 2px 1px;
+		padding: 0 3px 0 5px;
+		height: 19px;
+		background: yellow;
+		color: #000;
+	}
+	
+	.actions:nth-of-type(4) {
+		border-left: 1px solid #fff;
+		padding-left: 5px;
 	}
 
 /*.card-back_facebook {
