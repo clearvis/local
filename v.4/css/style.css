@@ -613,7 +613,7 @@ span.footer-time-divider {
 	padding: 20px 0 0 30px;
 }
 
-.card-wall-medium > .span11, .card-wall-large > .span11, .card-wall-205x293 > .span11 {
+.card-wall-medium , .card-wall-large > .span11, .card-wall-205x293 > .span11 {
 	overflow-y: scroll;
 	/*height: calc(85vh - 90px);*/
 	height: 68vh;
@@ -622,25 +622,25 @@ span.footer-time-divider {
 	display: block;                                                                                                                       
 }
 
-.card-wall-large > .span11::-webkit-scrollbar, .card-wall-medium > .span11::-webkit-scrollbar {
+.card-wall-large > .span11::-webkit-scrollbar, .card-wall-medium::-webkit-scrollbar {
     width: 8px;
 }
 
 /* Track */
-.card-wall-large > .span11::-webkit-scrollbar-track, .card-wall-medium > .span11::-webkit-scrollbar-track {
+.card-wall-large > .span11::-webkit-scrollbar-track, .card-wall-medium::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
  
 /* Handle */
-.card-wall-large > .span11::-webkit-scrollbar-thumb, .card-wall-medium > .span11::-webkit-scrollbar-thumb {
+.card-wall-large > .span11::-webkit-scrollbar-thumb, .card-wall-medium::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background: rgba(255,255,255,1); 
     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
 }
-.card-wall-large > .span11::-webkit-scrollbar-thumb:window-inactive, .card-wall-medium > .span11::-webkit-scrollbar-thumb:window-inactive {
+.card-wall-large > .span11::-webkit-scrollbar-thumb:window-inactive, .card-wall-medium::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,255,255,0.4); 
 }
 
@@ -694,7 +694,7 @@ span.footer-time-divider {
 .wall-card-medium {
     width: 340px;
 	height: 518px;
-	background: transparent url(../img/tammy-cards.jpg) -25px -35px no-repeat;
+	background: #FFF;
 	margin: 1em 0 0 3%;
 	float: left;
 	display: inline-block;
@@ -1512,14 +1512,17 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 }
 	
 	.card-front-header,
-	.card-back-header
+	.card-back-header,
+	.wall-card-header
 	{
 		height: 40px;
 		padding: .5em .25em .25em;
 		position: relative;
 	}
 	
-	.card-back-header {
+	.card-back-header,
+	.wall-card-header
+	{
 		height: 50px;
 	}
 	
@@ -1541,7 +1544,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		height: 150px;
 	}
 	
-	.card-front-header-profile, .card-back-header-profile {
+	.card-front-header-profile, 
+	.card-back-header-profile,
+	.wall-card-medium-header-profile {
 		float: left;
 		margin-right: .5em;
 	}
@@ -1551,7 +1556,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-front-header.card-front-header_tweet--blue p, 
 	.card-front-header.card-front-header_tweet--white p, 
 	.card-front-header.card-front-header_tweet--clouds p, 
-	.card-back-header-h1
+	.card-back-header-h1,
+	.wall-card-medium-header-h1
 	{
 		font-size: .75em;
 		font-weight: bold;
@@ -1613,7 +1619,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-back_facebook,
 	.card-back_event,
 	.card-back_instagram,
-	.card-back_message
+	.card-back_message,
+	.wall-card-medium_facebook
 	{
 		background: #fff;
 		border: 2px solid #ccc;
@@ -1623,7 +1630,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-front_facebook, .card-front_instagram,
 .card-back_facebook,
 .card-back_event,
-.card-back_instagram
+.card-back_instagram,
+.wall-card-medium_facebook
 	{
 		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
@@ -1685,7 +1693,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	transition: all 150ms ease-in-out;
 }
 	
-	.card-back-main
+	.card-back-main,
+	.wall-card-medium-main
 	{
 		width: 336px;
 		height: 439px;
@@ -1693,12 +1702,16 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		position: relative;
 	}
 	
-	.card-back-logo {
+	.card-back-logo,
+	.wall-card-medium-logo {
 		float: left;
 		padding: 10px 0 0 5px;
 	}
 	
-	.card-back-facebook-comment, .card-back-event-description, .card-back-instagram-comment {
+	.card-back-facebook-comment, 
+	.card-back-event-description, 
+	.card-back-instagram-comment,
+	.wall-card-medium-facebook-comment {
 		padding: 10px 5px 0 40px;
 	}
 	
@@ -1717,7 +1730,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-back-instagram-comment p, 
 	.card-back-prev-messages p,
 	.card-back-prev-messages h2,
-	.card-back-poi-comment p
+	.card-back-poi-comment p,
+	.wall-card-medium-facebook-comment p
 	{
 		font-size: 12px;
 		line-height: 1.25;
@@ -1737,7 +1751,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		margin-bottom: .5em !important;
 	}
 	
-	.card-back-divider {
+	.card-back-divider,
+	.wall-card-medium-divider {
 		background: linear-gradient(#fff 0%, #fff 45%, #999 46%, #999 54%, #fff 54%, #fff 100%);
 		text-align: center;
 		font-size: .65em;
@@ -1746,7 +1761,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		margin: 0 auto .75em;
 	}
 	
-	.card-back-divider span {
+	.card-back-divider span,
+	.wall-card-medium-divider span {
 		background: #fff;
 		padding: 0 20px;
 	}
@@ -1773,29 +1789,35 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		margin-right: 0;
 	}
 	
-	.card-back-hashtags {
+	.card-back-hashtags,
+	ul.wall-card-medium-hashtags {
 		list-style: none;
-		height: 30px !important;
+		margin: 0 0 .5em 10px !important;
 		min-width: 0 !important;
 	}
 	
-	.card-back-hashtags li { 
+	.card-back-hashtags li,
+	ul.wall-card-medium-hashtags li { 
 		width: auto !important;
 		margin-left: 10px !important;
 		height: 1em !important;
 		font-size: 12px;
 		line-height: 1;
+		display: inline-block;
 	}
 	
-	.card-back-hashtags li:after { 
+	.card-back-hashtags li:after,
+	ul.wall-card-medium-hashtags li:after { 
 		content: ",";
 	}
 	
-	.card-back-hashtags li:last-child:after { 
+	.card-back-hashtags li:last-child:after,
+	ul.wall-card-medium-hashtags li:last-child:after { 
 		content: "";
 	}
 	
-	.card-back-hashtags li:first-child { 
+	.card-back-hashtags li:first-child,
+	ul.wall-card-medium-hashtags li:first-child { 
 		margin-left: 0 !important;
 	}
 	
