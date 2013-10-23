@@ -693,7 +693,8 @@ span.footer-time-divider {
 	
 .wall-card-medium {
     width: 340px;
-	height: 518px;
+	min-height: 300px;
+	max-height: 750px;
 	background: #FFF;
 	margin: 1em 0 0 3%;
 	float: left;
@@ -1702,6 +1703,10 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		position: relative;
 	}
 	
+	.wall-card-medium-main {
+		height: auto;
+	}
+	
 	.card-back-logo,
 	.wall-card-medium-logo {
 		float: left;
@@ -1832,24 +1837,27 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		margin-right: 20px;
 	}
 	
-	.card-back-comment-form {
+	.card-back-comment-form,
+	.wall-card-medium-comment-form {
 		background:  #ccc;
 		height: 40px;
-		padding: 8px 5px;
-		margin-bottom: 0;
+		padding: 5px;
+		margin-bottom: .5em;
 	}
 	
-	.card-back-comment-form .btn-primary {
+	.card-back-comment-form .btn-primary,
+	.wall-card-medium-comment-form .btn-primary {
 		background: blue !important;
 		float: right;
 	}
 	
-	.card-back-comment-form input {
+	.card-back-comment-form input,
+	.wall-card-medium-comment-form input {
 		display: inline-block;
 		margin-bottom: 0;
 		vertical-align: middle;
 		background: #fff url(../img/cards/camera-icon.jpg) no-repeat center right;
-		height: 29px;
+		height: 30px;
 		width: 70%;
 	}
 	

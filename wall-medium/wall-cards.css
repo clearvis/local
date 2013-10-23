@@ -437,7 +437,8 @@ table {
 
 .wall-card {
     width: 340px;
-	height: 518px;
+	min-height: 300px;
+	max-height: 750px;
 	background: #FFF;
 	margin: 1em 0 0 3%;
 	float: left;
@@ -452,7 +453,7 @@ table {
 }		
 	
 .wall-card_facebook {
-		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
+		background: #fff url(img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
 
@@ -490,7 +491,7 @@ table {
 
 .wall-card-main {
 		width: 336px;
-		height: 439px;
+		height: auto;
 		overflow: hidden;
 		position: relative;
 }
@@ -553,14 +554,15 @@ table {
 
 ul.wall-card-hashtags {
 		list-style: none;
-		margin: 0 0 .5em 10px !important;
-		min-width: 0 !important;
+		margin: 0 0 .5em 10px;
+		padding-left: 0;
+		min-width: 0;
 }
 	
-ul.wall-card-medium-hashtags li { 
-		width: auto !important;
-		margin-left: 10px !important;
-		height: 1em !important;
+ul.wall-card-hashtags li { 
+		width: auto;
+		margin-left: 1px;
+		height: 1em;
 		font-size: 12px;
 		line-height: 1;
 		display: inline-block;
@@ -570,10 +572,95 @@ ul.wall-card-hashtags li:after {
 		content: ",";
 }
 	
-ul.wall-card-medium-hashtags li:last-child:after { 
+ul.wall-card-hashtags li:last-child:after { 
 		content: "";
 }
 	
-ul.wall-card-medium-hashtags li:first-child { 
+ul.wall-card-hashtags li:first-child { 
 		margin-left: 0 !important;
+}
+
+/* Comment Form */
+.wall-card-comment-form {
+	  background:  #ccc;
+	  height: 30px;
+	  padding: 5px;
+	  margin-bottom: .5em;
+}
+  
+.btn {
+	  display: inline-block;
+	  padding: 4px 12px;
+	  margin-bottom: 0;
+	  font-size: 14px;
+	  line-height: 20px;
+	  color: #FFF;
+	  text-align: center;
+	  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	  vertical-align: middle;
+	  cursor: pointer;
+	  border: 1px solid #cccccc;
+	  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  border-bottom-color: #b3b3b3;
+	  border-radius: 4px;
+	  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.wall-card-comment-form .btn-primary {
+	  background: blue;
+	  float: right;
+}
+
+input[type="text"] {
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input[type="text"] {
+	padding: 4px 6px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+  
+.wall-card-comment-form input {
+	  display: inline-block;
+	  margin-bottom: 0;
+	  vertical-align: middle;
+	  background: #fff url(../img/cards/camera-icon.jpg) no-repeat center right;
+	  height: 20px;
+	  width: 70%;
+}
+
+/* Card Actions */
+.actions-container {
+	  background: #000;
+	  height: 25px;
+}
+  
+  .actions {
+	  display: inline-block;
+	  margin-left: 25px;
+	  font-size: .75em;
+	  font-weight: bold;
+	  color: #fff;
+}
+  
+  .actions:first-child {
+	  margin: 2px 0 2px 1px;
+	  padding: 0 3px 0 5px;
+	  height: 19px;
+	  background: yellow;
+	  color: #000;
+}
+  
+  .actions:nth-of-type(4) {
+	  border-left: 1px solid #fff;
+	  padding-left: 5px;
 }
