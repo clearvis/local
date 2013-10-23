@@ -448,7 +448,9 @@ table {
 
 .wall-card_facebook,
 .wall-card_event,
-.wall-card_instagram {
+.wall-card_instagram,
+.wall-card_message,
+.wall-card_poi {
 		background: #fff;
 		border: 2px solid #ccc;
 		background-position: right 5px top 0;
@@ -462,6 +464,17 @@ table {
 
 .wall-card_event {
 		background: #fff url(img/cards/event-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
+}
+
+.wall-card_message {
+		background: #fff url(img/cards/message-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
+}
+
+.wall-card_poi
+{
+		background: #fff url(../img/cards/poi-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
 
@@ -521,10 +534,28 @@ table {
 .wall-card-facebook-comment p,
 .wall-card-event-description p,
 .wall-card-event-description address,
-.wall-card-instagram-comment p {
+.wall-card-instagram-comment p,
+.wall-card-prev-messages h2,
+.wall-card-prev-messages p {
 	  font-size: 12px;
 	  line-height: 1.25;
 	  margin: 0 0 .25em;
+}
+
+.card-back-poi-comment,
+.wall-card-prev-messages {
+	  padding: 5px;
+}
+
+.message-actions {
+	  border-bottom: 1px solid #ccc;
+	  padding-bottom: 5px;
+	  margin-bottom: 5px;
+}
+
+.message-actions a:link {
+	  color: #0A95E4;
+	  text-decoration: none;
 }
  
 .friends-tribes-container, .card-back-hashtags {

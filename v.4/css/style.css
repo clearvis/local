@@ -1624,7 +1624,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-back_message,
 	.wall-card-medium_facebook,
 	.wall-card-medium_event,
-	.wall-card-medium_instagram
+	.wall-card-medium_instagram,
+	.wall-card-medium_message,
+	.wall-card-medium_poi
 	{
 		background: #fff;
 		border: 2px solid #ccc;
@@ -1654,7 +1656,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 }
 
 .card-front_message,
-.card-back_message
+.card-back_message,
+.wall-card-medium_message
  {
 		background: #fff url(../img/cards/message-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
@@ -1666,7 +1669,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	}
 
 .card-front_poi,
-.card-back_poi
+.card-back_poi,
+.wall-card-medium_poi
 {
 		background: #fff url(../img/cards/poi-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
@@ -1732,7 +1736,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		height: 398px;
 	}
 	
-	.card-back-poi-comment {
+	.card-back-poi-comment,
+	.wall-card-medium-prev-messages,
+	.wall-card-medium-poi-comment {
 		padding: 5px;
 	}
 	
@@ -1746,7 +1752,10 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.wall-card-medium-facebook-comment p,
 	.wall-card-medium-event-description p,
 	.wall-card-medium-event-description address,
-	.wall-card-medium-instagram-comment p
+	.wall-card-medium-instagram-comment p,
+	.wall-card-medium-prev-messages h2,
+	.wall-card-medium-prev-messages p,
+	.wall-card-medium-poi-comment p
 	{
 		font-size: 12px;
 		line-height: 1.25;
