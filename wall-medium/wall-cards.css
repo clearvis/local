@@ -446,14 +446,22 @@ table {
 	position: relative;
 }
 
-.wall-card_facebook {
+.wall-card_facebook,
+.wall-card_event,
+.wall-card_instagram {
 		background: #fff;
 		border: 2px solid #ccc;
 		background-position: right 5px top 0;
 }		
 	
-.wall-card_facebook {
+.wall-card_facebook,
+.wall-card_instagram {
 		background: #fff url(img/cards/blue-ribbon.jpg) no-repeat;
+		background-position: right 5px top 0;
+}
+
+.wall-card_event {
+		background: #fff url(img/cards/event-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
 }
 
@@ -461,6 +469,8 @@ table {
 		height: 50px;
 		padding: .5em .25em .25em;
 		position: relative;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 }
 
 .wall-card-header-profile {
@@ -468,7 +478,8 @@ table {
 		margin-right: .5em;
 }
 
-.wall-card-header-h1 {
+.wall-card-header-h1,
+.wall-card-header-p {
 		font-size: .75em;
 		font-weight: bold;
 		line-height: 1;
@@ -501,14 +512,19 @@ table {
 	  padding: 10px 0 0 5px;
  }
  
-.wall-card-facebook-comment {
+.wall-card-facebook-comment,
+.wall-card-event-description,
+.wall-card-instagram-comment {
 	  padding: 10px 5px 0 40px;
 }
 
-.wall-card-facebook-comment p {
+.wall-card-facebook-comment p,
+.wall-card-event-description p,
+.wall-card-event-description address,
+.wall-card-instagram-comment p {
 	  font-size: 12px;
 	  line-height: 1.25;
-	  margin-bottom: .25em;
+	  margin: 0 0 .25em;
 }
  
 .friends-tribes-container, .card-back-hashtags {
