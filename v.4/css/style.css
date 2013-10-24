@@ -1578,7 +1578,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-front-header.card-front-header_tweet--white a:link,
 	.card-front-header.card-front-header_tweet--comments a:link,
 	.card-front-header.card-front-header_tweet--clouds a:link,
-	.message-actions a:link
+	.message-actions a:link,
+	.tweet-actions a:link
 	{
 		color: #0A95E4;
 	}
@@ -1626,7 +1627,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.wall-card-medium_event,
 	.wall-card-medium_instagram,
 	.wall-card-medium_message,
-	.wall-card-medium_poi
+	.wall-card-medium_poi,
+	.wall-card-medium_twitter
 	{
 		background: #fff;
 		border: 2px solid #ccc;
@@ -1637,7 +1639,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 .card-back_facebook,
 .card-back_instagram,
 .wall-card-medium_facebook,
-.wall-card-medium_instagram
+.wall-card-medium_instagram,
+.wall-card-medium_twitter
 	{
 		background: #fff url(../img/cards/blue-ribbon.jpg) no-repeat;
 		background-position: right 5px top 0;
@@ -1727,7 +1730,8 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.card-back-instagram-comment,
 	.wall-card-medium-facebook-comment,
 	.wall-card-medium-event-description,
-	.wall-card-medium-instagram-comment  {
+	.wall-card-medium-instagram-comment,
+	.wall-card-medium-twitter-comments  {
 		padding: 10px 5px 0 40px;
 	}
 	
@@ -1755,7 +1759,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.wall-card-medium-instagram-comment p,
 	.wall-card-medium-prev-messages h2,
 	.wall-card-medium-prev-messages p,
-	.wall-card-medium-poi-comment p
+	.wall-card-medium-poi-comment p,
+	.wall-card-medium-twitter-comments h2,
+	.wall-card-medium-twitter-comments p
 	{
 		font-size: 12px;
 		line-height: 1.25;
@@ -1845,13 +1851,15 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 		margin-left: 0 !important;
 	}
 	
-	.message-actions {
+	.message-actions,
+	.tweet-actions {
 		border-bottom: 1px solid #ccc;
 		padding-bottom: 5px;
 		margin-bottom: 5px;
 	}
 	
-	.message-actions span {
+	.message-actions span,
+	.tweet-actions span {
 		display: inline-block;
 		margin-right: 20px;
 	}
