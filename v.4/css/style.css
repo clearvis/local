@@ -1725,13 +1725,9 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.wall-card-medium-main
 	{
 		width: 336px;
-		height: 439px;
+		min-height: 220px;
 		overflow: hidden;
 		position: relative;
-	}
-	
-	.wall-card-medium-main {
-		height: auto;
 	}
 	
 	.card-back-logo,
