@@ -560,6 +560,12 @@ table {
 	  margin-bottom: 5px;
 }
 
+.message-actions span,
+.tweet-actions span {
+	  display: inline-block;
+	  margin-right: 20px;
+}
+
 .message-actions:last-child,
 .tweet-actions:last-child {
 	border-bottom: none;
