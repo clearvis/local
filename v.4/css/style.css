@@ -622,25 +622,31 @@ span.footer-time-divider {
 	display: block;                                                                                                                       
 }
 
-.card-wall-large > .span11::-webkit-scrollbar, .card-wall-medium::-webkit-scrollbar {
+.card-wall-large > .span11::-webkit-scrollbar, .card-wall-medium::-webkit-scrollbar, .add-scroll-bar::-webkit-scrollbar {
     width: 8px;
 }
 
 /* Track */
-.card-wall-large > .span11::-webkit-scrollbar-track, .card-wall-medium::-webkit-scrollbar-track {
+.card-wall-large > .span11::-webkit-scrollbar-track, .card-wall-medium::-webkit-scrollbar-track, .add-scroll-bar::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
  
 /* Handle */
-.card-wall-large > .span11::-webkit-scrollbar-thumb, .card-wall-medium::-webkit-scrollbar-thumb {
+.card-wall-large > .span11::-webkit-scrollbar-thumb, .card-wall-medium::-webkit-scrollbar-thumb, .add-scroll-bar::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background: rgba(255,255,255,1); 
     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
 }
-.card-wall-large > .span11::-webkit-scrollbar-thumb:window-inactive, .card-wall-medium::-webkit-scrollbar-thumb:window-inactive {
+
+.add-scroll-bar::-webkit-scrollbar-thumb {
+	background: rgba(231, 76, 60,1.0);
+	height: 50px;
+}
+
+.card-wall-large > .span11::-webkit-scrollbar-thumb:window-inactive, .card-wall-medium::-webkit-scrollbar-thumb:window-inactive, .add-scroll-bar::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,255,255,0.4); 
 }
 
@@ -1725,9 +1731,14 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	.wall-card-medium-main
 	{
 		width: 336px;
-		min-height: 220px;
+		height: auto;
 		overflow: hidden;
 		position: relative;
+	}
+	
+	.wall-card-medium-main {
+		min-height: 300px;
+		max-height: 625px;
 	}
 	
 	.card-back-logo,
@@ -1785,6 +1796,12 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	
 	.card-back-prev-messages p {
 		margin-bottom: .5em;
+	}
+	
+	.add-scroll-bar {
+		max-height: 230px;
+		overflow-x: hidden;
+		overflow-y: scroll;
 	}
 	
 	.friends-tribes-container, .card-back-hashtags {
@@ -1885,7 +1902,7 @@ button.ticker-toggle-open, .wall-ticker-toggle-open {
 	
 	.card-back-comment-form .btn-primary,
 	.wall-card-medium-comment-form .btn-primary {
-		background: blue !important;
+		background: #3498db !important;
 		float: right;
 	}
 	
