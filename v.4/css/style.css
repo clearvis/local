@@ -654,6 +654,21 @@ span.footer-time-divider {
 	position: relative;
 }
 
+/* Sets up Salvattore */
+[data-columns]::before { display: none; } /* Don't forget this. */
+
+.wall-card-medium-wrapper[data-columns]::before {
+    content: '3 .card-col.one-third';
+}
+
+.card-col {
+	float:left;
+}
+
+.one-third {
+	width: 33%;
+}
+
 .wall-card-medium-index {
 	position: absolute;
 	bottom: 39px;
@@ -696,9 +711,9 @@ span.footer-time-divider {
 	min-height: 300px;
 	max-height: 750px;
 	background: #FFF;
-	margin: 1em 0 0 3%;
-	float: left;
-	display: inline-block;
+	margin: 1em 0 0 20px;
+	/*float: left;
+	display: inline-block;*/
 	position: relative;
 }
 
